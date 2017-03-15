@@ -3,10 +3,10 @@
 date = "2016-04-27"
 
 # Project title.
-title = "External Project"
+title = "Spieleprojekt"
 
 # Project summary to display on homepage.
-summary = "An example of linking directly to an external project website using `external_link`."
+summary = "Beispiel `external_link`."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "boards.jpg"
@@ -22,4 +22,3 @@ external_link = "http://example.org"
 math = false
 
 +++
-

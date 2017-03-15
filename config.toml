@@ -1,6 +1,6 @@
 baseurl = "https://example.com"
-title = "Academic"
-copyright = "&copy; 2016 Hans Beck"
+title = "Gaming is learning"
+copyright = "&copy; 2017 Hans Beck"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -19,16 +19,16 @@ defaultContentLanguageInSubdir = false
   hrefTargetBlank = true
 
 [params]
-  name = "Hans Beck"
+  name = "Hans N. Beck"
   role = ""
   organization = "Educational Concepts Hans Beck"
   organization_url = ""
   avatar = "portrait.jpg"
   email = "hnbeck@educational-concepts.biz"
-  address = "Neckarsulm"
+  address = "74172 Neckarsulm"
   office_hours = ""
-  phone = "888 888 88 88"
-  skype = "beckhn@gmail.com"
+  phone = "+49 (0) 151 58744954"
+  skype = "hnbeck@educational-concepts.biz"
   telegram = ""
 
   # Enable Keybase in Contact section by entering your keybase.io username.
@@ -85,7 +85,7 @@ defaultContentLanguageInSubdir = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = ["green.css"]
+  custom_css = ["eduConHB.css"]
   custom_js  = []
 
   # Publication types.
@@ -96,10 +96,10 @@ defaultContentLanguageInSubdir = false
   #   For multi-lingual sites, copy this block to each language section at the end of this file.
   publication_types = [
     'Uncategorized',  # 0
-    'Conference proceedings',  # 1
-    'Journal',  # 2
+    'Test report',  # 1
+    'Magazine',  # 2
     'Work in progress',  # 3
-    'Technical report',  # 4
+    'Guest blog post',  # 4
     'Book',  # 5
     'Book chapter'  # 6
   ]
@@ -130,7 +130,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "//twitter.com/GeorgeCushen"
+    link = "//twitter.com/EnrichedGamesHB"
 
 #  [[params.social]]
 #    icon = "google-scholar"
@@ -174,7 +174,7 @@ defaultContentLanguageInSubdir = false
 #  weight = 5
 
 [[menu.main]]
-  name = "Contact"
+  name = "Contact/Impressuum"
   url = "#contact"
   weight = 6
 

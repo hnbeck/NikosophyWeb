@@ -1,7 +1,7 @@
 +++
 # About/Biography widget.
 
-date = "2016-04-20T00:00:00"
+date = "2017-03-20T00:00:00"
 draft = false
 
 widget = "about"
@@ -12,31 +12,25 @@ weight = 1
 # List your academic interests.
 [interests]
   interests = [
-    "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Serious Gaming",
+    "Autonomos Systems",
+    "Philosophy"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
+  course = "1. Staatsexamen für Lehramt an Realschulen"
+  institution = "Pädagogische Hochschule Freiburg"
+  year = 1989
 
 [[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2009
-
-[[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
+  course = "Dipl.-Ing. Elektrotechnik"
+  institution = "TH Karslruhe"
+  year = 1995
 
 +++
 
 # Biography
 
-Das ist die zweite Version, jau !
-
-Ich bin ein Safety mensch und total an Sicherheit, künstlichen Charakteren und Spielen interessiert
+Gaming is a important part of our life. But it can have mor value than fun, it can transport information. Gaming can be education.
+My work is about this: design games and game concepts to educate. 
