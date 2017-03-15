@@ -37,6 +37,6 @@ weight = 1
 
 # Biography
 
-Das ist der erste Versuch
+Das ist die zweite Version, jau !
 
 Ich bin ein Safety mensch und total an Sicherheit, künstlichen Charakteren und Spielen interessiert
