@@ -9,9 +9,6 @@ widget = "about"
 # Order that this section will appear in.
 weight = 1
 
-[header]
-image = "boards.jpg"
-caption = "Vision"
 
 # List your academic interests.
 [interests]
