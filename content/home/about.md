@@ -34,7 +34,7 @@ caption = "Vision"
 
 +++
 
-# Biography
+# Mission and Vision
 
 Gaming is a important part of our life. But it can have mor value than fun, it can transport information. Gaming can be education.
 My work is about this: design games and game concepts to educate.
