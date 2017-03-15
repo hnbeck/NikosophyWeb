@@ -9,6 +9,10 @@ widget = "about"
 # Order that this section will appear in.
 weight = 1
 
+[header]
+image = "boards.jpg"
+caption = "Vision"
+
 # List your academic interests.
 [interests]
   interests = [
@@ -33,4 +37,4 @@ weight = 1
 # Biography
 
 Gaming is a important part of our life. But it can have mor value than fun, it can transport information. Gaming can be education.
-My work is about this: design games and game concepts to educate. 
+My work is about this: design games and game concepts to educate.
