@@ -245,6 +245,7 @@ blockquote p:last-child {
   text-align: center;
   padding: 30px 10px;
   position: relative;
+  background-color: rgb(10, 50, 255);
 }
 
 #profile .portrait {
