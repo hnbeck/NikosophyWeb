@@ -245,7 +245,6 @@ blockquote p:last-child {
   text-align: center;
   padding: 30px 10px;
   position: relative;
-  background-color: rgb(10, 50, 255);
 }
 
 #profile .portrait {
@@ -584,7 +583,8 @@ article {
 
 #projects.home-section .project-tags {
   font-size: 0.75rem;
-  color: #9c9c9c;
+  /*color: #9c9c9c;*/
+  color: rgb(50,50,50);
 }
 
 #container-projects {
