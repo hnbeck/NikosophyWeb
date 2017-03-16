@@ -59,5 +59,9 @@ a:hover {
 
 
 #profile {
-  background-color:  rgb(0,128,128);
+  background-color:  rgb(128,128,128);
+}
+
+#contact {
+  background-color:  rgb(128,10,10);
 }
