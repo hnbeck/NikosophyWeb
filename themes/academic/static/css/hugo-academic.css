@@ -203,7 +203,7 @@ blockquote p:last-child {
 }
 
 .home-section {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 255);
   padding: 110px 0 110px 0;
   animation: intro 0.3s both;
   animation-delay: 0.15s;
@@ -592,6 +592,7 @@ article {
   position: relative;
   /*margin-top: 5rem;*/
   overflow: hidden;
+  background-color: rgb(0, 100, 100);
 }
 
 .project-toolbar{
@@ -658,7 +659,7 @@ article {
 
 .card p:last-child {
   margin-bottom: 0;
-} 
+}
 
 .card .card-image.hover-overlay:before {
   display: block;
