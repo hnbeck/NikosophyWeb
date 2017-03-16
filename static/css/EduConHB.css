@@ -58,10 +58,6 @@ a:hover {
 }
 
 
-#profile.row {
-  background-color:  rgb(128,128,128);
-}
-
-#contact {
-  background-color:  rgb(128,10,10);
+.home-section {
+  background-color:  rgb(10,10,128);
 }
