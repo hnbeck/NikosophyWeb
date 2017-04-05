@@ -8,23 +8,22 @@
 a,
 a:visited,
 h3.article-title a:hover {
-    color: rgb(0,0,128);
+    color: rgb(220,110,14);
 }
 
 a:hover {
-    color: rgb(0,230,118);
+    color: rgb(100,100,100);
 }
 
-.navbar-default .navbar-nav li a:hover,
 .btn-primary,
 .btn-primary.btn-outline {
-    color:  rgb(0,0,128);
+    color:  rgb(100,100,130);
 }
 
 /* Articles */
 
 .article-title a {
-    color:  rgb(0,0,128);
+    color:  rgb(220,110,14);
 }
 
 .article-metadata a {
@@ -54,13 +53,5 @@ a:hover {
 .btn-primary.active,
 .btn-primary:visited,
 .btn-primary.btn-outline:active {
-    background-color: rgb(175,175,175);
-}
-
-.home-section {
-  background-color:  rgb(10,10,128);
-  background-image: url('../img/bubbles.jpg');
-}
-.home-section:nth-of-type(even) {
-  background-color: rgb(200, 200, 247);
+    background-color: rgb(150,150,150);
 }

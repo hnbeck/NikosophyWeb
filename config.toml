@@ -1,5 +1,5 @@
 baseurl = "https://example.com"
-title = "Gaming is learning"
+title = "Playing for skills"
 copyright = "&copy; 2017 Hans Beck"
 theme = "academic"
 enableEmoji = true
@@ -12,7 +12,7 @@ disqusShortname = ""
 googleAnalytics = ""
 
 # Default language to use (if you setup multilingual support)
-defaultContentLanguage = "en"
+defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
 
 [blackfriday]
@@ -85,8 +85,8 @@ defaultContentLanguageInSubdir = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = ["eduConHB.css"]
-  custom_js  = []
+  custom_css = ["EduConHB.css"]
+  custom_js  = ["processing.min.js"]
 
   # Publication types.
   #   Used to categorize publications.
@@ -155,8 +155,8 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "Publications"
-  url = "#publications_selected"
-  weight = 2
+  url = "#publications"
+  weight = 4
 
 [[menu.main]]
   name = "Posts"
@@ -166,7 +166,7 @@ defaultContentLanguageInSubdir = false
 [[menu.main]]
   name = "Projects"
   url = "#projects"
-  weight = 4
+  weight = 2
 
 #[[menu.main]]
 #  name = "Teaching"
@@ -190,3 +190,6 @@ defaultContentLanguageInSubdir = false
 # Configure the English version of the website.
 [languages.en]
   languageCode = "en-us"
+
+[languages.de]
+  languageCode = "de-de"

@@ -5,18 +5,17 @@
 date = "2016-04-20T00:00:00"
 draft = false
 
-title = "Recent Publications"
+title = "Publications"
 subtitle = ""
 widget = "publications"
 
 # Order that this section will appear in.
-weight = 20
+weight = 59
 
 # Number of publications to list.
-count = 10
+count = 10 
 
 # Show publication details (such as abstract)? (true/false)
 detailed_list = false
 
 +++
-

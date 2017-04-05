@@ -21,10 +21,10 @@
 }
 
 html {
-  font-family: 'Merriweather', serif;
-  font-size: 16px;
-  color: rgba(0,0,0,0.8);
-  line-height: 1.65;
+  font-family: 'Droid Serif', serif;
+  font-size: 20px;
+  color: rgba(0,0,0, 1.0);
+  line-height: 1.6;
 }
 @media screen and (min-width: 58em) {
   html {
@@ -61,19 +61,20 @@ ul, ol, dl {
 
 /* Navigation bar text */
 .navbar-default {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   line-height: 1.25;
   text-rendering: optimizeLegibility;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   margin-bottom: .5rem;
   line-height: 1.25;
-  color: #313131;
+  /*color: #313131;*/
+  color: rgb(220,110,14);
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -95,15 +96,17 @@ h4, h5, h6 {
 }
 
 a,
-h3.article-title a:hover {
+h3.article-title  {
   color: #0095eb;
+  color: rgb(200,200,0);
   text-decoration: none;
-  transition: color 0.6s ease;
+  transition: color 0.8s ease;
 }
 
 a:hover,
 a:focus {
-  color: #005181;
+  /*color: #005181;*/
+  color: rgb(0,0,170);
 }
 
 img,
@@ -130,7 +133,7 @@ figcaption {
   line-height: 1.25;
   font-size: 1rem;
   margin-bottom: 1.65rem;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
   counter-increment: captions;
 }
 
@@ -211,10 +214,23 @@ blockquote p:last-child {
 
 .home-section:first-of-type {
   padding-top: 50px;
+  background-image: url('../img/Circle.jpg');
 }
 
-.home-section:nth-of-type(even) {
-  background-color: rgb(247, 247, 247);
+.home-section:nth-of-type(2) {
+  background-color: rgb(200, 200, 200);
+}
+
+.home-section:nth-of-type(3) {
+  background-image: url('../img/Circle.jpg');
+}
+
+.home-section:nth-of-type(4) {
+  background-image: url('../img/Circle.jpg');
+}
+
+.home-section:last-of-type {
+  background-color: rgb(200, 200, 200);
 }
 
 @media screen and (max-width: 768px) {
@@ -231,8 +247,8 @@ blockquote p:last-child {
 }
 
 .section-heading p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   font-size: 1.1rem;
   color: #b2b2b2;
 }
@@ -245,6 +261,7 @@ blockquote p:last-child {
   text-align: center;
   padding: 30px 10px;
   position: relative;
+
 }
 
 #profile .portrait {
@@ -263,12 +280,13 @@ blockquote p:last-child {
   font-weight: 300;
   color: #000000;
   margin: 20px 0 10px 0;
+    color: rgb(100,100,100);
 }
 
 #profile .portrait-title h3 {
   font-size: 1.13em;
   font-weight: 300;
-  color: #AAAAAA;
+  color: rgb(100,100,100);
   margin: 0px 0 10px 0;
 }
 
@@ -320,8 +338,10 @@ ul.ul-edu li .description p.course {
 
 ul.ul-edu li .description p.institution {
   font-size: 0.75rem;
-  color: rgba(0,0,0,0.9);
+  color: rgba(0,0,128,1.0);
+
 }
+
 
 /*************************************************
  *  Sharing
@@ -372,6 +392,9 @@ ul.share li:hover .fa {
   transform: scale(1.4)
 }
 
+.panel {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+}
 /*************************************************
  *  Blog Articles
  **************************************************/
@@ -379,12 +402,14 @@ ul.share li:hover .fa {
 article {
   animation: intro 0.3s both;
   animation-delay: 0.15s;
+  background-image: url('../img/Circle.jpg');
 }
 
 .article-container {
   max-width: 760px;
   padding: 1rem 20px 0 20px;
   margin: 0 auto 0 auto;
+  background-color: rgb(250,250,250);
 }
 
 .article-header {
@@ -583,7 +608,7 @@ article {
 
 #projects.home-section .project-tags {
   font-size: 0.75rem;
-  color: #9c9c9c;
+  color: rgb(10,10,139);
 }
 
 #container-projects {
@@ -620,6 +645,7 @@ article {
   background: #fff;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
   transition: all 0.2s ease-out;
+  background-color: rgb(250,250,250);
 }
 
 .card .card-image {
@@ -681,8 +707,8 @@ article {
   transform: translate(0, -50%);
   opacity: 0;
   transition: all 0.2s ease-out;
-  font-family: 'FontAwesome';
-  content: '\f0c1';
+  font-family: 'Oswald';
+  content: 'Play \f0c1';
   text-align: center;
   font-size: 3rem;
   color: #666;
@@ -750,8 +776,8 @@ footer a#back_to_top i {
  **************************************************/
 
 .btn-primary {
-  border-color: #0095eb;
-  background: #0095eb;
+  border-color:  rgb(10,10,130);/*#0095eb;*/
+  background: rgb(220,220,250);/*#0095eb;*/
 }
 
 .btn-primary:hover,
@@ -769,7 +795,7 @@ footer a#back_to_top i {
 .btn-toolbar .btn {
   font-size: 0.9rem;
   padding: 10px 14px 9px;
-  border: none;
+  border-color: rgb(10,10,130);
 }
 
 .btn-toolbar .btn:first-child {
@@ -782,12 +808,12 @@ footer a#back_to_top i {
 
 .btn-toolbar .btn.btn-primary:hover,
 .btn-toolbar .btn.btn-primary:focus {
-  background-color: rgba(0,149,235,0.6);
+  background-color: rgba(10,10,130,0.6);
 }
 
 .btn-toolbar .btn.btn-primary:active,
 .btn-toolbar .btn.btn-primary.active {
-  background-color: rgba(0,89,175,1);
+  background-color: rgba(10,10,150,1);
 }
 
 /*************************************************
@@ -826,7 +852,8 @@ footer a#back_to_top i {
 .btn-info.btn-outline:hover,
 .btn-warning.btn-outline:hover,
 .btn-danger.btn-outline:hover {
-  color: #fff;
+  /*color: #fff;*/
+  color: rgb(0,0,120);
 }
 
 /*************************************************
@@ -838,30 +865,33 @@ footer a#back_to_top i {
 }
 
 .navbar-default {
-  background: #fff;
-  box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11)
+  /*background: #fff; */
+  background-color: rgb(100,100,120);
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
 }
 
 nav#navbar-main li {
   font-size: 16px;
 }
 
+
 .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-nav>a:focus,
 .navbar-default .navbar-nav>a:hover {
   white-space: nowrap;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-  color: #34495e;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  color: rgb(210, 210, 210);
   font-weight: 600;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-  color: #0095eb;
+
+  color: rgb(224,121,49);
   font-weight: 700;
-  background-color: transparent !important; /* Override Bootstrap. */
+  background-color: transparent !important;
 }
 
 .navbar-brand,
@@ -870,6 +900,7 @@ nav#navbar-main li {
   line-height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
+  color: rgb(200,0,0);
 }
 
 .dropdown-menu > li > a {
@@ -878,14 +909,15 @@ nav#navbar-main li {
   clear: both;
   font-weight: 400;
   line-height: 1.42857143;
-  color: #34495e;
+  color: rgb(0,200,0);
   white-space: nowrap;
 }
 
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:focus,
 .dropdown-menu > .active > a:hover {
-  color: #fff;
+  /*color: #fff;*/
+  color: rgb(190,190,190);
   text-decoration: none;
   background-color: #0095eb;
   outline: 0;
@@ -895,7 +927,8 @@ nav#navbar-main li {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.2em;
-  color: #2b2b2b;
+  /*color: #2b2b2b;*/
+  color: rgb(200,200,200);
 }
 
 @media screen and (max-width: 1200px) {
@@ -972,19 +1005,21 @@ nav#navbar-main li {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     padding: 5px 15px 5px 25px;
     line-height: 20px;
-    color: #34495e;
+    color: rgb(0,200,0);
   }
 
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
     color: inherit;
+    color: rgb(190,250,190);
     background-color: transparent;
   }
 
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover {
-    color: #0095eb;
+    /*color: #0095eb;*/
+    color: rgb(190,190,190);
     background-color: transparent;
   }
 
@@ -1072,9 +1107,9 @@ div.alert p:first-child::before {
   position: absolute;
   top: -0.5rem;
   left: -2rem;
-  font-family: 'FontAwesome';
+  font-family: 'Oswald';
   font-size: 1.5rem;
-  color: #fff;
+  color: rgb(200,200,0);
   content: '\f05a';
   width: 1.5rem;
   text-align: center;
@@ -1093,7 +1128,7 @@ div.alert a {
 
 div.alert a:hover {
   border-bottom-color: transparent;
-  color: rgba(255,255,255,0.5) !important;
+  color: rgba(200,255,255,0.8) !important;
 }
 
 .alert-note {

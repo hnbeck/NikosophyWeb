@@ -8,7 +8,7 @@ widget = "about"
 
 # Order that this section will appear in.
 weight = 1
-
+ 
 
 # List your academic interests.
 [interests]
@@ -19,16 +19,23 @@ weight = 1
   ]
 
 # List your qualifications (such as academic degrees).
-[[education.courses]]
-  course = "1. Staatsexamen für Lehramt an Realschulen"
-  institution = "Pädagogische Hochschule Freiburg"
-  year = 1989
+#[[education.courses]]
+#  course = "1. Staatsexamen für Lehramt an Realschulen"
+#  institution = "Pädagogische Hochschule Freiburg"
+#  year = 1989
 
-[[education.courses]]
-  course = "Dipl.-Ing. Elektrotechnik"
-  institution = "TH Karslruhe"
-  year = 1995
+#[[education.courses]]
+#  course = "Dipl.-Ing. Elektrotechnik"
+#  institution = "TH Karslruhe"
+#  year = 1995
 
+#List of Services
+
+[[services.pos]]
+  offer = "Beratung für Konzepte"
+
+[[services.pos]]
+  offer = "Spielekonzepte"
 +++
 
 # Mission and Vision
