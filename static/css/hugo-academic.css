@@ -214,23 +214,23 @@ blockquote p:last-child {
 
 .home-section:first-of-type {
   padding-top: 50px;
-  background-image: url('../img/Circle.jpg');
+  background-image: url('../img/Circle2.jpg');
 }
 
 .home-section:nth-of-type(2) {
-  background-color: rgb(200, 200, 200);
+  background-color: rgb(170, 170, 170);
 }
 
 .home-section:nth-of-type(3) {
-  background-image: url('../img/Circle.jpg');
+  background-image: url('../img/Circle2.jpg');
 }
 
 .home-section:nth-of-type(4) {
-  background-image: url('../img/Circle.jpg');
+  background-image: url('../img/Circle2.jpg');
 }
 
 .home-section:last-of-type {
-  background-color: rgb(200, 200, 200);
+  background-color: rgb(170, 170, 170);
 }
 
 @media screen and (max-width: 768px) {
@@ -266,10 +266,10 @@ blockquote p:last-child {
 
 #profile .portrait {
   background-image: url('../img/portrait.jpg');
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 210px;
   margin: 0 auto;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -402,14 +402,13 @@ ul.share li:hover .fa {
 article {
   animation: intro 0.3s both;
   animation-delay: 0.15s;
-  background-image: url('../img/Circle.jpg');
+  background-image: url('../img/Circle2.jpg');
 }
 
 .article-container {
   max-width: 760px;
-  padding: 1rem 20px 0 20px;
+  padding: 40px 2px 40px 2px;
   margin: 0 auto 0 auto;
-  background-color: rgb(250,250,250);
 }
 
 .article-header {
@@ -519,6 +518,9 @@ article {
  *  Publications
  **************************************************/
 
+.pub {
+  background-image: url('../img/Circle2.jpg');
+}
 .pub-icon {
   color: #03396c;
   font-size: 0.81em;
@@ -573,8 +575,12 @@ article {
   display: block;
   position: relative;
   overflow: hidden;
+  /*background-image: url('../img/Circle2.jpg');*/
 }
-
+#container {
+  background-image: url('../img/Circle2.jpg');
+  border-style: solid;
+}
 /*************************************************
  * Talks
  **************************************************/
@@ -732,6 +738,7 @@ article {
 
 #contact.home-section .fa-ul {
   margin-left: 3.14285714rem; /* Must be > `fa-2x` icon size. */
+  color: rgb(100,100,100);
 }
 
 #contact.home-section .fa-li {
@@ -745,6 +752,7 @@ article {
 #contact.home-section li {
   padding-top: 0.8rem; /* Align text with bottom of `fa-2x` icon. */
   margin-bottom: 0.3rem;
+  color: rgb(224,114,17);
 }
 
 #contact.home-section li:last-of-type {

@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
 
-<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   {{ if .Params.header.image }}
   <div class="article-header">
@@ -10,33 +10,26 @@
   </div>
   {{end}}
 
-
   <div class="article-container">
     <div class="panel panel-default">
       <div class="panel-body">
-    <div class="pub-title">
-      <h1 itemprop="name">{{ .Title }}</h1>
-      <span class="pub-authors" itemprop="author">&nbsp;</span>
-      <span class="pull-right">
-        {{ partial "share.html" . }}
-      </span>
-    </div>
-
-    {{ with .Params.external_link }}
-    <a class="btn btn-primary btn-outline" href="{{ . }}" target="_blank">{{ i18n "open_project_site" }}</a>
-    {{ end }}
-
+    <h1 itemprop="name">{{ .Title }}</h1>
+    {{ partial "article_metadata" (dict "content" . "is_list" 0) }}
     <div class="article-style" itemprop="articleBody">
-      <p><canvas data-processing-sources="{{ "/src" | relURL }}/{{ .Params.src }}"></canvas></p>
       {{ .Content }}
     </div>
-  </dev>
-  </dev>
   </div>
+    </div>
+      </div>
+
 </article>
 
 <div class="container">
   {{ partial "section_pager.html" . }}
+</div>
+
+<div class="article-container">
+  {{ partial "comments.html" . }}
 </div>
 
 {{ partial "footer_container.html" . }}
