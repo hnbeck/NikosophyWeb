@@ -17,6 +17,8 @@
     {{ end }}
   </div>
   <div class="col-xs-12 col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-body">
     {{ with $page.Content }}<p>{{ . | markdownify }}</p>{{ end }}
 
     {{ if $page.Params.detailed_list }}
@@ -25,15 +27,14 @@
     {{ end }}
     {{ else }}
     <ul class="fa-ul">
-      <div class="panel panel-default">
-        <div class="panel-body">
+
       {{ range first $page.Params.count (where $.Data.Pages "Type" "publication") }}
       {{ partial "publication_li_simple" . }}
       {{ end }}
-        </div>
-          </div>
+
     </ul>
     {{ end }}
-
+  </div>
+    </div>
   </div>
 </div>

@@ -12,14 +12,14 @@ publication = "iX Heft 10"
 url_slides = ""
 math = false
 url_dataset = ""
-abstract_short = ""
+abstract_short = "alles über spiele"
 url_pdf = ""
 selected = false
 abstract = "Spiele werden verteufelt, können aber auhc nützlich sein"
 url_video = ""
 
 [header]
-  caption = ""
+  caption = "test"
   image = ""
 
 +++
