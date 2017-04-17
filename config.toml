@@ -1,11 +1,11 @@
-baseurl = "https://example.com"
-title = "Playing for skills"
-copyright = "&copy; 2017 Hans Beck"
+baseurl = "https://www.educational-concepts.biz"
+title = "Spiel und Lernen"
+copyright = "&copy; 2017 Hans N. Beck"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 
-# Enable comments by entering your Disqus shortname
+# Enable comments by entering your Disqus shortnameh
 disqusShortname = ""
 
 # Enable analytics by entering your Google Analytics tracking ID
@@ -20,12 +20,12 @@ defaultContentLanguageInSubdir = false
 
 [params]
   name = "Hans N. Beck"
-  role = ""
+  role = "Dipl.-Ing."
   organization = "Educational Concepts Hans Beck"
   organization_url = ""
   avatar = "EduCon_Logo.png"
   email = "hnbeck@educational-concepts.biz"
-  address = "74172 Neckarsulm"
+  address = "Zabergäustr 3, D-74172 Neckarsulm"
   office_hours = ""
   phone = "+49 (0) 151 58744954"
   skype = "hnbeck@educational-concepts.biz"
@@ -85,7 +85,7 @@ defaultContentLanguageInSubdir = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = ["EduConHB.css"]
+  custom_css = []
   custom_js  = ["processing.min.js"]
 
   # Publication types.
@@ -149,22 +149,22 @@ defaultContentLanguageInSubdir = false
 #   The weight parameter defines the order that the links will appear in.
 
 [[menu.main]]
-  name = "Home"
+  name = "Start"
   url = "#about"
   weight = 1
 
 [[menu.main]]
-  name = "Publications"
+  name = "Publikationen"
   url = "#publications"
   weight = 4
 
 [[menu.main]]
-  name = "Posts"
+  name = "Beiträge"
   url = "#posts"
-  weight = 3
+  weight = 3 
 
 [[menu.main]]
-  name = "Projects"
+  name = "Projekte"
   url = "#projects"
   weight = 2
 
@@ -174,7 +174,7 @@ defaultContentLanguageInSubdir = false
 #  weight = 5
 
 [[menu.main]]
-  name = "Contact/Impressuum"
+  name = "Kontakt/Impressuum"
   url = "#contact"
   weight = 6
 

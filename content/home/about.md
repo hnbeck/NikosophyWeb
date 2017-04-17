@@ -8,14 +8,15 @@ widget = "about"
 
 # Order that this section will appear in.
 weight = 1
- 
+
 
 # List your academic interests.
 [interests]
   interests = [
-    "Serious Gaming",
-    "Autonomos Systems",
-    "Philosophy"
+    "Lernen und Psychologie",
+    "Sichere Autonomoe Systeme",
+    "Philosophie",
+    "und natürlich: Spiele"
   ]
 
 # List your qualifications (such as academic degrees).
@@ -29,16 +30,22 @@ weight = 1
 #  institution = "TH Karslruhe"
 #  year = 1995
 
-#List of Services
+##List of Services
 
 [[services.pos]]
-  offer = "Beratung für Konzepte"
+  offer = "Verfassen von Texten,"
 
 [[services.pos]]
-  offer = "Spielekonzepte"
+  offer = "Gestalten von Konzepten,"
+
+[[services.pos]]
+  offer = "Beratung"
+
+[[services.pos]]
+    offer = "zum Thema lernen und validieren mit Spielen"
 +++
 
-# Mission and Vision
+## Mission and Vision
 
-Gaming is a important part of our life. But it can have more value than fun, it can transport information. Gaming can be education.
-My work is about this: design games and game concepts to educate.
+Spielen ist Teil der menschlichen Natur. Spiele helfen uns zu lernen, uns zu entdecken und weiterzuentwickeln.
+Spiele können, richtig entworfen, nicht nur der Unterhaltung dienen, sondern auch Wissen transportieren. Damit liegt  die Idee nicht fern, künstliche Agenten (KI) mittels Spielen zu trainieren und zu validieren. Um all diese Dinge geht es bei meiner Arbeit. Eigene kleine Projekte helfen, meine Ideen selbst zu erleben.

@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   line-height: 1.25;
   /*color: #313131;*/
-  color: rgb(220,110,14);
+  color: rgb(224,121,49);
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -96,9 +96,9 @@ h4, h5, h6 {
 }
 
 a,
+a:visited,
 h3.article-title  {
-  color: #0095eb;
-  color: rgb(200,200,0);
+  color: rgb(224,121,49);
   text-decoration: none;
   transition: color 0.8s ease;
 }
@@ -338,7 +338,7 @@ ul.ul-edu li .description p.course {
 
 ul.ul-edu li .description p.institution {
   font-size: 0.75rem;
-  color: rgba(0,0,128,1.0);
+  color: rgba(0,0,130,1.0);
 
 }
 
@@ -451,7 +451,7 @@ article {
 }
 
 .article-title a {
-  color: #151515;
+  color: rgb(224,121,49);
   transition: color 0.6s ease;
 }
 
@@ -468,7 +468,7 @@ article {
 }
 
 .article-metadata a:hover {
-  color: #0095eb;
+  color: rgb(100,100,100);
 }
 
 .article-list-item {
@@ -614,7 +614,7 @@ article {
 
 #projects.home-section .project-tags {
   font-size: 0.75rem;
-  color: rgb(10,10,139);
+  color: rgb(10,10,130);
 }
 
 #container-projects {
@@ -752,7 +752,7 @@ article {
 #contact.home-section li {
   padding-top: 0.8rem; /* Align text with bottom of `fa-2x` icon. */
   margin-bottom: 0.3rem;
-  color: rgb(224,114,17);
+  color: rgb(224,121,49);
 }
 
 #contact.home-section li:last-of-type {
@@ -804,6 +804,7 @@ footer a#back_to_top i {
   font-size: 0.9rem;
   padding: 10px 14px 9px;
   border-color: rgb(10,10,130);
+    background-color: rgb(140,140,140);
 }
 
 .btn-toolbar .btn:first-child {
@@ -816,12 +817,12 @@ footer a#back_to_top i {
 
 .btn-toolbar .btn.btn-primary:hover,
 .btn-toolbar .btn.btn-primary:focus {
-  background-color: rgba(10,10,130,0.6);
+  background-color: rgba(140,140,160,0.6);
 }
 
 .btn-toolbar .btn.btn-primary:active,
 .btn-toolbar .btn.btn-primary.active {
-  background-color: rgba(10,10,150,1);
+  background-color: rgba(100,100,130,1);
 }
 
 /*************************************************
@@ -835,12 +836,12 @@ footer a#back_to_top i {
 }
 
 .btn-primary.btn-outline {
-  color: #0095eb;
-  border-color: #0095eb;
+  color:  rgb(10,10,130);
+  border-color:  rgb(10,10,130);
 }
 
 .btn-success.btn-outline {
-  color: #5cb85c;
+  color:  rgb(100,100,130);
 }
 
 .btn-info.btn-outline {
@@ -855,13 +856,23 @@ footer a#back_to_top i {
   color: #d9534f;
 }
 
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:visited,
+.btn-primary.btn-outline:active {
+    background-color: rgb(180,180,180);
+}
+
 .btn-primary.btn-outline:hover,
 .btn-success.btn-outline:hover,
 .btn-info.btn-outline:hover,
 .btn-warning.btn-outline:hover,
 .btn-danger.btn-outline:hover {
   /*color: #fff;*/
-  color: rgb(0,0,120);
+  color: rgb(10,10,130);
+  background-color: rgb(180,180,180);
 }
 
 /*************************************************
