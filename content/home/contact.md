@@ -31,3 +31,5 @@ Alle Texte, Bilder und grafischen Gestaltungselemente auf dieser Website sind ur
 ## Haftungsausschluss
 
 Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte dieser Homepage und für externe Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+
+Trotz sorgfältiger Recherche und Prüfung der im Rahmen unserer Dienstleistung erstellten Artefakte und Konzepte wird keine Haftung für die Richtigkeig, die Freiheit von Rechten Dritter oder für einen Lernerfolg übernommen. Beratung versteht sich als Einbindung in ein Projekt des Kunden, die letztliche Verantwortung bleibt beim Kunden.
