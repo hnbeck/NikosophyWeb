@@ -7,7 +7,7 @@ title = "Der Anfang"
 
 [header]
   caption = "Neue Website online"
-  image = ""
+  image = "KranRot.jpg"
 
 +++
 
