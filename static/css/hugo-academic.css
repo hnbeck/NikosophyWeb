@@ -214,7 +214,7 @@ blockquote p:last-child {
 
 .home-section:first-of-type {
   padding-top: 50px;
-  background-image: url('../img/Circle2.jpg');
+  background-image: url('../img/Circle.jpg');
 }
 
 .home-section:nth-of-type(2) {
@@ -222,11 +222,11 @@ blockquote p:last-child {
 }
 
 .home-section:nth-of-type(3) {
-  background-image: url('../img/Circle2.jpg');
+  background-image: url('../img/Circle.jpg');
 }
 
 .home-section:nth-of-type(4) {
-  background-image: url('../img/Circle2.jpg');
+  background-image: url('../img/Circle.jpg');
 }
 
 .home-section:last-of-type {
@@ -402,7 +402,7 @@ ul.share li:hover .fa {
 article {
   animation: intro 0.3s both;
   animation-delay: 0.15s;
-  background-image: url('../img/Circle2.jpg');
+  background-image: url('../img/Circle.jpg');
 }
 
 .article-container {
@@ -519,7 +519,7 @@ article {
  **************************************************/
 
 .pub {
-  background-image: url('../img/Circle2.jpg');
+  background-image: url('../img/Circle.jpg');
 }
 .pub-icon {
   color: #03396c;
@@ -578,7 +578,7 @@ article {
   /*background-image: url('../img/Circle2.jpg');*/
 }
 #container {
-  background-image: url('../img/Circle2.jpg');
+  background-image: url('../img/Circle.jpg');
   border-style: solid;
 }
 /*************************************************
