@@ -218,7 +218,7 @@ blockquote p:last-child {
 }
 
 .home-section:nth-of-type(2) {
-  background-color: rgb(170, 170, 170);
+  background-color: rgb(100, 100, 120);
 }
 
 .home-section:nth-of-type(3) {
@@ -230,7 +230,7 @@ blockquote p:last-child {
 }
 
 .home-section:last-of-type {
-  background-color: rgb(170, 170, 170);
+  background-color: rgb(100, 100, 120);
 }
 
 @media screen and (max-width: 768px) {
