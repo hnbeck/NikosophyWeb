@@ -1,4 +1,4 @@
-baseurl = "https://www.educational-concepts.biz"
+baseurl = "/"
 title = "Spiel und Lernen"
 copyright = "&copy; 2017 Hans N. Beck"
 theme = "academic"
@@ -6,7 +6,7 @@ enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 
 # Enable comments by entering your Disqus shortnameh
-disqusShortname = "" 
+disqusShortname = ""
 
 # Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = ""
