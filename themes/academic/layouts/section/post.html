@@ -11,7 +11,7 @@
 <div class="universal-wrapper">
 
   <h1>{{ .Title | default (i18n "posts") }}</h1>
-  
+
   {{ with .Content }}
   <div class="article-style" itemprop="articleBody">{{ . }}</div>
   {{ end }}

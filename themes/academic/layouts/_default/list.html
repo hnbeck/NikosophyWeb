@@ -1,7 +1,6 @@
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
 
-<article class="article" itemscope itemtype="http://schema.org/Article">
 {{ if .Params.header.image }}
 <div class="article-header">
   <img src="{{ "/img/" | relURL }}/{{ .Params.header.image }}" class="article-banner" itemprop="image">
@@ -9,9 +8,8 @@
 </div>
 {{end}}
 
-<div class="article-container">
-  <div class="panel panel-default">
-    <div class="panel-body">
+<div class="universal-wrapper">
+
   {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
 
   {{ with .Content }}
@@ -33,9 +31,7 @@
   {{ end }}
 
   {{ partial "pagination" . }}
+
 </div>
-</div>
-</div>
-</article>
 {{ partial "footer_container.html" . }}
 {{ partial "footer.html" . }}
