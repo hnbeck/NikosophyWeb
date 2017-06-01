@@ -28,7 +28,7 @@ E-Mails, die Sie an die im Impressum genannten E-Mail Adressen senden, werden ab
 
 Alle Texte, Bilder und grafischen Gestaltungselemente auf dieser Website sind urheberrechtlich geschützt. Sie dürfen ausschließlich zu privaten Zwecken heruntergeladen werden. Jegliche Art der Veröffentlichung (kommerziell oder privat) bedarf der schriftlichen Zustimmung durch die Urheber.
 
-Sofern nicht anders angegeben, liegen die Rechte in dieser Website verwendeten Bilder und Hintergründe beim Betreiber dieser Website.
+Sofern nicht anders angegeben, liegen die Rechte für die in dieser Website verwendeten Bilder beim Betreiber dieser Website.
 
 ## Haftungsausschluss
 
