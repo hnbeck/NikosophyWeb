@@ -30,6 +30,8 @@ Alle Texte, Bilder und grafischen Gestaltungselemente auf dieser Website sind ur
 
 Sofern nicht anders angegeben, liegen die Rechte für die in dieser Website verwendeten Bilder beim Betreiber dieser Website.
 
+Markenzeichen oder registrierte Marken sind Eigentum ihrer jeweiligen Inhaber.
+
 ## Haftungsausschluss
 
 Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte dieser Homepage und für externe Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
