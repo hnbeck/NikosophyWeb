@@ -37,9 +37,6 @@ weight = 1
 
 [[services.pos]]
   offer = "Gestalten von Konzepten,"
-  
-[[services.pos]]
-  offer = "Begleitung der Entwicklung"
 
 [[services.pos]]
     offer = "im Bereich Lernen und computergestützte Psychologie"
@@ -48,4 +45,4 @@ weight = 1
 ## Mission and Vision
 
 Spielen ist Teil der menschlichen Natur. Spiele helfen uns zu lernen, uns zu entdecken und weiterzuentwickeln.
-Spiele können, richtig entworfen, nicht nur der Unterhaltung dienen, sondern auch Wissen transportieren. Damit liegt  die Idee nicht fern, computergestützte konstruktive Psychologie und Spiele zu verbinden. Um all diese Dinge geht es bei meiner Arbeit. Eigene kleine Projekte helfen, meine Ideen selbst zu erleben.
+Spiele können, richtig entworfen, nicht nur der Unterhaltung dienen, sondern auch Wissen transportieren. Weil Spiele auch Charaktereigenschaften spiegeln, bieten sie sich als Experimentierfeld der konstruktiven computergestützen Psychologie an. Um all diese Dinge geht es bei meiner Arbeit. Eigene kleine Projekte helfen, meine Ideen selbst zu erleben.

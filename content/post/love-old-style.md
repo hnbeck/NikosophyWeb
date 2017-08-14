@@ -6,7 +6,7 @@ tags = ["Spiele", "Animation", "Handzeichnung"]
 title = "Der 'alte' Stil"
 
 [header]
-  caption = ""
+  caption = "(c) Hans Beck"
   image = "ZeichnungRakete.jpg"
 
 +++
