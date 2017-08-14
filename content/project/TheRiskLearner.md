@@ -9,11 +9,11 @@ tags = ["ClickObserve"]
 title = "TheRiskLearner"
 
 [header]
-  caption = "TheRiskLearner"
-  image = ""
+  caption = "(c) Hans N. Beck)"
+  image = "steelroof.jpg"
 
 +++
 
 Dieses Spiel führt an die Grundprinzipien des Risikomanagements heran. Erkenne das Risiko und handle entsprechend.
 
-Das Spiel ist gerade in der Entwicklung. Sobald es einen spielbaren Stand erreicht hat, wird es hier veröffentlicht werden. Seien Sie gespannt !
+Das Spiel ist derzeit in der Entwicklung. Sobald es einen spielbaren Stand erreicht hat, wird es hier veröffentlicht werden. Seien Sie gespannt !
