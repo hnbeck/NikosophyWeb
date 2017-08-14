@@ -5,7 +5,7 @@ highlight = true
 image_preview = ""
 math = false
 summary = ""
-tags = []
+tags = ["ClickObserve"]
 title = "TheRiskLearner"
 
 [header]
