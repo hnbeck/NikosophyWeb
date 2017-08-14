@@ -37,7 +37,7 @@ weight = 1
 
 [[services.pos]]
   offer = "Gestalten von Konzepten,"
-
+  
 [[services.pos]]
   offer = "Begleitung der Entwicklung"
 
