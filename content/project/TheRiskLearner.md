@@ -4,7 +4,7 @@ external_link = ""
 highlight = true
 image_preview = ""
 math = false
-summary = ""
+summary = "Riskomanagement spielend vermittelt"
 tags = ["ClickObserve"]
 title = "TheRiskLearner"
 
@@ -13,7 +13,6 @@ title = "TheRiskLearner"
   image = "steelroof.jpg"
 
 +++
-
 Dieses Spiel führt an die Grundprinzipien des Risikomanagements heran. Erkenne das Risiko und handle entsprechend.
 
 Das Spiel ist derzeit in der Entwicklung. Sobald es einen spielbaren Stand erreicht hat, wird es hier veröffentlicht werden. Seien Sie gespannt !
