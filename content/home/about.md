@@ -14,7 +14,7 @@ weight = 1
 [interests]
   interests = [
     "Lernen und Psychologie",
-    "Sichere Autonomoe Systeme",
+    "Computational Psychology",
     "Philosophie",
     "und natürlich: Spiele"
   ]
@@ -27,7 +27,7 @@ weight = 1
 
 #[[education.courses]]
 #  course = "Dipl.-Ing. Elektrotechnik"
-#  institution = "TH Karslruhe"
+#  institution = "TH Karlsruhe"
 #  year = 1995
 
 ##List of Services
@@ -39,13 +39,13 @@ weight = 1
   offer = "Gestalten von Konzepten,"
 
 [[services.pos]]
-  offer = "Beratung"
+  offer = "Begleitung der Entwicklung"
 
 [[services.pos]]
-    offer = "zum Thema lernen und validieren mit Spielen"
+    offer = "im Bereich Lernen und computergestützte Psychologie"
 +++
 
 ## Mission and Vision
 
 Spielen ist Teil der menschlichen Natur. Spiele helfen uns zu lernen, uns zu entdecken und weiterzuentwickeln.
-Spiele können, richtig entworfen, nicht nur der Unterhaltung dienen, sondern auch Wissen transportieren. Damit liegt  die Idee nicht fern, künstliche Agenten (KI) mittels Spielen zu trainieren und zu validieren. Um all diese Dinge geht es bei meiner Arbeit. Eigene kleine Projekte helfen, meine Ideen selbst zu erleben.
+Spiele können, richtig entworfen, nicht nur der Unterhaltung dienen, sondern auch Wissen transportieren. Damit liegt  die Idee nicht fern, computergestützte konstruktive Psychologie und Spiele zu verbinden. Um all diese Dinge geht es bei meiner Arbeit. Eigene kleine Projekte helfen, meine Ideen selbst zu erleben.

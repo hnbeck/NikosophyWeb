@@ -27,11 +27,11 @@ view = 1
   tag = "*"
 
 [[filter]]
-  name = "Plattformer"
-  tag = ".plattformer"
+  name = "Klicke&Handle"
+  tag = ".ClickAction"
 
 [[filter]]
-  name = "Other"
-  tag = ".demo"
+  name = "Klicke&Beobachte"
+  tag = ".ClickObserve"
 
 +++
