@@ -5,13 +5,13 @@ highlight = true
 image_preview = ""
 math = false
 summary = ""
-tags = [ClickObserve]
+tags = []
 title = "TheRiskLearner"
 
 [header]
   caption = "TheRiskLearner"
   image = ""
- 
+
 +++
 
 Dieses Spiel führt an die Grundprinzipien des Risikomanagements heran. Erkenne das Risiko und handle entsprechend.
