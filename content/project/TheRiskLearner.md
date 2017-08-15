@@ -2,7 +2,7 @@
 date = "2017-08-14T19:28:37+02:00"
 external_link = ""
 highlight = true
-image_preview = ""
+image_preview = "intro.png"
 math = false
 summary = "Riskomanagement spielend vermittelt"
 tags = ["ClickObserve"]
