@@ -6,15 +6,9 @@ int nX, nY;
 int delay = 16;
 
 PImage webImg;
+var cnv;
 
-void setup() {
 
-}
-
-void draw() {
-  background(0);
-  image(webImg, 0, 0);
-}
 function centerCanvas() {
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
@@ -24,18 +18,18 @@ function centerCanvas() {
 
 // Setup the Processing Canvas
 void setup(){
-  size( 400, 200 );
+  cnv = createCanvas(400, 200);
   centerCanvas();
   strokeWeight( 10 );
+
   String url = "/img/intro.png";
   // Load image from a web server
   webImg = loadImage(url, "png");
-
-  frameRate( 15 );
 
 }
 
 // Main draw loop
 void draw(){
+  background(0);
   image(webImg, 0, 0);
 }
