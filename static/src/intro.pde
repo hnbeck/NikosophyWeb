@@ -27,7 +27,7 @@ void setup(){
   size( 400, 200 );
   centerCanvas();
   strokeWeight( 10 );
-  String url = "/img/into.png";
+  String url = "/img/intro.png";
   // Load image from a web server
   webImg = loadImage(url, "png");
 
