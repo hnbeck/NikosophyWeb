@@ -7,6 +7,7 @@ math = false
 summary = "Riskomanagement spielend vermittelt"
 tags = ["ClickObserve"]
 title = "TheRiskLearner"
+src = "maustest.pde"
 
 [header]
   caption = "(c) Hans N. Beck)"
