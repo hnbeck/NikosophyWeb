@@ -19,6 +19,6 @@ void setup(){
 
 // Main draw loop
 void draw(){
-  background(0,100,0);
-  image(webImg, 0, 0);
+  background(100,100,100);
+  image(webImg, 100, 0);
 }

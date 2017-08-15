@@ -20,6 +20,15 @@
   display: table;
 }
 
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
+}
+
 html {
   font-family: 'Droid Serif', serif;
   font-size: 20px;
@@ -418,7 +427,7 @@ article {
 
 .article-banner {
   width: 100%;
-  height: auto; 
+  height: auto;
 }
 
 .article-header-caption {
