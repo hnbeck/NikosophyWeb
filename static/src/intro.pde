@@ -20,7 +20,7 @@ void setup(){
 // Main draw loop
 void draw(){
   background(100,100,100);
-  var rad = radians(5);
+  float rad = radians(5);
   rotate(rad);
   image(webImg, , 0);
 }
