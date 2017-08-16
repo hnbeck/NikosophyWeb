@@ -14,11 +14,13 @@ void setup(){
   String url = "/img/intro.png";
   // Load image from a web server
   webImg = loadImage(url, "png");
-
+  framerate(15);
 }
 
 // Main draw loop
 void draw(){
   background(100,100,100);
-  image(webImg, 100, 0);
+  var rad = radidans(5);
+  rotate(rad);
+  image(webImg, , 0);
 }
