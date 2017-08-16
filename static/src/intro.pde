@@ -22,5 +22,6 @@ void draw(){
   background(100,100,100);
   float rad = radians(5.0);
   rotate(rad);
+  scale(0.6);
   image(webImg, 100, 0);
 }
