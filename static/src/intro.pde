@@ -19,9 +19,8 @@ void setup(){
 
 // Main draw loop
 void draw(){
-  background(100,100,100);
-  float rad = radians(5.0);
-  rotate(rad);
+  background(100,100,50);
   scale(0.6);
+  rotate(radians(5.0));
   image(webImg, 100, 0);
 }
