@@ -14,7 +14,7 @@ void setup(){
   String url = "/img/intro.png";
   // Load image from a web server
   webImg = loadImage(url, "png");
-  frameRate(15);
+  frameRate(5);
   alpha = 0.0;
 }
 
@@ -24,7 +24,7 @@ void draw(){
   translate(200,100);
   scale(0.7);
   rotate(radians(alpha));
-  alpha = alpha + 5;
+  alpha = alpha + 2;
   if (alpha >359)
     { alpha = 0.0; }
   image(webImg, -100, -100);
