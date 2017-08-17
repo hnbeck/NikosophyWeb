@@ -22,10 +22,10 @@ void setup(){
 void draw(){
   background(100,100,150);
   translate(200,100);
-  /*scale(0.6);*/
+  scale(0.7);
   rotate(radians(alpha));
   alpha = alpha + 5;
   if (alpha >359)
-    { alpha = 0.0; } 
+    { alpha = 0.0; }
   image(webImg, -100, -100);
 }
