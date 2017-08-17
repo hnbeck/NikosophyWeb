@@ -14,7 +14,7 @@ void setup(){
   String url = "/img/intro.png";
   // Load image from a web server
   webImg = loadImage(url, "png");
-  framerate(15);
+  frameRate(15);
 }
 
 // Main draw loop
