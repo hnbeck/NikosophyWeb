@@ -19,7 +19,7 @@ void setup(){
   frameRate(5);
   alpha = 0.0;
   delta = 2.0;
-  image.mask(mask);
+  webImg.mask(mask);
 }
 
 // Main draw loop
