@@ -5,7 +5,7 @@ int nX, nY;
 int delay = 16;
 float alpha;
 PImage webImg;
-
+PImage maskImg;
 
 // Setup the Processing Canvas
 void setup(){
@@ -15,11 +15,11 @@ void setup(){
   String url2 = "/img/mask.jpg";
   // Load image from a web server
   webImg = loadImage(url, "png");
-  mask = loadImage(url2, "jpg");
+  maskImg = loadImage(url2, "jpg");
   frameRate(5);
   alpha = 0.0;
   delta = 2.0;
-  webImg.mask(mask);
+  webImg.mask(maskImg);
 }
 
 // Main draw loop
