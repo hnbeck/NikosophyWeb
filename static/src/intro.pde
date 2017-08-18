@@ -12,10 +12,14 @@ void setup(){
   size(400, 200);
 
   String url = "/img/intro.png";
+  String url2 = "/img/mask.jpg";
   // Load image from a web server
   webImg = loadImage(url, "png");
+  mask = loadImage(url2, "jpg");
   frameRate(5);
   alpha = 0.0;
+  delta = 2.0;
+  image.mask(mask);
 }
 
 // Main draw loop
@@ -24,8 +28,11 @@ void draw(){
   translate(200,100);
   scale(0.7);
   rotate(radians(alpha));
-  alpha = alpha + 2;
-  if (alpha >359)
-    { alpha = 0.0; }
+  alpha = alpha + delta;
+  if (alpha >50)
+    { delta = -2.0; }
+  if (alpha <-50)
+    { delta = 2.0; }
+
   image(webImg, -100, -100);
 }
