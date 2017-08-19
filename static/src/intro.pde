@@ -35,6 +35,4 @@ void draw(){
     { delta = 1.0; }
 
   image(webImg, -100, -100);
-  scale(0.3);
-  image(maskImg);
 }
