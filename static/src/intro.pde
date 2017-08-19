@@ -4,6 +4,7 @@ int X, Y;
 int nX, nY;
 int delay = 16;
 float alpha;
+float delta;
 PImage webImg;
 PImage maskImg;
 
@@ -35,5 +36,5 @@ void draw(){
     { delta = 1.0; }
 
   image(webImg, -100, -100);
-  image(maskImg, mouseX, mouseY);
+  
 }
