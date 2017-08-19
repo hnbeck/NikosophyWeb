@@ -24,6 +24,7 @@ void setup(){
 
 // Main draw loop
 void draw(){
+webImg.mask(maskImg);
   background(100,100,120);
   translate(150,100);
   scale(0.7);
