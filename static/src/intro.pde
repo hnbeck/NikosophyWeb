@@ -27,12 +27,12 @@ void draw(){
   background(100,100,120);
   /*translate(150,100);
   scale(0.7);
-  rotate(radians(alpha));
+  rotate(radians(alpha));*/
   alpha = alpha + delta;
   if (alpha >40)
     { delta = -1.0; }
   if (alpha <-40)
-    { delta = 1.0; }*/
+    { delta = 1.0; }
 
   image(webImg, -100, -100);
 }
