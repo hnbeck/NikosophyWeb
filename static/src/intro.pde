@@ -12,7 +12,7 @@ void setup(){
   size(300, 200);
 
   String url = "/img/intro.png";
-  String url2 = "/img/mask.png";
+  String url2 = "/img/mask.jpg";
   // Load image from a web server
   webImg = loadImage(url);
   maskImg = loadImage(url2);
