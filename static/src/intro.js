@@ -14,7 +14,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(300, 200);
+  var myCanvas = createCanvas(300, 200);
+  myCanvas.parent('processingCanvas');
   frameRate(10);
   alpha = 0.0;
   delta = 1.0;
