@@ -1,6 +1,8 @@
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
 
+<script src="{{ "/src" | relURL }}/{{ .Params.src }}"></script>
+
 <article class="article article-project" itemscope itemtype="http://schema.org/Article">
 
   {{ if .Params.header.image }}
@@ -9,7 +11,6 @@
     {{ with .Params.header.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
   </div>
   {{end}}
-
 
   <div class="article-container">
     <div class="panel panel-default">
@@ -26,7 +27,7 @@
     {{ end }}
 
     <div class="article-style" itemprop="articleBody">
-      <p><script src="{{ "/src" | relURL }}/{{ .Params.src }}"></script></p>
+      <p><div id="processingCanvas"></div></p>
       {{ .Content }}
     </div>
   </dev>
