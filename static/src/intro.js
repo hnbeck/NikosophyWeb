@@ -9,7 +9,7 @@ var maskImg;
 function preload() {
   var url = "/img/intro.png";
   var urlMask = "/img/mask.jpg";
-  img = loadImage(url);
+  webImg = loadImage(url);
   maskImg = loadImage(urlMask);
 }
 
