@@ -26,7 +26,7 @@
     {{ end }}
 
     <div class="article-style" itemprop="articleBody">
-      <p><canvas data-processing-sources="{{ "/src" | relURL }}/{{ .Params.src }}"></canvas></p>
+      <p><script src="{{ "/src" | relURL }}/{{ .Params.src }}"></script></p>
       {{ .Content }}
     </div>
   </dev>

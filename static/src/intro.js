@@ -1,22 +1,20 @@
 
 // Global variables
-int X, Y;
-int nX, nY;
-int delay = 16;
-float alpha;
-float delta;
-PImage webImg;
-PImage maskImg;
+var alpha;
+var delta;
+var webImg;
+var maskImg;
 
 // Setup the Processing Canvas
-void setup(){
-  size(300, 200);
+function preload() {
+  var url = "/img/intro.png";
+  var urlMask = "/img/mask.jpg";
+  img = loadImage(url);
+  maskImg = loadImage(urlMask);
+}
 
-  String url = "/img/intro.png";
-  String url2 = "/img/mask.jpg";
-  // Load image from a web server
-  webImg = loadImage(url);
-  maskImg = loadImage(url2);
+function setup() {
+  createCanvas(300, 200);
   frameRate(10);
   alpha = 0.0;
   delta = 1.0;
@@ -24,7 +22,7 @@ void setup(){
 }
 
 // Main draw loop
-void draw(){
+function draw(){
   background(100,100,120);
   translate(150,100);
   scale(0.7);
@@ -36,5 +34,4 @@ void draw(){
     { delta = 1.0; }
 
   image(webImg, -100, -100);
-  
 }
