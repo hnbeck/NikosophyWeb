@@ -26,8 +26,8 @@ void setup(){
 void draw(){
   background(100,100,120);
   translate(150,100);
-  /*scale(0.7);
-  rotate(radians(alpha));*/
+  scale(0.7);
+  rotate(radians(alpha));
   alpha = alpha + delta;
   if (alpha >40)
     { delta = -1.0; }
@@ -35,4 +35,5 @@ void draw(){
     { delta = 1.0; }
 
   image(webImg, -100, -100);
+  image(webImg, mouseX, mouseY);
 }
