@@ -35,5 +35,4 @@ function draw(){
     { delta = 1.0; }
 
   image(webImg, -100, -100);
-  image(maskImg, -200,-150);
 }
