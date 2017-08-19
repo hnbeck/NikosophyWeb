@@ -25,8 +25,8 @@ void setup(){
 // Main draw loop
 void draw(){
   background(100,100,120);
-  /*translate(150,100);
-  scale(0.7);
+  translate(150,100);
+  /*scale(0.7);
   rotate(radians(alpha));*/
   alpha = alpha + delta;
   if (alpha >40)
