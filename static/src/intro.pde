@@ -24,7 +24,6 @@ void setup(){
 
 // Main draw loop
 void draw(){
-webImg.mask(maskImg);
   background(100,100,120);
   translate(150,100);
   scale(0.7);
@@ -36,5 +35,5 @@ webImg.mask(maskImg);
     { delta = 1.0; }
 
   image(webImg, -100, -100);
-  image(webImg, mouseX, mouseY);
+  image(maskImg, mouseX, mouseY);
 }
