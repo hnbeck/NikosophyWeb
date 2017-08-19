@@ -12,9 +12,9 @@ void setup(){
   size(400, 200);
 
   String url = "/img/intro.png";
-  String url2 = "/img/mask.jpg";
+  String url2 = "/img/mask.png";
   // Load image from a web server
-  webImg = loadImage(url, "png");
+  webImg = loadImage(url);
   maskImg = loadImage(url2);
   frameRate(10);
   alpha = 0.0;
