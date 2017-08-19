@@ -17,8 +17,6 @@ function setup() {
   var myCanvas = createCanvas(300, 200);
   myCanvas.parent('processingCanvas');
   webImg.mask(maskImg);
-
-  frameRate(2);
   alpha = 0.0;
   delta = 1.0;
 
