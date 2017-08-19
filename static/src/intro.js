@@ -8,7 +8,7 @@ var maskImg;
 // Setup the Processing Canvas
 function preload() {
   var url = "/img/intro.png";
-  var urlMask = "/img/mask.jpg";
+  var urlMask = "/img/mask.png";
   webImg = loadImage(url);
   maskImg = loadImage(urlMask);
 }
@@ -35,4 +35,5 @@ function draw(){
     { delta = 1.0; }
 
   image(webImg, -100, -100);
+  image(maskImg, -200,-150);
 }
