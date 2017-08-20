@@ -25,8 +25,8 @@ function setup() {
 // Main draw loop
 function draw(){
     webImg.mask(maskImg);
-  //background(100,100,120);
-  //translate(150,100);
+  background(100,100,120);
+  translate(150,100);
   //scale(0.7);
   //rotate(radians(alpha));
   alpha = alpha + delta;
