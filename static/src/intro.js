@@ -14,18 +14,18 @@ function preload() {
 }
 
 function setup() {
-  var myCanvas = createCanvas(300, 200);
+  var myCanvas = createCanvas(500, 200);
   myCanvas.parent('processingCanvas');
   webImg.mask(maskImg);
   alpha = 0.0;
   delta = 1.0;
-
+  imageMode(CENTER);
 }
 
 // Main draw loop
 function draw(){
   background(100,100,120);
-  translate(150,100);
+  translate(width/2,height/2);
   scale(0.7);
   rotate(radians(alpha));
   alpha = alpha + delta;
@@ -34,5 +34,5 @@ function draw(){
   if (alpha <-40)
     { delta = 1.0; }
 
-  image(webImg, -100, -100);
+  image(webImg, 0, 0);
 }
