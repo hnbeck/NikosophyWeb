@@ -35,4 +35,6 @@ Far third goal:
 
 At this moment in time, I can not say if this will works. I don't know if I I#m capable of doing this, and if the OpenCroquet code is understandable and operable enough. It also may be possible to implement the theory of David P. Reed ("TeaTime system") new from scratch. Anyway, I'll try it.
 
-I hope also to get support by the Smalltalk community, but I know this community was very helpful all the time and intereset in new things, so I feel good :)
+I hope also to get support by the Smalltalk community, but I know from my past that this community was very helpful and interested all the time, so I feel good :) Please contact me (data are available [here](/#contact)) if you want to discuss things. At the moment, I'm busy with a game development, but I hope to start the work not later than end of this year.
+
+Note to myself: I'm very happy to be back at Smalltalk ..... 
