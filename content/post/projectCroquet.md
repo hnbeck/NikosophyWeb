@@ -7,9 +7,10 @@ title = "Pharo Smalltalk to the net"
 
 [header]
   caption = "(c) Hans Beck"
-  image = "dataspace.jpg"
+  image = "spaceCity.jpg"
 
 +++
+
 The world today is dominated by the internet and the clouds. More and more things are stored in the cloud, and it is common to have access to the own images, mails and posts from  every device.
 
 Then another technology raised and begin to shape the way how we use computers and how we see data. Augmented Reality and Virtual Reality provide a 3D immersive experience.  Objects flowing around the user or are located right in front or somewhere in space. Data objects getting a shape or even a body. If many users are looking at these objects through their VR headsets in parallel, they should see the same objects. This is the collaborative work visioned by the companies providing such AR or VR headsets.
@@ -37,4 +38,4 @@ At this moment in time, I can not say if this will works. I don't know if I I#m 
 
 I hope also to get support by the Smalltalk community, but I know from my past that this community was very helpful and interested all the time, so I feel good :) Please contact me (data are available [here](/#contact)) if you want to discuss things. At the moment, I'm busy with a game development, but I hope to start the work not later than end of this year.
 
-Note to myself: I'm very happy to be back at Smalltalk ..... 
+Note to myself: I'm very happy to be back at Smalltalk .....
