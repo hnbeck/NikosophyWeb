@@ -18,6 +18,11 @@
 
       <!-- Left Nav Bar -->
       <ul class="nav navbar-nav navbar-right">
+        <ul>
+{{ range $.Site.Home.AllTranslations }}
+<li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+{{ end }}
+
         {{ range .Site.Menus.main }}
 
         {{ if .HasChildren }}
