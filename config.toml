@@ -153,22 +153,71 @@ defaultContentLanguageInSubdir = false
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
-[[menu.main]]
+
+#[[menu.main]]
+#  name = "Start"
+#  url = "#about"
+#  weight = 1
+
+#[[menu.main]]
+#  name = "Publikationen"
+#  url = "#publications"
+ # weight = 4
+
+#[[menu.main]]
+#  name = "Beiträge"
+#  url = "#posts"
+#  weight = 3
+
+#[[menu.main]]
+#  name = "Projekte"
+#  url = "#projects"
+#  weight = 2
+
+#[[menu.main]]
+#  name = "Teaching"
+#  url = "#teaching"
+#  weight = 5
+
+#[[menu.main]]
+#  name = "Kontakt/Impressuum"
+#  url = "#contact"
+#  weight = 6
+
+# Taxonomies.
+#[taxonomies]
+#  tag = "tags"
+#  category = "categories"
+#  publication_type = "publication_types"
+
+# Languages
+#   Create a [languages.X] block for each language you want, where X is the language ID.
+
+# Configure the English version of the website.
+[languages.en]
+  languageCode = "en-us"
+  title = "Play and Learn"
+
+
+[languages.de]
+  languageCode = "de-de"
+  title = "Spiel und Lernen"
+  [[menu.main]]
   name = "Start"
   url = "#about"
   weight = 1
 
-[[menu.main]]
+[[languages.de.menu.main]]
   name = "Publikationen"
   url = "#publications"
   weight = 4
 
-[[menu.main]]
+[[languages.de.menu.main]]
   name = "Beiträge"
   url = "#posts"
   weight = 3
 
-[[menu.main]]
+[[languages.de.menu.main]]
   name = "Projekte"
   url = "#projects"
   weight = 2
@@ -178,23 +227,7 @@ defaultContentLanguageInSubdir = false
 #  url = "#teaching"
 #  weight = 5
 
-[[menu.main]]
-  name = "Kontakt/Impressuum"
+[[languages.de.menu.main]]
+  name = "Impressuum"
   url = "#contact"
   weight = 6
-
-# Taxonomies.
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-  publication_type = "publication_types"
-
-# Languages
-#   Create a [languages.X] block for each language you want, where X is the language ID.
-
-# Configure the English version of the website.
-[languages.en]
-  languageCode = "en-us"
-
-[languages.de]
-  languageCode = "de-de"
