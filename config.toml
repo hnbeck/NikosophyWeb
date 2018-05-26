@@ -28,7 +28,7 @@ defaultContentLanguageInSubdir = false
   address = "Zabergäustr 3, D-74172 Neckarsulm"
   office_hours = ""
   phone = "+49 (0) 151 58744954"
-  skype = "hnbeck@educational-concepts.biz"
+  # skype = "hnbeck@educational-concepts.biz"
   telegram = ""
 
   # Enable Keybase in Contact section by entering your keybase.io username.
