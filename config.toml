@@ -198,11 +198,11 @@ defaultContentLanguageInSubdir = false
   languageCode = "en-us"
   title = "Play and Learn"
 
-
 [languages.de]
   languageCode = "de-de"
   title = "Spiel und Lernen"
-  [[menu.main]]
+
+[[languages.de.menu.main]]
   name = "Start"
   url = "#about"
   weight = 1
@@ -228,6 +228,31 @@ defaultContentLanguageInSubdir = false
 #  weight = 5
 
 [[languages.de.menu.main]]
+  name = "Impressuum"
+  url = "#contact"
+  weight = 6
+
+[[languages.en.menu.main]]
+  name = "Start"
+  url = "#about"
+  weight = 1
+
+[[languages.en.menu.main]]
+  name = "Publications"
+  url = "#publications"
+  weight = 4
+
+[[languages.en.menu.main]]
+  name = "Posts"
+  url = "#posts"
+  weight = 3
+
+[[languages.en.menu.main]]
+  name = "Projects"
+  url = "#projects"
+  weight = 2
+
+[[languages.en.menu.main]]
   name = "Impressuum"
   url = "#contact"
   weight = 6
