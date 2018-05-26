@@ -14,7 +14,7 @@ googleAnalytics = ""
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
-
+ 
 [blackfriday]
   hrefTargetBlank = true
 
