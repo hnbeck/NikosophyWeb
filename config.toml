@@ -132,6 +132,11 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "//twitter.com/EnrichedGamesHB"
 
+   [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "https://de.linkedin.com/in/hans-nikolaus-beck-b9a795159"
+
 #  [[params.social]]
 #    icon = "google-scholar"
 #    icon_pack = "ai"

@@ -20,7 +20,7 @@ owner = "Dipl.-Ing. Hans N. Beck"
 service ="Beratung, Gestaltung von Konzepten, Verfassen von Texten zum Thema Lernen und Validieren mittels Spielen"
 +++
 
-## Datenschutzerklärung
+## Datenschutzerklärung nach DGSVO
 
 Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders hohen Stellenwert für die Geschäftsleitung der Educational Concepts Hans Beck. Eine Nutzung der Internetseiten der Educational Concepts Hans Beck ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein.
 
