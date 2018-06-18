@@ -154,36 +154,6 @@ defaultContentLanguageInSubdir = false
 #   The weight parameter defines the order that the links will appear in.
 
 
-#[[menu.main]]
-#  name = "Start"
-#  url = "#about"
-#  weight = 1
-
-#[[menu.main]]
-#  name = "Publikationen"
-#  url = "#publications"
- # weight = 4
-
-#[[menu.main]]
-#  name = "Beiträge"
-#  url = "#posts"
-#  weight = 3
-
-#[[menu.main]]
-#  name = "Projekte"
-#  url = "#projects"
-#  weight = 2
-
-#[[menu.main]]
-#  name = "Teaching"
-#  url = "#teaching"
-#  weight = 5
-
-#[[menu.main]]
-#  name = "Kontakt/Impressuum"
-#  url = "#contact"
-#  weight = 6
-
 # Taxonomies.
 #[taxonomies]
 #  tag = "tags"
@@ -194,65 +164,63 @@ defaultContentLanguageInSubdir = false
 #   Create a [languages.X] block for each language you want, where X is the language ID.
 
 # Configure the English version of the website.
-[languages.en]
-  languageCode = "en-us"
-  title = "Play and Learn"
+[languages]
+  [languages.en]
+    languageCode = "en-us"
+    title = "Play and Learn"
+    languageName = "flag-uk.png"
+   
+  [languages.de]
+    languageCode = "de-de"
+    title = "Spiel und Lernen"
+    languageName = "flag-de.png"
+    
+  [[languages.de.menu.main]]
+    name = "Start"
+    url = "#about"
+    weight = 1
 
-[languages.de]
-  languageCode = "de-de"
-  title = "Spiel und Lernen"
+  [[languages.de.menu.main]]
+    name = "Publikationen"
+    url = "#publications"
+    weight = 4
 
-[[languages.de.menu.main]]
-  name = "Start"
-  url = "#about"
-  weight = 1
+  [[languages.de.menu.main]]
+    name = "Beiträge"
+    url = "#posts"
+    weight = 3
 
-[[languages.de.menu.main]]
-  name = "Publikationen"
-  url = "#publications"
-  weight = 4
+  [[languages.de.menu.main]]
+    name = "Projekte"
+    url = "#projects"
+    weight = 2
 
-[[languages.de.menu.main]]
-  name = "Beiträge"
-  url = "#posts"
-  weight = 3
+  [[languages.de.menu.main]]
+    name = "Impressuum"
+    url = "#contact"
+    weight = 6
 
-[[languages.de.menu.main]]
-  name = "Projekte"
-  url = "#projects"
-  weight = 2
+  [[languages.en.menu.main]]
+    name = "Start"
+    url = "#about"
+    weight = 1
 
-#[[menu.main]]
-#  name = "Teaching"
-#  url = "#teaching"
-#  weight = 5
+  [[languages.en.menu.main]]
+    name = "Publications"
+    url = "#publications"
+    weight = 4
 
-[[languages.de.menu.main]]
-  name = "Impressuum"
-  url = "#contact"
-  weight = 6
+  [[languages.en.menu.main]]
+    name = "Posts"
+    url = "#posts"
+    weight = 3
 
-[[languages.en.menu.main]]
-  name = "Start"
-  url = "#about"
-  weight = 1
+  [[languages.en.menu.main]]
+    name = "Projects"
+    url = "#projects"
+    weight = 2
 
-[[languages.en.menu.main]]
-  name = "Publications"
-  url = "#publications"
-  weight = 4
-
-[[languages.en.menu.main]]
-  name = "Posts"
-  url = "#posts"
-  weight = 3
-
-[[languages.en.menu.main]]
-  name = "Projects"
-  url = "#projects"
-  weight = 2
-
-[[languages.en.menu.main]]
-  name = "Impressuum"
-  url = "#contact"
-  weight = 6
+  [[languages.en.menu.main]]
+    name = "Impressuum"
+    url = "#contact"
+    weight = 6

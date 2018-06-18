@@ -34,7 +34,7 @@ html {
   font-family: 'Droid Serif', serif;
   font-size: 20px;
   color: rgba(0,0,0, 1.0);
-  line-height: 1.6;
+  line-height: 1.4;
 }
 @media screen and (min-width: 58em) {
   html {
@@ -1004,6 +1004,13 @@ nav#navbar-main li {
 
   .navbar-nav > li {
     float: none;
+  }
+
+  span.nav-icon  {
+    height:10px;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding:-30px;
   }
 
   .navbar-nav > li > a {
