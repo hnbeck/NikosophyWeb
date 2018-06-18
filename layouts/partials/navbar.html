@@ -55,10 +55,10 @@
           {{ range .AllTranslations }}  
             <a href="{{ .Permalink }}">
               <span>
-                <img src="{{ "/img/" | relURL }}{{.Language.LanguageName}}" width="20" height="15"> 
+                <img src="{{ "/img/" | relURL }}{{.Language.LanguageName}}" width="20" height="15" padding=0> 
               </span>
             </a> 
-               {{ end }} 
+            {{ end }} 
         </li>
      
       </ul>

@@ -51,11 +51,15 @@
         <div class="panel panel-default">
           <div class="panel-body">
           <h3>{{ i18n "interests" | markdownify }}</h3>
-          <ul class="ul-interests">
-              {{ range .interests }}
-          <li>{{ . }}</li>
-          {{ end }}
-          </ul>
+            <table class="table table-sm">
+              <tbody>
+                {{ range .interests }}
+                <tr><td>
+                  {{.}}
+                </td></tr>
+                {{ end }}
+              </tbody>
+            </table>
         </div>
         </div>
       </div>
@@ -87,7 +91,18 @@
           <div class="panel panel-default">
             <div class="panel-body">
         <h3>{{ i18n "services" | markdownify }}</h3>
-        <ul class="ul-interests">
+         <table class="table table-sm">
+              <tbody>
+                {{ range .pos }}
+                <tr><td>
+                  <div class="description">
+                    <div class="course">{{ .offer }}</div>
+                  </div>
+                </td></tr>
+                {{ end }}
+              </tbody>
+            </table>
+       <!-- <ul class="ul-interests">
           {{ range .pos }}
           <li>
             <div class="description">
@@ -95,7 +110,7 @@
             </div>
           </li>
           {{ end }}
-        </ul>
+        </ul>-->
       </div>
       </div>
           </div>
