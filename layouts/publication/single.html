@@ -11,7 +11,7 @@
   
   <div class="container pub-title">
 
-    <h1 itemprop="name">{{ .Title }}</h1>
+    <h2 itemprop="name">{{ .Title }}</h2>
     <span class="pub-authors" itemprop="author">
       {{ with .Params.authors }}
       {{ delimit . ", " | markdownify }}

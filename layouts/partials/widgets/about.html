@@ -50,7 +50,7 @@
       <div class="col-sm-5">
         <div class="panel panel-default">
           <div class="panel-body">
-          <h3>{{ i18n "interests" | markdownify }}</h3>
+          <h2>{{ i18n "interests" | markdownify }}</h2>
             <table class="table table-sm">
               <tbody>
                 {{ range .interests }}
@@ -69,7 +69,7 @@
       <div class="col-sm-7">
           <div class="panel panel default">
             <div class="panel-body">
-        <h3>{{ i18n "education" | markdownify }}</h3>
+        <h2>{{ i18n "education" | markdownify }}</h2>
         <ul class="ul-edu fa-ul">
           {{ range .courses }}
           <li>
@@ -90,7 +90,7 @@
       <div class="col-sm-7">
           <div class="panel panel-default">
             <div class="panel-body">
-        <h3>{{ i18n "services" | markdownify }}</h3>
+        <h2>{{ i18n "services" | markdownify }}</h2>
          <table class="table table-sm">
               <tbody>
                 {{ range .pos }}
@@ -102,15 +102,6 @@
                 {{ end }}
               </tbody>
             </table>
-       <!-- <ul class="ul-interests">
-          {{ range .pos }}
-          <li>
-            <div class="description">
-              <div class="course">{{ .offer }}</div>
-            </div>
-          </li>
-          {{ end }}
-        </ul>-->
       </div>
       </div>
           </div>

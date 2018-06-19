@@ -416,7 +416,7 @@ article {
 }
 
 .article-container {
-  max-width: 760px;
+  max-width: 920px;
   padding: 40px 2px 40px 2px;
   margin: 0 auto 0 auto;
 }
@@ -457,7 +457,7 @@ article {
 }
 
 .article-title {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .article-title a {

@@ -196,7 +196,7 @@ defaultContentLanguageInSubdir = false
     weight = 2
 
   [[languages.de.menu.main]]
-    name = "Impressum"
+    name = "Impressum/Datenschutz"
     url = "#contact"
     weight = 6
 
@@ -221,6 +221,6 @@ defaultContentLanguageInSubdir = false
     weight = 2
 
   [[languages.en.menu.main]]
-    name = "Impressum"
+    name = "Impressum/privacy"
     url = "#contact"
     weight = 6

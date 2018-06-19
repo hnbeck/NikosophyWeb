@@ -101,3 +101,10 @@
 
 - id: talks
   translation: Talks
+
+# contact
+- id: beruf
+  translation: Job title
+
+- id: responsible
+  translation: Responsible for design and content

@@ -15,12 +15,13 @@ weight = 70
 autolink = true
 
 law = "Alle Angaben gemäß §5 Telemediengesetz"
-responsible = "Domaininhaber und verantwortlich für den Inhalt: Hans N. Beck"
+services = "Autorentätigkeit von Texten und Konzepten im Bereich Computerspiele und Lernen"
+responsible = "Hans N. Beck"
 owner = "Dipl.-Ing. Hans N. Beck"
-service ="Beratung, Gestaltung von Konzepten, Verfassen von Texten zum Thema Lernen und Validieren mittels Spielen"
+beruf = "Dipl.-Ing. Elektrotechnik (TH)"
 +++
 
-## Datenschutzerklärung nach DGSVO
+### Datenschutzerklärung nach DGSVO
 
 Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders hohen Stellenwert für die Geschäftsleitung der Educational Concepts Hans Beck. Eine Nutzung der Internetseiten der Educational Concepts Hans Beck ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein.
 
@@ -83,9 +84,11 @@ Die Internetseite der Educational Concepts Hans Beck erfasst mit jedem Aufruf de
 Bei der Nutzung dieser allgemeinen Daten und Informationen zieht die Educational Concepts Hans Beck keine Rückschlüsse auf die betroffene Person. Diese Informationen werden vielmehr benötigt, um (1) die Inhalte unserer Internetseite korrekt auszuliefern, (2) die Inhalte unserer Internetseite sowie die Werbung für diese zu optimieren, (3) die dauerhafte Funktionsfähigkeit unserer informationstechnologischen Systeme und der Technik unserer Internetseite zu gewährleisten sowie (4) um Strafverfolgungsbehörden im Falle eines Cyberangriffes die zur Strafverfolgung notwendigen Informationen bereitzustellen. Diese anonym erhobenen Daten und Informationen werden durch die Educational Concepts Hans Beck daher einerseits statistisch und ferner mit dem Ziel ausgewertet, den Datenschutz und die Datensicherheit in unserem Unternehmen zu erhöhen, um letztlich ein optimales Schutzniveau für die von uns verarbeiteten personenbezogenen Daten sicherzustellen. Die anonymen Daten der Server-Logfiles werden getrennt von allen durch eine betroffene Person angegebenen personenbezogenen Daten gespeichert.
 
 #### 4. Abonnement von Kommentaren im Blog auf der Internetseite
-Die im Blog der Educational Concepts Hans Beck abgegebenen Kommentare können grundsätzlich von Dritten abonniert werden. Insbesondere besteht die Möglichkeit, dass ein Kommentator die seinem Kommentar nachfolgenden Kommentare zu einem bestimmten Blog-Beitrag abonniert.
+*ACHTUNG: Das Kommentieren von Blog Einträgen und Abonnieren von Kommentaren und Blog Einträgen ist derzeit nicht implementiert und der Inhalt dieses Abschnitts ist daher nicht anwendbar.*
 
-Sofern sich eine betroffene Person für die Option entscheidet, Kommentare zu abonnieren, versendet der für die Verarbeitung Verantwortliche eine automatische Bestätigungsmail, um im Double-Opt-In-Verfahren zu überprüfen, ob sich wirklich der Inhaber der angegebenen E-Mail-Adresse für diese Option entschieden hat. Die Option zum Abonnement von Kommentaren kann jederzeit beendet werden.
+(Die im Blog der Educational Concepts Hans Beck abgegebenen Kommentare können grundsätzlich von Dritten abonniert werden. Insbesondere besteht die Möglichkeit, dass ein Kommentator die seinem Kommentar nachfolgenden Kommentare zu einem bestimmten Blog-Beitrag abonniert.
+
+Sofern sich eine betroffene Person für die Option entscheidet, Kommentare zu abonnieren, versendet der für die Verarbeitung Verantwortliche eine automatische Bestätigungsmail, um im Double-Opt-In-Verfahren zu überprüfen, ob sich wirklich der Inhaber der angegebenen E-Mail-Adresse für diese Option entschieden hat. Die Option zum Abonnement von Kommentaren kann jederzeit beendet werden.)
 
 #### 5. Routinemäßige Löschung und Sperrung von personenbezogenen Daten
 Der für die Verarbeitung Verantwortliche verarbeitet und speichert personenbezogene Daten der betroffenen Person nur für den Zeitraum, der zur Erreichung des Speicherungszwecks erforderlich ist oder sofern dies durch den Europäischen Richtlinien- und Verordnungsgeber oder einen anderen Gesetzgeber in Gesetzen oder Vorschriften, welchen der für die Verarbeitung Verantwortliche unterliegt, vorgesehen wurde.
