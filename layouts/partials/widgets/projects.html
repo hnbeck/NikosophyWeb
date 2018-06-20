@@ -57,7 +57,7 @@
       {{   $.Scratch.Set "project_url" $project.Params.external_link }}
       {{   $.Scratch.Set "target" "target=\"_blank\"" }}
       {{ end }}
-      <div class="col-xs-12 col-sm-8 col-md-4 col-lg-6 project-item isotope-item {{ delimit .Params.tags " " }}">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item {{ delimit .Params.tags " " }}">
         <div class="card">
           {{ with $project.Params.image_preview }}
           <a href="{{ $.Scratch.Get "project_url" }}" title="" class="card-image hover-overlay"
@@ -66,7 +66,7 @@
           </a>
           {{ end }}
           <div class="card-text">
-            <h4><a href="{{ $.Scratch.Get "project_url" }}" {{ $.Scratch.Get "target" | safeHTMLAttr }}>{{ .Title }}</a></h4>
+            <h3><a href="{{ $.Scratch.Get "project_url" }}" {{ $.Scratch.Get "target" | safeHTMLAttr }}>{{ .Title }}</a></h3>
             <div class="card-desription">
               {{ with $project.Params.summary }}<p>{{ . | markdownify }}</p>{{ end }}
             </div>
