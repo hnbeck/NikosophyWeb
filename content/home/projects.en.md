@@ -27,15 +27,15 @@ view = 1
   tag = "*"
 
 [[filter]]
-  name = "Klicke & Handle"
+  name = "Click & Act"
   tag = ".ClickAction"
 
 [[filter]]
-  name = "Klicke & Beobachte"
+  name = "Click & Observe"
   tag = ".ClickObserve"
 
  [[filter]]
-  name = "Grundlagen"
+  name = "Basics"
   tag = ".Basics"
 
 +++
