@@ -24,7 +24,7 @@
   translation: Datensatz
 
 - id: btn_project
-  translation: Projekt
+  translation: Link
 
 # About widget
 
@@ -35,7 +35,7 @@
   translation: Ausbildung
 
 - id: services
-  translation: Angebot
+  translation: Dienstleistung
 
 # Publications widget
 
@@ -90,3 +90,10 @@
 
 - id: open_project_site
   translation: Zur Projektseite
+
+# contact
+- id: beruf
+  translation: Berufsbezeichnung
+
+- id: responsible
+  translation: Verantwortlicher für Inhalt und Gestaltung

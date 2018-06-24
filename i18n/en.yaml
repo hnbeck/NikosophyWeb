@@ -24,7 +24,7 @@
   translation: Dataset
 
 - id: btn_project
-  translation: Project
+  translation: Link
 
 # About widget
 
@@ -101,3 +101,10 @@
 
 - id: talks
   translation: Talks
+
+# contact
+- id: beruf
+  translation: Job title
+
+- id: responsible
+  translation: Responsible for design and content

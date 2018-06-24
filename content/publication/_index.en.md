@@ -11,4 +11,4 @@ caption = ""
 
 +++
 
-Folgende Beiträge online oder Print habe ich bisher verfasst - Blogbeiträge sind nicht berücksichtigt:
+For publications in German see [here](/publication)

@@ -13,24 +13,24 @@
   <div class="article-container">
     <div class="panel panel-default">
       <div class="panel-body">
-    <h1 itemprop="name">{{ .Title }}</h1>
-    {{ partial "article_metadata" (dict "content" . "is_list" 0) }}
-    <div class="article-style" itemprop="articleBody">
-      {{ .Content }}
+        <h2 itemprop="name">{{ .Title }}</h2>
+        {{ partial "article_metadata" (dict "content" . "is_list" 0) }}
+        <div class="article-style" itemprop="articleBody">
+          {{ .Content }}
+        </div>
+      </div>
     </div>
   </div>
-    </div>
-      </div>
-
-</article>
-
-<div class="container">
+  <div class="container">
   {{ partial "section_pager.html" . }}
 </div>
+</article>
 
-<div class="article-container">
+
+
+<!--<div class="article-container">
   {{ partial "comments.html" . }}
-</div>
+</div>-->
 
 {{ partial "footer_container.html" . }}
 {{ partial "footer.html" . }}

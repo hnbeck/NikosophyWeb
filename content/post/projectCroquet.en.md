@@ -6,7 +6,7 @@ tags = ["Projekte"]
 title = "Pharo Smalltalk to the net"
 
 [header]
-  caption = "(c) Hans Beck"
+  caption = "(c) Hans N. Beck"
   image = "spaceCity.jpg"
 
 +++

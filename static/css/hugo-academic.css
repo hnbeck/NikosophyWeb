@@ -34,7 +34,7 @@ html {
   font-family: 'Droid Serif', serif;
   font-size: 20px;
   color: rgba(0,0,0, 1.0);
-  line-height: 1.6;
+  line-height: 1.4;
 }
 @media screen and (min-width: 58em) {
   html {
@@ -96,7 +96,7 @@ h2 {
 }
 h3 {
   font-weight: 700;
-  margin-top: 1.5rem;
+  margin-top: 0.75rem;
   font-size: 1.25rem;
 }
 h4, h5, h6 {
@@ -129,6 +129,8 @@ video {
 .img-responsive {
   /* Extend Bootstrap declaration with centering. */
   margin: 0 auto;
+  padding: 15px;
+  max-width: 100%;
 }
 
 figcaption:before {
@@ -416,7 +418,7 @@ article {
 }
 
 .article-container {
-  max-width: 760px;
+  max-width: 920px;
   padding: 40px 2px 40px 2px;
   margin: 0 auto 0 auto;
 }
@@ -457,7 +459,7 @@ article {
 }
 
 .article-title {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .article-title a {
@@ -694,8 +696,8 @@ article {
 }
 
 .card .card-text p {
-  color: #999999;
-  font-size: 0.75rem;
+  color: #rgba(0,0,0,1);
+  font-size: 1rem;
 }
 
 .card p:last-child {
@@ -1004,6 +1006,13 @@ nav#navbar-main li {
 
   .navbar-nav > li {
     float: none;
+  }
+
+  span.nav-icon  {
+    height:10px;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding:-30px;
   }
 
   .navbar-nav > li > a {

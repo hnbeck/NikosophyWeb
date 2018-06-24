@@ -11,6 +11,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a>
+      
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,6 +50,17 @@
 
         {{ end }}
         {{ end }}
+        
+        <li class="nav-item">
+          {{ range .AllTranslations }}  
+            <a href="{{ .Permalink }}">
+              <span>
+                <img src="{{ "/img/" | relURL }}{{.Language.LanguageName}}" width="20" height="15" padding=0> 
+              </span>
+            </a> 
+            {{ end }} 
+        </li>
+     
       </ul>
 
     </div><!-- /.navbar-collapse -->
