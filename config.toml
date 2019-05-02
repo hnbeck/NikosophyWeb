@@ -1,6 +1,6 @@
 baseurl = "/"
 title = "Spiel und Lernen"
-copyright = "&copy; 2017, 2018 Hans N. Beck"
+copyright = "&copy; 2017, 2018, 2019 Hans N. Beck"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"

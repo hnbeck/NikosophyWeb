@@ -14,9 +14,9 @@ weight = 1
 [interests]
   interests = [
   	"Philosophy",
-  	"Writing and storytelling",
+  	"Writing and story telling",
     "Learning and Psychology",
-    "uand of course: games"
+    "and of course: games"
   ]
 
 
@@ -29,10 +29,9 @@ weight = 1
   offer = "design concepts,"
 
 [[services.pos]]
-    offer = "for education an computational psychology"
+    offer = "for gaming and story telling"
 +++
 
 ## Mission and Vision
 
-To play is part of human nature. Games help us to learn, to explore and to evolve. If designes well games can do more than entertain you. They can transport knowledge. Games can reflect attribures of a character, which makes them suitable for experiments in computer based constructive psychology. Thats what my work is all about. Own small projects help, to experience my ideas.
-
+Storyy telling and gaming are the foundation of my work. Story telling is my way to develop and to communicate theories and knowledge. Games too can transport knowledge. But games are also a model of the world. To design gaming rules means to model world and dynamics. To be exact, games are some kind of story telling where many stories can grow at the same time. Both, story telling and gaming is guided by the question "what if..." with the intention, to design and shape things.
