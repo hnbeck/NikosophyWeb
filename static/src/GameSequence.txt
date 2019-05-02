@@ -1,0 +1,16 @@
+@startuml
+
+	
+start
+:Spielaufbau;
+
+repeat
+	:Phase one;
+	:Phase ...;
+	:Auswertung; 
+
+repeat while (Spielende?);
+
+stop
+
+@enduml
