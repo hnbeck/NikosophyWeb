@@ -27,4 +27,4 @@ Reglen haben zwei Teile:
 
 Das Entwicklungssystem soll [SWI-Prolog](http://www.swi-prolog.org) sein. Es macht Sinn, dass dieses Prolog Programm als Server Programm zum Einsatz kommt, welches von dem Client kontaktiert wird. Das Prolog System sollte den Zustand der Welt als ASCII Zeichenfolge dem Client übermitteln. Oder anders gesagt, die Visualisierung bleibt eigenständig.
 
-![Testbild](/static/img/mask.png)
+![Testbild](/img/mask.png)
