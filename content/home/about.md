@@ -13,9 +13,9 @@ weight = 1
 # List your academic interests.
 [interests]
   interests = [
+   	"Philosophie",
+   	"Schreiben und Erzählen",
     "Lernen und Psychologie",
-    "Computational Psychology",
-    "Philosophie",
     "und natürlich: Spiele"
   ]
 
@@ -39,10 +39,10 @@ weight = 1
   offer = "Gestalten von Konzepten,"
 
 [[services.pos]]
-    offer = "im Bereich Lernen und computergestützte Psychologie"
+    offer = "im Bereich Spielen und Erzählen"
 +++
 
 ## Mission and Vision
 
-Spielen ist Teil der menschlichen Natur. Spiele helfen uns zu lernen, uns zu entdecken und weiterzuentwickeln.
-Spiele können, richtig entworfen, nicht nur der Unterhaltung dienen, sondern auch Wissen transportieren. Weil Spiele auch Charaktereigenschaften spiegeln, bieten sie sich als Experimentierfeld der konstruktiven computergestützen Psychologie an. Um all diese Dinge geht es bei meiner Arbeit. Eigene kleine Projekte helfen, meine Ideen selbst zu erleben.
+Erzählen und Spielen sind die Grundpfeiler meiner Arbeit. Erzählen ist mein Medium, um Wissen und Gedanken zu entwickeln und weiterzugeben. Auch Spiele können Wissen vermitteln. Aber Spiele sind auch ein Modell der Welt. Spielregeln zu entwerfen bedeutet, Welt und Entwicklungen zu modellieren. Genau betrachtet ist Spielen eine Art Geschichtenezählung, die mehrere Geschichten gleichzeitig entfaltet. Beides, Erzählen wie Spielen, steht unter der Frage "Was wäre, wenn..." mit dem Intention, zu gestaletn.
+
