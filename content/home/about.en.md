@@ -13,9 +13,9 @@ weight = 1
 # List your academic interests.
 [interests]
   interests = [
+  	"Philosophy",
+  	"Writing and storytelling",
     "Learning and Psychology",
-    "Computational Psychology",
-    "Philosophy",
     "uand of course: games"
   ]
 
