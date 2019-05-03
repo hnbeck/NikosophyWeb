@@ -126,6 +126,10 @@ video {
   display: block;
 }
 
+img.myimg {
+  float: right;
+}
+
 .img-responsive {
   /* Extend Bootstrap declaration with centering. */
   margin: 0 auto;
