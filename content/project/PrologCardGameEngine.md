@@ -16,7 +16,7 @@ src = ""
 +++
 Prolog ist eine Sprache, in der sich Spielregeln sehr gut abbilden lassen. Dieses Projekt hat zum Ziel, ein Grundsystem für Kartenspiele in Prolog zu entwickeln. Die Spielflächse sollte beliebtig sein können. Karten mögen mit jeder Art von Attributen und Typen versehen sein. 
 
-Jeden Kartenspielen sei die Eigenschaft gemein, in Runden gespielt zu werden. Jede Runde hat dabei wiederum Phasen.  ![Spielsequenz](/img/gamesequence.png) 
+Jeden Kartenspielen sei die Eigenschaft gemein, in Runden gespielt zu werden. Jede Runde hat dabei wiederum Phasen.  {{< figure src="/img/gamesequence.png" title="Spielsequenz" >}}s
 
 Ob in jeder Phase beide Spieler Aktionen spielen, oder ein Spieler eine ganze Runde absolviert, bevor der andere Spieler seine Aktionen durchführen darf, soll der Spieledesigner entscheiden können. 
 
