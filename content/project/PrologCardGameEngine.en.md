@@ -1,12 +1,12 @@
 +++
-date = "2018-06-18T19:28:37+02:00"
+date = "2019-05-03T15:00:37+02:00"
 external_link = ""
 highlight = true
-image_preview = "introCardEngine.png"
+image_preview = "Meeresrauschen.jpg"
 math = false
-summary = "Basic card game engine in Prolog"
+summary = "Ideen für ein Perry Rhodan MMO"
 tags = ["Basics"]
-title = "ECCardLogic"
+title = "Perry Rhodan MMO Ideas"
 src = ""
 
 [header]
@@ -14,4 +14,4 @@ src = ""
   image = "steelroof.jpg"
 
 +++
-For details look at [German version of this post](/project/prologcardgameengine/).
+For details look at [German version of this post](/project/PerryRhodanMMO/).
