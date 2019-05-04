@@ -2,7 +2,7 @@
 date = "2019-05-03T15:00:37+02:00"
 external_link = ""
 highlight = true
-image_preview = "meeresrauschen.jpg"
+image_preview = "meer.jpg"
 math = false
 summary = "Ideen für ein Perry Rhodan MMO"
 tags = ["Basics"]
@@ -11,7 +11,7 @@ src = ""
 
 [header]
   caption = "(c) Hans N. Beck"
-  image = "meeresrauschen.jpg"
+  image = "meer.jpg"
 
 +++
 Prolog ist eine Sprache, in der sich Spielregeln sehr gut abbilden lassen. Dieses Projekt hat zum Ziel, ein Grundsystem für Kartenspiele in Prolog zu entwickeln. Spielfläche und Karten sollen belieben gewählt werden können. Attribute und Texte, die die Karten tragen, sollen frei gestaltbar sein.
