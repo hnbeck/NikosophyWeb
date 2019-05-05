@@ -2,7 +2,7 @@
 date = "2019-05-03T15:00:37+02:00"
 external_link = ""
 highlight = true
-image_preview = "meer.jpg"
+image_preview = "introPerryMMO.png"
 math = false
 summary = "Ideen für ein Perry Rhodan MMO"
 tags = ["Basics"]
