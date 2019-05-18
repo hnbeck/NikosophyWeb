@@ -22,7 +22,7 @@ Jeden Kartenspielen sei die Eigenschaft gemein, in Runden gespielt zu werden. Je
 
 Ob in jeder Phase beide Spieler Aktionen spielen, oder ein Spieler eine ganze Runde absolviert, bevor der andere Spieler seine Aktionen durchführen darf, bleibt dem Spieldesigner überlassen. 
 
-Reglen haben zwei Teile: 
+Reglen gibt es in zwei Arten: 
 
 	1.  Regeln, die die Entwicklung der Spielewelt modellieren. Nach jeder Phase oder Runde sollen diese Regeln aus dem Zustand der Spielewelt einen neuen Zustand ermitteln, inklusive Punkteauswertungen oder ähnliches.
 
