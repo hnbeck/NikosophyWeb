@@ -34,4 +34,4 @@ weight = 1
 
 ## Mission and Vision
 
-Story telling and gaming are the foundation of my work. Story telling is my way to develop and to communicate theories and knowledge. Games too can transport knowledge. But games are also a model of the world. To design gaming rules means to model world and dynamics. To be exact, games are some kind of story telling where many stories can grow at the same time. Both, story telling and gaming is guided by the question "what if..." with the intention, to design and shape things.
+Story telling and gaming are the foundation of my work. Story telling is my way to develop and to communicate theories and knowledge. Games too can transport knowledge. But games are also a model of the world. To design gaming rules requires to model world and dynamics. To be exact, games are some kind of story telling where many stories can grow at the same time. Both, story telling and gaming is guided by the question "what if..." with the intention, to design and shape things.
