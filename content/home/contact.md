@@ -15,7 +15,7 @@ weight = 70
 autolink = true
 
 law = "Alle Angaben gemäß §5 Telemediengesetz"
-services = "Autorentätigkeit von Texten und Konzepten im Bereich Computerspiele und Lernen"
+services = "Autorentätigkeit von Texten und Konzepten im Bereich Philosophie und Spiele"
 responsible = "Hans N. Beck"
 owner = "Dipl.-Ing. Hans N. Beck"
 beruf = "Dipl.-Ing. Elektrotechnik (TH)"
