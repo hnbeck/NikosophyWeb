@@ -2,11 +2,11 @@
 date = "2019-05-03T15:00:37+02:00"
 external_link = ""
 highlight = true
-image_preview = "introCardEngine.jpg"
+image_preview = "introCardEngine.png"
 math = false
 summary = "Ideen für ein Perry Rhodan MMO"
 tags = ["Basics"]
-title = "Perry Rhodan MMO Ideas"
+title = "ECCardEngine"
 src = ""
 
 [header]
@@ -15,13 +15,11 @@ src = ""
 
 +++
 
-Prolog is a programming language which supports the notation of game rules very well. This project aims to develop a base system for card games in Prolog. The game designer should have the possibility to define playfield and cards free as well as attributes and text of cards. 
+Prolog is a programming language which supports the notation of game rules very well. This project aims to develop a base system for card games in Prolog. The game designer should have the possibility to define playfield and cards including attributes and text of cards. 
 
 {{< figure src="/img/gamesequence.png" class="myimg" title="Spielsequenz" >}}
 
-Common property of all card games is to be played in turns. Every turn is diveded in phases.
-
-In every phase may be actions of both players, or every turn is played by one player only. This is a matter of the game designer.  
+Common property of all card games is to be played in turns. Every turn is diveded in phases. In every phase may be actions of both players, or every turn is played by one player only. This is a matter of the game designer.  
 
 There are two kind of rules: 
 

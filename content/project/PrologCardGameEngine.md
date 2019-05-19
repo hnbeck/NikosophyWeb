@@ -6,7 +6,7 @@ image_preview = "introCardEngine.png"
 math = false
 summary = "Grundsystem (Engine) für Kartenspiele in Prolog"
 tags = ["Basics"]
-title = "ECCardLogic"
+title = "ECCardEngine"
 src = ""
 
 [header]
@@ -18,9 +18,7 @@ Prolog ist eine Sprache, in der sich Spielregeln sehr gut abbilden lassen. Diese
 
 {{< figure src="/img/gamesequence.png" class="myimg" title="Spielsequenz" >}}
 
-Jeden Kartenspielen sei die Eigenschaft gemein, in Runden gespielt zu werden. Jede Runde hat dabei wiederum Phasen.  
-
-Ob in jeder Phase beide Spieler Aktionen spielen, oder ein Spieler eine ganze Runde absolviert, bevor der andere Spieler seine Aktionen durchführen darf, bleibt dem Spieldesigner überlassen. 
+Jeden Kartenspielen ist die Eigenschaft gemein, in Runden gespielt zu werden. Jede Runde hat dabei wiederum Phasen.  Ob in jeder Phase beide Spieler Aktionen spielen, oder ein Spieler eine ganze Runde absolviert, bevor der andere Spieler seine Aktionen durchführen darf, bleibt dem Spieldesigner überlassen. 
 
 Reglen gibt es in zwei Arten: 
 
