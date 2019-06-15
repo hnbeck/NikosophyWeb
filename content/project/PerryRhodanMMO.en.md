@@ -14,4 +14,4 @@ src = ""
   image = "meer.jpg"
 
 +++
-For details look at [German version of this post](/project/perryrhodanmmo/).
+For details look at [German version of this post](/project/perryrhodanmmo/). Translation may be a subject for future.
