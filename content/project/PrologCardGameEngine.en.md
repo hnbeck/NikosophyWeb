@@ -14,6 +14,8 @@ src = ""
   image = "steelroof.jpg"
 
 +++
+Das muss geändert werden
+
 
 Prolog is a programming language which supports the notation of game rules very well. This project has the goal to develop a base system for card games in Prolog. The game designer should have the possibility to define the playfield as well as cards including their attributes and texts. 
 

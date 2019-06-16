@@ -14,6 +14,10 @@ src = ""
   image = "steelroof.jpg"
 
 +++
+
+Das muss  komplett geändert werden
+
+s
 Prolog ist eine Sprache, in der sich Spielregeln sehr gut abbilden lassen. Dieses Projekt hat zum Ziel, ein Grundsystem für Kartenspiele in Prolog zu entwickeln. Spielfläche und Karten sollen nach Belieben gewählt werden können. Attribute und Texte der Karten sollen frei gestaltbar sein.
 
 {{< figure src="/img/gamesequence.png" class="myimg" title="Spielsequenz" >}}
