@@ -1,5 +1,5 @@
 +++
-date = "2018-06-18T19:28:37+02:00"
+date = "2019-07-13"
 external_link = ""
 highlight = true
 image_preview = "steelroof.jpg"
@@ -10,7 +10,7 @@ title = "ECLogicPlay"
 src = ""
 
 [header]
-  caption = "(c) Hans N. Beck)"
+  caption = "(c) Hans N. Beck"
   image = "steelroof.jpg"
 
 +++
@@ -51,12 +51,12 @@ Die Architektur (vgl. Diagramm "Elements") wird also einen Funktionsblock haben,
 
 ### Projektrealisierung
 
-Der Sourcecode ist [hier](https://github.com/hnbeck/ECToBeTerraner.git) in GitHub verfügbar. Anforderungen und Userstories bzw. weitere Informationen werden im GitHub Projekt [ECToBeTerranerRQ](https://github.com/hnbeck/ECToBeTerranerRQ). Implementiert wird in [SWI-Prolog](http://www.swi-prolog.org), der JavaScript Teil wird evtl. über [P5.js](https://p5js.org/) realisiert. Aber das ist noch nicht entschieden. Mit der Sprache [Processing](http://www.processing.org), dem "Mutterprojekt" von P5.js habe ich schon Erfahrungen gesammelt. Daher liegt es nahe, damit zu beginnen.
+Der Sourcecode ist [hier](https://github.com/hnbeck/ECToBeTerraner.git) in GitHub verfügbar. Anforderungen und Userstories bzw. weitere Informationen werden im GitHub Projekt [ECToBeTerranerRQ](https://github.com/hnbeck/ECToBeTerranerRQ). Implementiert wird in [SWI-Prolog](http://www.swi-prolog.org), der JavaScript Teil wird evtl. über [P5.js](https://p5js.org/) realisiert. Aber das ist noch nicht entschieden. Mit der Sprache [Processing](http://www.processing.org), dem "Mutterprojekt" von P5.js, habe ich schon Erfahrungen gesammelt. Daher liegt es nahe, damit zu beginnen.
 
 Mit der Zuordnung 
 
-UI - JavaScript
-alle anderen Elemente - Prolog
+*  UI =  JavaScript
+*  alle anderen Elemente =  Prolog
 
 ergibt sich folgendes Verteilungsdiagramm. SWI Prolog hat auch einen Webserver, so dass Prolog die HTTP Schnittstelle direkt implementieren kann.
 
@@ -65,6 +65,6 @@ ergibt sich folgendes Verteilungsdiagramm. SWI Prolog hat auch einen Webserver, 
 ### Entwicklungsschritte:
 
 1.  Schritt: Nur ein Spieler, der eine vorgegebene Geschichte mit Alternativen spielt, keine Persistenz, kein User Management, Textadventure
-2.  Schritt: <10 Player spielen in einem gemeinsamen Universum, d.h. inkl. User Management
+2.  Schritt: < 10 Player spielen in einem gemeinsamen Universum, d.h. inkl. User Management
 3.  Schritt: Weiterentwicklung der Grafik und Persistenz
 

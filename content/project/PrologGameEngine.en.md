@@ -1,33 +1,68 @@
 +++
-date = "2019-05-03T15:00:37+02:00"
+date = "2019-07-13"
 external_link = ""
 highlight = true
-image_preview = "MSCSchiff.jpg"
+image_preview = "steelroof.jpg"
 math = false
-summary = "Basic system for games powered with Prolog"
+summary = "Framework (Engine) for games in Prolog"
 tags = ["Basics"]
-title = "ECPlayEngine"
+title = "ECLogicPlay"
 src = ""
 
 [header]
-  caption = "(c) Hans N. Beck)"
-  image = "MSCSchiff.jpg"
+  caption = "(c) Hans N. Beck"
+  image = "steelroof.jpg"
 
 +++
 
-Prolog is a programming language which supports the notation of game rules very well. This project has the goal to develop a base system for card games in Prolog. The game designer should have the possibility to define the playfield as well as cards including their attributes and texts. 
+### Goal and motivation
 
-{{< figure src="/img/gamesequence.png" class="myimg" title="Spielsequenz" >}}
+The project aims to build a framework for computer games in Prolog. This language is not a typical one for implementing games. Although, as language of logic programming it can describe rules very well. And rules are the building blocks of games. In addition, the following things comming out of the Prolog world are very helpful building games:
 
-Common property of all card games is to be played in turns. Every turn is diveded in phases. In every phase may be actions of both players, or every turn is played by one player only. This is a matter of the game designer.  
+*  Some algorithms of classical AI like decision trees, knowledge modelling
+*  Probabilitic programming
+*  Qualitative Simulation
+*  Logical description of structures
+*  Modelling of causality using logical statements
 
-There are two kind of rules: 
+So it seems valuable to try out this things for gaming. If a working prototype can be done then this technology may be the base for bigger projects. But in the first step, trying out things by building a small adventure game.
 
-	1.  Rules modelling the game world. After every phase or turn the new state of the game world shall be calculated by this rules. This includes also the operation with game points or other assessments.
+Despite beeing a experiment it shall be a playful game. It should not be seen as a competitor to good Indie games or commercial games, of course.
 
-	2.  Rules prescribing the player actions. What a player can do is defined by these rules. Of course they depend on the game state.
+### Initial decisions
 
+The ECLogicPlay is intended for building adventure games or role playing games. This reason is that telling stories is an important and ground theme of games I deal with. Graphics is not the first part as this project want to build a prototype. The resulting game shall have this properties:
 
-The development system is [SWI-Prolog](http://www.swi-prolog.org). The Prolog program should operate as a server application which will be connected by clients. The Prolog system shall communicate the game state as a ASCII stream. The transformation of this stream to a visual representation shall be matter of the client. 
+*  Multiplayer, but not in the first version
+*  Adventure game in the SF domain
+*  There shall be roles with different level of action: games and telling gamer (authors)
+*  Browsergame, which means Prolog runs on a server, the interaction with the player is done via Javascript in the browser
+*  Persitence is implemented using RDF and Prolog
+*  In the first version the game may be a text adventure
 
-This is a little bit a reminiscence to the old and great X11 ideas of remote computer displays and of course all the WWW things out today. But as a difference to this, the ASCII stream should be more on a abstract level. It should not describing geometric things like rectangles and coordinates or descriptive attributes like `<body>` or `<p>`. It should describe objects. To design this ASCII based language is an interesting subtask for itself.
+The meaning of the actors or roles can be seen in diagram "Use Cases"
+
+{{< figure src="/src/UseCaseECLogPlay.png" title="Use Cases" >}}
+
+{{< figure src="/src/ElementsECLogicPlay.png" class="myimg" title="Elements" >}}
+
+The architecture (see diagram "Elements") will contain a block controling the roles acting in the game. There is a simulation computing the development of the world. Thats done by applying rules to the current state of the world, which results in the next state. The Block Script includes the computation of the overall story line, which is influenced by the autors. It is a special property in this approach that the autors are common players too, they playing the game like all others. To save game state, character data and other things is task of the Persistence.
+
+### Realization
+
+The source code is [here](https://github.com/hnbeck/ECToBeTerraner.git) in GitHub available. Requirements and Userstories and other informations will be stored in the GitHub project [ECToBeTerranerRQ](https://github.com/hnbeck/ECToBeTerranerRQ). Implementation will be done  in [SWI-Prolog](http://www.swi-prolog.org), the JavaScript part may be coded in [P5.js](https://p5js.org/). But there is no final decision yet. I personally have experience with the "mother project" [Processing](http://www.processing.org), of P5.js. Therefore beginning with this may a good start.
+
+With the mapping
+
+*  UI =  JavaScript
+*  all other elements =  Prolog
+
+the following deployment diagram can be drawn. SWI Prolog has a built-in predicates for creating a web server. In this way Prolog can implement HTTP directly. 
+
+{{< figure src="/src/DeployECLogPlay.png" title="Use Cases" >}}
+
+### Roadmap:
+
+1.  Step: Only one player, which plays a given story, no persistence, no user management, only text
+2.  Step: < 10 Players playing in a common game universe, so user management included
+3.  Step: Grafiks and persistence

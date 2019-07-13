@@ -2,16 +2,16 @@
 date = "2017-08-14T19:28:37+02:00"
 external_link = ""
 highlight = true
-image_preview = "introRiskLearner.png"
+image_preview = "meer.jpg"
 math = false
-summary = "Riskomanagement spielend vermittelt"
+summary = "Animationstool in Prolog"
 tags = ["ClickObserve"]
 title = "ECRiskLearner"
-src = "intro.js"
+src = ""
 
 [header]
   caption = "(c) Hans N. Beck)"
-  image = "steelroof.jpg"
+  image = "meer.jpg"
 
 +++
 Dieses Spiel führt an die Grundprinzipien des Risikomanagements heran. Erkenne das Risiko und handle entsprechend.

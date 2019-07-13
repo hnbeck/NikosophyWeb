@@ -2,16 +2,16 @@
 date = "2017-08-14T19:28:37+02:00"
 external_link = ""
 highlight = true
-image_preview = "introRiskLearner.png"
+image_preview = "meer.jpg"
 math = false
-summary = "Risk management introduced by a game"
-tags = ["ClickObserve"]
-title = "ECRiskLearner"
-src = "intro.js"
+summary = "Tool for animations in Prolog"
+tags = ["Basics"]
+title = "ECLogicAnime"
+src = ""
 
 [header]
   caption = "(c) Hans N. Beck)"
-  image = "steelroof.jpg"
+  image = "meer.jpg"
 
 +++
 For details look at [German version of this post](/project/therisklearner/).
