@@ -44,9 +44,11 @@ Die ECLogicPlay ist gedacht für Abenteuerspiele oder Rollenspiele, da das Gesch
 Die Bedeutung der Akteure ergibt sich aus dem Diagramm "Anwendungsfälle".
 {{< figure src="/src/UseCaseECLogPlay.png" title="Anwendungsfälle" >}}
 
+{{< figure src="/src/ElementsECLogicPlay.png" class="myimg" title="Elements" >}}
+
 Die Architektur wird also einen Funktionsblock haben, der Rollen beschreibt, die im Spiel die Handlung bestreiten. Eine Simulation kümmert sich um die Weltentwicklung. Das macht diese, indem unter Anwendung bestimmter Regeln aus einem Zustand der Spielewelt der nächste Zustand bestimmt wird. Im Block Skript steckt die Realisierung des Handlungsbogens, der von den Autoren bestimmt wird. Das besondere aber ist, dass die Autoren auch Teil der Spielewelt sind, also einfach mitspielen. Über die Persistenz werden Spielstände und Charakterstände und ggf. andere Dinge wie User Daten gespeichert.
 
-{{< figure src="/src/ElementsECLogicPlay.png" class="myimg" title="Elements" >}}
+
 
 ### Projektrealisierung
 
