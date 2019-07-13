@@ -1,0 +1,8 @@
+@startuml
+
+Rules -- Simulator
+Simulator -- Roles
+Simulator -- Persistence
+Roles -- Persistence
+
+@enduml
