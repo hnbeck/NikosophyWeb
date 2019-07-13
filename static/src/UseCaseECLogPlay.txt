@@ -1,0 +1,8 @@
+@startuml
+
+left to right direction
+:Spieler: --> (Rolle aussuchen)
+:Spieler: --> (Spielen)
+:Autor: --> (Handlung spielen)
+
+@enduml
