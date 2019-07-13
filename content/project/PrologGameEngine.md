@@ -42,17 +42,25 @@ Die ECLogicPlay ist gedacht für Abenteuerspiele oder Rollenspiele, da das Gesch
 * In der ersten Version wird das Spiel evtl. als Textadventure gestaltet
 
 Die Bedeutung der Akteure ergibt sich aus dem Diagramm "Anwendungsfälle".
-{{< figure src="/src/UseCaseECLogPlay.png" title="Anwendungsfälle" >}}
+{{< figure src="/src/UseCaseECLogPlay.png" title="Use Cases" >}}
 
 {{< figure src="/src/ElementsECLogicPlay.png" class="myimg" title="Elements" >}}
 
-Die Architektur wird also einen Funktionsblock haben, der Rollen beschreibt, die im Spiel die Handlung bestreiten. Eine Simulation kümmert sich um die Weltentwicklung. Das macht diese, indem unter Anwendung bestimmter Regeln aus einem Zustand der Spielewelt der nächste Zustand bestimmt wird. Im Block Skript steckt die Realisierung des Handlungsbogens, der von den Autoren bestimmt wird. Das besondere aber ist, dass die Autoren auch Teil der Spielewelt sind, also einfach mitspielen. Über die Persistenz werden Spielstände und Charakterstände und ggf. andere Dinge wie User Daten gespeichert.
-
+Die Architektur (vgl. Diagramm "Elements") wird also einen Funktionsblock haben, der Rollen beschreibt, die im Spiel die Handlung bestreiten. Eine Simulation kümmert sich um die Weltentwicklung. Das macht diese, indem unter Anwendung bestimmter Regeln aus einem Zustand der Spielewelt der nächste Zustand bestimmt wird. Im Block Skript steckt die Realisierung des Handlungsbogens, der von den Autoren bestimmt wird. Das besondere aber ist, dass die Autoren auch Teil der Spielewelt sind, also einfach mitspielen. Über die Persistenz werden Spielstände und Charakterstände und ggf. andere Dinge wie User Daten gespeichert.
 
 
 ### Projektrealisierung
 
 Der Sourcecode ist [hier](https://github.com/hnbeck/ECToBeTerraner.git) in GitHub verfügbar. Anforderungen und Userstories bzw. weitere Informationen werden im GitHub Projekt [ECToBeTerranerRQ](https://github.com/hnbeck/ECToBeTerranerRQ). Implementiert wird in [SWI-Prolog](http://www.swi-prolog.org), der JavaScript Teil wird evtl. über [P5.js](https://p5js.org/) realisiert. Aber das ist noch nicht entschieden. Mit der Sprache [Processing](http://www.processing.org), dem "Mutterprojekt" von P5.js habe ich schon Erfahrungen gesammelt. Daher liegt es nahe, damit zu beginnen.
+
+Mit der Zuordnung 
+
+UI - JavaScript
+alle anderen Elemente - Prolog
+
+ergibt sich folgendes Verteilungsdiagramm. SWI Prolog hat auch einen Webserver, so dass Prolog die HTTP Schnittstelle direkt implementieren kann.
+
+{{< figure src="/src/DeployECLogPlay.png" title="Use Cases" >}}
 
 ### Entwicklungsschritte:
 
