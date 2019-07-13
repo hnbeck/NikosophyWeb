@@ -37,12 +37,14 @@ Die ECLogicPlay ist gedacht für Abenteuerspiele oder Rollenspiele, da das Gesch
 
 *  Multiplayerfähig, wenn auch nicht in der ersten Version
 *  Abenteuerspiel im SF Kontext
-*  Es soll Rollen geben mit unterschiedlicher Handlungsbreite: Spieler und erzählende Spieler
+*  Es soll Rollen geben mit unterschiedlicher Handlungsbreite: Spieler und erzählende Spieler (Autoren)
 *  Browserspiel, d.h. Prolog läuft auf dem Server, die Interaktion mit dem Spieler erfolgt über JavaScript im Browser
 * Persistenz wird über Prolog in RDF gelöst.
 * In der ersten Version wird das Spiel evtl. als Textadventure gestaltet
 
-Die Bedeutung der Akteure ergibt sich aus dem Diagramm "Anwendungsfälle"
+Die Bedeutung der Akteure ergibt sich aus dem Diagramm "Anwendungsfälle" 
+{{< figure src="/src/UseCaseECLogicPlay.png" title="Elements" >}}
+
 ### Projektrealisierung
 
 Der Sourcecode ist [hier](https://github.com/hnbeck/ECToBeTerraner.git) in GitHub verfügbar. Anforderungen und Userstories bzw. weitere Informationen werden im GitHub Projekt [ECToBeTerranerRQ](https://github.com/hnbeck/ECToBeTerranerRQ). Implementiert wird in [SWI-Prolog](http://www.swi-prolog.org), der JavaScript Teil wird evtl. über [P5.js](https://p5js.org/) realisiert. Aber das ist noch nicht entschieden. Mit der Sprache [Processing](http://www.processing.org), dem "Mutterprojekt" von P5.js habe ich schon Erfahrungen gesammelt. Daher liegt es nahe, damit zu beginnen.
