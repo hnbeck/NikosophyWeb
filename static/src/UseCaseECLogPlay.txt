@@ -3,6 +3,7 @@
 left to right direction
 :Spieler: --> (Rolle aussuchen)
 :Spieler: --> (Spielen)
-:Autor: --> (Handlung spielen)
+:Autor: --> (Skript vorgeben)
+:Autor: --> (Spielen)
 
 @enduml

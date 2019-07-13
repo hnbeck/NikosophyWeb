@@ -31,9 +31,8 @@ Als Experiment soll es zwar ein spielbares Spiel werden, aber nicht mit fortgesc
 
 ### Grundsätzliche Entscheidungen
 
-Die ECLogicPlay ist gedacht für Abenteuerspiele oder Rollenspiele, da das Geschichten erzählen für mich ein wesentlicher Punkt von Spielen ist. Die Grafik steht sm Anfang nicht im Vordergrund, denn es geht zunächst um einen Technikprototyp. Das Spiel soll folgende Eigenschaften haben: 
+Die ECLogicPlay ist gedacht für Abenteuerspiele oder Rollenspiele, da das Geschichten erzählen für mich ein wesentlicher Punkt von Spielen ist. Die Grafik steht am Anfang nicht im Vordergrund, denn es geht zunächst um einen Technikprototyp. Das Spiel soll folgende Eigenschaften haben: 
 
-{{< figure src="/src/ElementsECLogicPlay.png" class="myimg" title="Elements" >}}
 
 *  Multiplayerfähig, wenn auch nicht in der ersten Version
 *  Abenteuerspiel im SF Kontext
@@ -42,8 +41,12 @@ Die ECLogicPlay ist gedacht für Abenteuerspiele oder Rollenspiele, da das Gesch
 * Persistenz wird über Prolog in RDF gelöst.
 * In der ersten Version wird das Spiel evtl. als Textadventure gestaltet
 
-Die Bedeutung der Akteure ergibt sich aus dem Diagramm "Anwendungsfälle" 
-{{< figure src="/src/UseCaseECLogicPlay.png" title="Elements" >}}
+Die Bedeutung der Akteure ergibt sich aus dem Diagramm "Anwendungsfälle".
+{{< figure src="/src/UseCaseECLogPlay.png" title="Anwendungsfälle" >}}
+
+Die Architektur wird also einen Funktionsblock haben, der Rollen beschreibt, die im Spiel die Handlung bestreiten. Eine Simulation kümmert sich um die Weltentwicklung. Das macht diese, indem unter Anwendung bestimmter Regeln aus einem Zustand der Spielewelt der nächste Zustand bestimmt wird. Im Block Skript steckt die Realisierung des Handlungsbogens, der von den Autoren bestimmt wird. Das besondere aber ist, dass die Autoren auch Teil der Spielewelt sind, also einfach mitspielen. Über die Persistenz werden Spielstände und Charakterstände und ggf. andere Dinge wie User Daten gespeichert.
+
+{{< figure src="/src/ElementsECLogicPlay.png" class="myimg" title="Elements" >}}
 
 ### Projektrealisierung
 

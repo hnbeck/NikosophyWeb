@@ -4,5 +4,6 @@ Rules -- Simulator
 Simulator -- Roles
 Simulator -- Persistence
 Roles -- Persistence
+Script -- Roles
 
 @enduml
