@@ -46,7 +46,16 @@ The meaning of the actors or roles can be seen in diagram "Use Cases"
 
 {{< figure src="/src/ElementsECLogicPlay.png" class="myimg" title="Elements" >}}
 
-The architecture (see diagram "Elements") will contain a block controling the roles acting in the game. There is a simulation computing the development of the world. Thats done by applying rules to the current state of the world, which results in the next state. The Block Script includes the computation of the overall story line, which is influenced by the autors. It is a special property in this approach that the autors are common players too, they playing the game like all others. To save game state, character data and other things is task of the Persistence.
+The architecture (see diagram "Elements") will contain a block controling the roles acting in the game. There is a simulation computing the development of the world. Thats done by applying rules to the current state of the world, which results in the next state. The Block Script includes the computation of the overall story line, which is influenced by the autors. To save game state, character data and other things is task of the Persistence.
+
+The approach has some special properties:
+
+
+Der Ansatz hat dabei zwei Besonderheiten: 
+
+1.  The autors prescribe the story of the game world. By defining events or important roles have big effect radius they writing the story of the world. They do this by defining behaviour rules of this important roles and events for a fix interval of the future of the game. This is in fact the script.
+2.  The autors are games as all others, they play the game and can log in or log off like all others.
+
 
 ### Realization
 

@@ -46,7 +46,12 @@ Die Bedeutung der Akteure ergibt sich aus dem Diagramm "Anwendungsfälle".
 
 {{< figure src="/src/ElementsECLogicPlay.png" class="myimg" title="Elements" >}}
 
-Die Architektur (vgl. Diagramm "Elements") wird also einen Funktionsblock haben, der Rollen beschreibt, die im Spiel die Handlung bestreiten. Eine Simulation kümmert sich um die Weltentwicklung. Das macht diese, indem unter Anwendung bestimmter Regeln aus einem Zustand der Spielewelt der nächste Zustand bestimmt wird. Im Block Skript steckt die Realisierung des Handlungsbogens, der von den Autoren bestimmt wird. Das besondere aber ist, dass die Autoren auch Teil der Spielewelt sind, also einfach mitspielen. Über die Persistenz werden Spielstände und Charakterstände und ggf. andere Dinge wie User Daten gespeichert.
+Die Architektur (vgl. Diagramm "Elements") wird also einen Funktionsblock haben der Rollen beschreibt, die im Spiel die Handlung bestreiten. Eine Simulation kümmert sich um die Weltentwicklung. Das macht diese, indem unter Anwendung bestimmter Regeln aus einem Zustand der Spielewelt der nächste Zustand bestimmt wird. Im Block "Script" steckt die Realisierung des Handlungsbogens, der von den Autoren bestimmt wird. Über die Persistenz werden Spielstände und Charakterstände und ggf. andere Dinge wie User Daten gespeichert.
+
+Der Ansatz hat dabei zwei Besonderheiten: 
+
+1.  Die Autoren geben über die Skripte den Handlungsbogen der Spielwelt vor. Über Ereignisse oder Verhalten von einflussreichen Rollen bestimmten sie das Weltgeschehen. Sie tun das, indem sie Ereignisse oder spezielle Verhaltensregeln für spezielle Rollen über einen Spielzeitraum festlegen, das Skript
+2.  Die Autoren sind aber dennoch normale Spieler, nehmen also am Spielgeschehen Teil wie alle anderen.
 
 
 ### Projektrealisierung
