@@ -130,7 +130,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "//twitter.com/EnrichedGamesHB"
+    link = "http://twitter.com/EnrichedGamesHB"
 
    [[params.social]]
     icon = "linkedin"
@@ -167,12 +167,12 @@ defaultContentLanguageInSubdir = false
 [languages]
   [languages.en]
     languageCode = "en-us"
-    title = "Play and Learn"
+    title = "Play and telling"
     languageName = "flag-uk.png"
    
   [languages.de]
     languageCode = "de-de"
-    title = "Spiel und Lernen"
+    title = "Spiel und Erzählen"
     languageName = "flag-de.png"
     
   [[languages.de.menu.main]]
