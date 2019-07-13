@@ -50,10 +50,7 @@ The architecture (see diagram "Elements") will contain a block controling the ro
 
 The approach has some special properties:
 
-
-Der Ansatz hat dabei zwei Besonderheiten: 
-
-1.  The autors prescribe the story of the game world. By defining events or important roles have big effect radius they writing the story of the world. They do this by defining behaviour rules of this important roles and events for a fix interval of the future of the game. This is in fact the script.
+1.  The autors prescribe the story of the game world. They do this by defining behaviour rules of  important roles and events for a interval of time in the future of the game. This is called the script. Important roles can be leaders, commanders or other persons with big effect.
 2.  The autors are games as all others, they play the game and can log in or log off like all others.
 
 

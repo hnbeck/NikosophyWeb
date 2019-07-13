@@ -50,7 +50,7 @@ Die Architektur (vgl. Diagramm "Elements") wird also einen Funktionsblock haben 
 
 Der Ansatz hat dabei zwei Besonderheiten: 
 
-1.  Die Autoren geben über die Skripte den Handlungsbogen der Spielwelt vor. Über Ereignisse oder Verhalten von einflussreichen Rollen bestimmten sie das Weltgeschehen. Sie tun das, indem sie Ereignisse oder spezielle Verhaltensregeln für spezielle Rollen über einen Spielzeitraum festlegen, das Skript
+1.  Die Autoren geben über die Skripte den Handlungsbogen der Spielwelt vor. Sie tun das, indem sie Ereignisse oder Verhaltensregeln für spezielle Rollen über einen Spielzeitraum in der Zukunft des Spiels festlegen, das sogennante Skript. Spezielle Rollen sind Führer, Völker oder andere Rollen mit grossem Wirkradius.
 2.  Die Autoren sind aber dennoch normale Spieler, nehmen also am Spielgeschehen Teil wie alle anderen.
 
 
