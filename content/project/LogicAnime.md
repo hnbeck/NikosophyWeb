@@ -10,7 +10,7 @@ title = "ECLogicAnime"
 src = ""
 
 [header]
-  caption = "(c) Hans N. Beck)"
+  caption = "(c) Hans N. Beck"
   image = "meer.jpg"
 
 +++
@@ -26,7 +26,7 @@ Hier stecken noch einige theoretische BonBons, die in einem Blog Post näher bet
 
 ### Grundsätzliche Entscheidungen
 
-Natürlich geht es um Prolog. Der Teil, der das Skript entgegen nimmt, ist also Prolog. Das Rendering übernimmt im ersten Schritt Processing. Das kenne ich, und es ist recht einfach im Verhältnis zu Unity oder Unreal. 
+Natürlich geht es um Prolog. Der Teil, der das Skript entgegen nimmt, ist also Prolog. Das Rendering übernimmt im ersten Schritt Processing. Das habe ich schon benutzt, und es erscheint mir recht einfach im Verhältnis zu [Unity](https://unity3d.com/de/unity) oder [Unreal](https://www.unrealengine.com/en-US/). 
 
 Das Diagramm "Use Cases" veranschaulicht, was damit gemacht werden soll:
 {{< figure src="/src/UseCaseECLogAnime.png" title="Use Cases" >}}
@@ -34,12 +34,19 @@ Das Diagramm "Use Cases" veranschaulicht, was damit gemacht werden soll:
 Einige wenige Elemente bestreiten die Verarbeitunggskette:
 {{< figure src="/src/ElementsECLogAnime.png" title="Elements" >}}
 
+### Besondere Fragestellungen
+
+Die zentrale Frage ist, wie man Processing die Szene beschreibt, was gerendert werden soll. Es könnte ein Processing Programm sein, es könnte aber auch eine Variante eines Scene Graph sein, der von Processing interpretiert wird. Generell bin ich ein Freund von Programmen, die Programme schreiben. Man denke da an diverse fortgeschrittene Beispiele der LISP und Prolog Welt. Würde man das tun, müsste man die deklarative Beschreibung von Prolog umsetzen in eine objektbezogene Welt des Processing rendering.
+
+In der Alternative würde ein Scene Graph direkt das deklarative des Prolog abbilden, dann müsste Processing die Umsetzungsarbeit deklarativ zu dynamisch leisten. Was besser ist wird wohl nur durch ausprobieren geklärt werden können.
 
 ### Projektrealisierung
 
 Der Sourcecode ist [hier](https://github.com/hnbeck/ECLogicAnime.git) in GitHub verfügbar. Anforderungen und Userstories bzw. weitere Informationen werden im Unterordner "RQ" gesammelt. Implementiert wird in [SWI-Prolog](http://www.swi-prolog.org) und  [Processing](https://processing.org/) realisiert. Processing kann derzeit nur Quicktime Filme renderen, daher ist evtl. noch ein Tools für die Umsetzung in mp4 oder ander Formate nötig.
 
-{{< figure src="/src/DeployECLogPlay.png" title="Use Cases" >}}
+Alles läuft zunächst auf einem Desktop Computer und tauscht die Informationen ASCII basiert aus:
+
+{{< figure src="/src/DeployECLogAnime.png" title="Use Cases" >}}
 
 ### Entwicklungsschritte:
 
