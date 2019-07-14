@@ -45,7 +45,7 @@ In der Alternative würde ein Scene Graph direkt das deklarative des Prolog abbi
 
 ### Projektrealisierung
 
-Der Sourcecode ist [hier](https://github.com/hnbeck/ECLogicAnime.git) in GitHub verfügbar. Anforderungen und Userstories bzw. weitere Informationen werden im Unterordner "RQ" gesammelt. Implementiert wird in [SWI-Prolog](http://www.swi-prolog.org) und  [Processing](https://processing.org/) realisiert. Processing kann derzeit nur Quicktime Filme renderen, daher ist evtl. noch ein Tools für die Umsetzung in mp4 oder ander Formate nötig.
+Der Sourcecode wird [hier](https://github.com/hnbeck/ECLogicAnime.git) in GitHub verfügbar sein. Anforderungen und Userstories bzw. weitere Informationen werden im Unterordner "RQ" gesammelt. Implementiert wird in [SWI-Prolog](http://www.swi-prolog.org) und  [Processing](https://processing.org/) realisiert. Processing kann derzeit nur Quicktime Filme renderen, daher ist evtl. noch ein Tools für die Umsetzung in mp4 oder ander Formate nötig.
 
 Alles läuft zunächst auf einem Desktop Computer und tauscht die Informationen ASCII basiert aus:
 
