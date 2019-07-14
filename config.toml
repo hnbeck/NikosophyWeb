@@ -1,5 +1,5 @@
 baseurl = "/"
-title = "Spiel und Erzählen"
+title = "Spiel und Erzählung"
 copyright = "&copy; 2017, 2018, 2019 Hans N. Beck"
 theme = "academic"
 enableEmoji = true
@@ -167,12 +167,12 @@ defaultContentLanguageInSubdir = false
 [languages]
   [languages.en]
     languageCode = "en-us"
-    title = "Play and telling"
+    title = "Play and tale"
     languageName = "flag-uk.png"
    
   [languages.de]
     languageCode = "de-de"
-    title = "Spiel und Erzählen"
+    title = "Spiel und Erzählung"
     languageName = "flag-de.png"
     
   [[languages.de.menu.main]]

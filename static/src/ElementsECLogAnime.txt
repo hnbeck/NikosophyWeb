@@ -1,0 +1,12 @@
+@startuml
+
+class "Script parser" as classP
+class "Scene descriptor" as classD
+class "Renderer" as classR
+class "Movie builder" as classM
+
+classP -> classD
+classD -> classR
+classR -> classM
+
+@enduml
