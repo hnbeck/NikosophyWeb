@@ -15,7 +15,7 @@ weight = 70
 autolink = true
 
 law = "Alle Angaben gemäß §5 Telemediengesetz"
-services = "Autorentätigkeit von Texten und Konzepten im Bereich Computerspiele und Lernen"
+services = "Autorentätigkeit von Texten und Konzepten im Bereich Philosophie und Spiele"
 responsible = "Hans N. Beck"
 owner = "Dipl.-Ing. Hans N. Beck"
 beruf = "Dipl.-Ing. Elektrotechnik (TH)"
@@ -70,9 +70,9 @@ Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten 
 #### 2. Name und Anschrift des für die Verarbeitung Verantwortlichen
 Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:
 
-Educational Concepts Hans Beck  
-Zabergäustr. 3  
-74172 Neckarsulm  
+Educational Concepts Hans N. Beck  
+Waghäuseler Str. 119  
+68753 Waghäusel
 Deutschland  
 Tel.: +4915158744954  
 E-Mail: hnbeck@educational-concepts.biz  

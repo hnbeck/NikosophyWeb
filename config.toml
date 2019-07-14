@@ -1,5 +1,5 @@
 baseurl = "/"
-title = "Spiel und Lernen"
+title = "Spiel und Erzählung"
 copyright = "&copy; 2017, 2018, 2019 Hans N. Beck"
 theme = "academic"
 enableEmoji = true
@@ -130,7 +130,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "//twitter.com/EnrichedGamesHB"
+    link = "https://twitter.com/EnrichedGamesHB"
 
    [[params.social]]
     icon = "linkedin"
@@ -167,12 +167,12 @@ defaultContentLanguageInSubdir = false
 [languages]
   [languages.en]
     languageCode = "en-us"
-    title = "Play and Learn"
+    title = "Play and tale"
     languageName = "flag-uk.png"
    
   [languages.de]
     languageCode = "de-de"
-    title = "Spiel und Lernen"
+    title = "Spiel und Erzählung"
     languageName = "flag-de.png"
     
   [[languages.de.menu.main]]

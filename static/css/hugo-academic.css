@@ -126,6 +126,11 @@ video {
   display: block;
 }
 
+figure.myimg {
+  float: right;
+  margin: 10px;
+}
+
 .img-responsive {
   /* Extend Bootstrap declaration with centering. */
   margin: 0 auto;
@@ -134,7 +139,7 @@ video {
 }
 
 figcaption:before {
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   content: "Figure " counter(captions) ": ";
 }
@@ -727,7 +732,7 @@ article {
   opacity: 0;
   transition: all 0.2s ease-out;
   font-family: 'Oswald';
-  content: 'Play \f0c1';
+  content: 'Continue \f0c1';
   text-align: center;
   font-size: 3rem;
   color: #666;

@@ -1,0 +1,13 @@
+@startuml
+
+
+node Desktop {
+	() "Script Textfile" as int1
+	() "Scene description textfile" as int2
+
+	int1 - [Prolog]
+	int2 - [Prolog]
+	[Processing] ..> int2 : use
+}
+
+@enduml

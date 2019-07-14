@@ -15,7 +15,7 @@ weight = 70
 autolink = true
 
 law = "Alle Angaben gemäß §5 Telemediengesetz"
-services = "Writing and designing texts and concepts related to learning with games"
+services = "Writing and designing texts and concepts related to philosophy and games"
 responsible = "Hans N. Beck"
 owner = "Dipl.-Ing. Hans N. Beck"
 beruf = "Dipl.-Ing. Elektrotechnik (TH)"
@@ -69,8 +69,8 @@ Consent of the data subject is any freely given, specific, informed and unambigu
 Controller for the purposes of the General Data Protection Regulation (GDPR), other data protection laws applicable in Member states of the European Union and other provisions related to data protection is: 
 
 Educational Concepts Hans Beck  
-Zabergäustr. 3  
-74172 Neckarsulm  
+Waghäuseler Str. 119
+68753 Waghäusel 
 Deutschland  
 Phone: +49 151 58744954  
 Email: hnbeck@educational-concepts.biz  

@@ -1,0 +1,14 @@
+@startuml
+
+node Server {
+	Database RDF 
+	HTTP - [Prolog]
+	RDF -- Prolog
+}
+
+node Browser {
+	[JavaScript] ..> HTTP : use
+
+}
+
+@enduml

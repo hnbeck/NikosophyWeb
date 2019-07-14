@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+:Autor: --> (Skript writing)
+:Autor: --> (Take animation)
+:System: -->(rendering)
+(Take animation) .> (rendering) : include
+
+@enduml

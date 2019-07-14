@@ -44,5 +44,5 @@ weight = 1
 
 ## Mission and Vision
 
-Erzählen und Spielen sind die Grundpfeiler meiner Arbeit. Erzählen ist mein Medium, um Wissen und Gedanken zu entwickeln und weiterzugeben. Auch Spiele können Wissen vermitteln. Aber Spiele sind auch ein Modell der Welt. Spielregeln zu entwerfen bedeutet, Welt und Entwicklungen zu modellieren. Genau betrachtet ist Spielen eine Art Geschichtenezählung, die mehrere Geschichten gleichzeitig entfaltet. Beides, Erzählen wie Spielen, steht unter der Frage "Was wäre, wenn..." mit dem Intention, zu gestaletn.
+Erzählen und Spielen sind die Grundpfeiler meiner Arbeit. Erzählen ist mein Medium, um Wissen und Gedanken zu entwickeln und weiterzugeben. Auch Spiele können Wissen vermitteln. Darüber hinaus sind Spiele ein Modell der Welt. Spielregeln zu entwerfen bedeutet, Welt und Entwicklungen zu modellieren. Genau betrachtet ist Spielen eine Art Geschichtenezählung, die mehrere Geschichten gleichzeitig entfaltet. Beides, Erzählen wie Spielen, steht unter der Frage "Was wäre, wenn..." mit dem Intention, zu gestalten.
 
