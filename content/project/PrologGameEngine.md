@@ -29,6 +29,7 @@ Es reizt also, diese Dinge im Spielekontext auszuprobieren. Wenn ein funktionere
 
 Als Experiment soll es zwar ein spielbares Spiel werden, aber nicht mit fortgeschrittenen Indie-Spielen oder gar kommerziellen Titel konkurrieren. 
 
+
 ### Grundsätzliche Entscheidungen
 
 Die ECLogicPlay ist gedacht für Abenteuerspiele oder Rollenspiele, da das Geschichten erzählen für mich ein wesentlicher Punkt von Spielen ist. Die Grafik steht am Anfang nicht im Vordergrund, denn es geht zunächst um einen Technikprototyp. Das Spiel soll folgende Eigenschaften haben: 
@@ -66,6 +67,7 @@ Mit der Zuordnung
 ergibt sich folgendes Verteilungsdiagramm. SWI Prolog hat auch einen Webserver, so dass Prolog die HTTP Schnittstelle direkt implementieren kann.
 
 {{< figure src="/src/DeployECLogPlay.png" title="Use Cases" >}}
+
 
 ### Entwicklungsschritte:
 

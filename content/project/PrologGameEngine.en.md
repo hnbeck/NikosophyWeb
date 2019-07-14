@@ -29,6 +29,7 @@ So it seems valuable to try out this things for gaming. If a working prototype c
 
 Despite beeing a experiment it shall be a playful game. It should not be seen as a competitor to good Indie games or commercial games, of course.
 
+
 ### Initial decisions
 
 The ECLogicPlay is intended for building adventure games or role playing games. This reason is that telling stories is an important and ground theme of games I deal with. Graphics is not the first part as this project want to build a prototype. The resulting game shall have this properties:
@@ -66,6 +67,7 @@ With the mapping
 the following deployment diagram can be drawn. SWI Prolog has a built-in predicates for creating a web server. In this way Prolog can implement HTTP directly. 
 
 {{< figure src="/src/DeployECLogPlay.png" title="Use Cases" >}}
+
 
 ### Roadmap:
 

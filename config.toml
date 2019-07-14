@@ -130,7 +130,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "http://twitter.com/EnrichedGamesHB"
+    link = "https://twitter.com/EnrichedGamesHB"
 
    [[params.social]]
     icon = "linkedin"

@@ -14,6 +14,7 @@ src = ""
   image = "meer.jpg"
 
 +++
+
 ### Ziel und Motivation
 
 Prolog hat eine deklarative Natur. Man beschreibt damit Strukturen. Aber wie verbindet man dies mit Bewegung und animierter Grafik? Aus dieser Frage ist dieses Projekt geboren. Hier soll ein Weg gefunden werden, mittels Prolog eine Animation zu beschreiben, ähnlich einem Drehbuch oder Story Board im Film. 
@@ -34,11 +35,13 @@ Das Diagramm "Use Cases" veranschaulicht, was damit gemacht werden soll:
 Einige wenige Elemente bestreiten die Verarbeitunggskette:
 {{< figure src="/src/ElementsECLogAnime.png" title="Elements" >}}
 
+
 ### Besondere Fragestellungen
 
 Die zentrale Frage ist, wie man Processing die Szene beschreibt, was gerendert werden soll. Es könnte ein Processing Programm sein, es könnte aber auch eine Variante eines Scene Graph sein, der von Processing interpretiert wird. Generell bin ich ein Freund von Programmen, die Programme schreiben. Man denke da an diverse fortgeschrittene Beispiele der LISP und Prolog Welt. Würde man das tun, müsste man die deklarative Beschreibung von Prolog umsetzen in eine objektbezogene Welt des Processing rendering.
 
-In der Alternative würde ein Scene Graph direkt das deklarative des Prolog abbilden, dann müsste Processing die Umsetzungsarbeit deklarativ zu dynamisch leisten. Was besser ist wird wohl nur durch ausprobieren geklärt werden können.
+In der Alternative würde ein Scene Graph direkt das deklarative des Prolog abbilden, dann müsste Processing die Umsetzungsarbeit deklarativ - dynamisch leisten. Was besser ist wird wohl nur durch ausprobieren geklärt werden können.
+
 
 ### Projektrealisierung
 
@@ -47,6 +50,7 @@ Der Sourcecode ist [hier](https://github.com/hnbeck/ECLogicAnime.git) in GitHub 
 Alles läuft zunächst auf einem Desktop Computer und tauscht die Informationen ASCII basiert aus:
 
 {{< figure src="/src/DeployECLogAnime.png" title="Use Cases" >}}
+
 
 ### Entwicklungsschritte:
 
