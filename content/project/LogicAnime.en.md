@@ -19,9 +19,9 @@ src = ""
 Prolog has a declarative nature. You use it for describing structures. But how can this be combined with action and animated graphics? Starting from this question I startet this project. It is intended to find a way how to describe animations with Prolog like a story board describe a movie.
 Far less important would be the goal to write another animation tool. There are plenty of goods ones. 
 
-The workflow should be like this: write a scene as a text, send this text to the render tool. This renders the animation and builds from this a movie, which the user now can integrate into its Powerpoint presentation.
+The workflow should be like this: write a scene as a text, send this text to the render tool. This renders the animation and builds from this a movie, which the user now can integrate into its PowerPoint presentation.
 
-The idea popped in my mind when I created a Powerpoint presentation which should explain something. It would be nice - so my thought - if I clould quickly create a small animation like these which every commercial today throws onto our eyes.
+The idea popped in my mind when I created a presentation which should explain something. It would be nice - so my thought - if I clould quickly create a small animation like these which every commercial today throws onto our eyes.
 
 There are some interesting theoretics goodies, which I want to look at in a special blog post.
 
@@ -46,7 +46,7 @@ As alternative, using a scene graph would be fit perfectly to the declarative na
 
 ### Realization
 
-Der Sourcecode will be [here](https://github.com/hnbeck/ECLogicAnime.git) in GitHub available. Requirements and user stories as well as more informationen werden will be collected in the  "RQ" directory. Implementation will be done in [SWI-Prolog](http://www.swi-prolog.org) and  [Processing](https://processing.org/). Processing can only produce Quicktime movies which may require to take an additional tool for producing mp4 or other formats. 
+Der Sourcecode will be [here](https://github.com/hnbeck/ECLogicAnime.git) in GitHub available. Requirements and user stories as well as more informationen werden will be collected in the  "RQ" directory. Implementation will be done in [SWI-Prolog](http://www.swi-prolog.org) and  [Processing](https://processing.org/). Processing can only produce QuickTime movies which may require to take an additional tool for producing mp4 or other formats. 
 
 Everything runs first on a desktop and exchange information in ASCII format:
 

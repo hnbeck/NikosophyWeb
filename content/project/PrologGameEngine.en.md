@@ -57,7 +57,7 @@ The approach has some special properties:
 
 ### Realization
 
-The source code is [here](https://github.com/hnbeck/ECToBeTerraner.git) in GitHub available. Requirements and Userstories and other informations will be stored in the GitHub project [ECToBeTerranerRQ](https://github.com/hnbeck/ECToBeTerranerRQ). Implementation will be done  in [SWI-Prolog](http://www.swi-prolog.org), the JavaScript part may be coded in [P5.js](https://p5js.org/). But there is no final decision yet. I personally have experience with the "mother project" [Processing](http://www.processing.org), of P5.js. Therefore beginning with this may a good start.
+The source code will be [here](https://github.com/hnbeck/ECToBeTerraner.git) in GitHub available. Requirements and Userstories and other informations will be stored in the GitHub project [ECToBeTerranerRQ](https://github.com/hnbeck/ECToBeTerranerRQ). Implementation will be done  in [SWI-Prolog](http://www.swi-prolog.org), the JavaScript part may be coded in [P5.js](https://p5js.org/). But there is no final decision yet. I personally have experience with the "mother project" [Processing](http://www.processing.org), of P5.js. Therefore beginning with this may a good start.
 
 With the mapping
 

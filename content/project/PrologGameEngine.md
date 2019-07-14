@@ -57,7 +57,7 @@ Der Ansatz hat dabei zwei Besonderheiten:
 
 ### Projektrealisierung
 
-Der Sourcecode ist [hier](https://github.com/hnbeck/ECToBeTerraner.git) in GitHub verfügbar. Anforderungen und Userstories bzw. weitere Informationen werden im GitHub Projekt [ECToBeTerranerRQ](https://github.com/hnbeck/ECToBeTerranerRQ). Implementiert wird in [SWI-Prolog](http://www.swi-prolog.org), der JavaScript Teil wird evtl. über [P5.js](https://p5js.org/) realisiert. Aber das ist noch nicht entschieden. Mit der Sprache [Processing](http://www.processing.org), dem "Mutterprojekt" von P5.js, habe ich schon Erfahrungen gesammelt. Daher liegt es nahe, damit zu beginnen.
+Der Sourcecode wird [hier](https://github.com/hnbeck/ECToBeTerraner.git) in GitHub verfügbar sein. Anforderungen und Userstories bzw. weitere Informationen werden im GitHub Projekt [ECToBeTerranerRQ](https://github.com/hnbeck/ECToBeTerranerRQ). Implementiert wird in [SWI-Prolog](http://www.swi-prolog.org), der JavaScript Teil wird evtl. über [P5.js](https://p5js.org/) realisiert. Aber das ist noch nicht entschieden. Mit der Sprache [Processing](http://www.processing.org), dem "Mutterprojekt" von P5.js, habe ich schon Erfahrungen gesammelt. Daher liegt es nahe, damit zu beginnen.
 
 Mit der Zuordnung 
 
