@@ -10,7 +10,7 @@ title = "ECLogicAnime"
 src = ""
 
 [header]
-  caption = "(c) Hans N. Beck)"
+  caption = "(c) Hans N. Beck"
   image = "meer.jpg"
 
 +++
