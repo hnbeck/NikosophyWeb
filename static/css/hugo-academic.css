@@ -732,7 +732,7 @@ article {
   opacity: 0;
   transition: all 0.2s ease-out;
   font-family: 'Oswald';
-  content: 'Play \f0c1';
+  content: 'Continue \f0c1';
   text-align: center;
   font-size: 3rem;
   color: #666;
