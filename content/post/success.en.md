@@ -2,12 +2,12 @@
 tags = ["Sonstiges"]
 highlight = true
 math = false
-date = "2019-07-22"
+date = "2017-04-14T21:19:52+01:00"
 title = "Der Anfang"
 
 [header]
   caption = "(c) Hans N. Beck"
-  image = "obstteller.jpg"
+  image = "KranRot.jpg"
 
 +++
 

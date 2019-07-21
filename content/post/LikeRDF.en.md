@@ -7,7 +7,7 @@ title = "Why I like RDF"
 
 [header]
   caption = "(c) Hans N. Beck"
-  image = "obstteller.jpg"
+  image = "KranRot.jpg"
 
 +++
 
@@ -25,7 +25,15 @@ is behind of that simple term "persistence". A lot of theory and structures were
 +  Jeffrey D. Ullman [Principles of Database & Knowledge-Base Systems](https://www.amazon.com/dp/0716781581/ref=cm_sw_r_tw_dp_U_x_0einDbE4CNB3D)
 +  Stefano Ceri, G. Gottlob, L. Tanca [Logic Programming and Databases (Surveys in Computer Science)](https://www.amazon.com/dp/0387517286/ref=cm_sw_r_tw_dp_U_x_wjinDb0788341)
 
-Now, I'm looking for a persistence component for my project [ECLogicPlay](en/project/prologgameengine/) The ECLogicPlay will be implemented in [SWI-Prolog](http://www.swi-prolog.org) which leads to the question how to connect Prolog with a database. Both should have a good relationship to each other, Prolog is about knowledge and query of knowledge, too. Looking at the basics of Prolog, we have klike
+Now, I'm looking for a persistence component for my project [ECLogicPlay](en/project/prologgameengine/) The ECLogicPlay will be implemented in [SWI-Prolog](http://www.swi-prolog.org) which raises 2 questions: 
+
+1.  which kind of database suits to my application
+2.  which kind of database fits to Prolog
+
+
+### considering database types
+
+Prolog should have a good relationship to each other, Prolog is about knowledge and query of knowledge, too. Looking at the basics of Prolog, we have klike
 
     daddy(mike, sahra).
     daddy(mike, john).
@@ -62,4 +70,6 @@ At this point, it is obvious that a decision how to do persistence is influenced
 *  what knowledge shall the data express
 *  how do you process the data, query or counting or visulization or...
 
+
+### considering Prolog
 
