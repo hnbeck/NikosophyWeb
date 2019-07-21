@@ -2,12 +2,12 @@
 tags = ["Sonstiges"]
 highlight = true
 math = false
-date = "2017-04-14T21:19:52+01:00"
+date = "2019-07-22"
 title = "Der Anfang"
 
 [header]
-  caption = "Hans N. Beck"
-  image = "KranRot.jpg"
+  caption = "(c) Hans N. Beck"
+  image = "obstteller.jpg"
 
 +++
 
@@ -21,6 +21,3 @@ We see: storing and accessing data is important, but also processing them like
 +  filter them
 
 is behind of that simple term "persistence". A lot of theory and structures were invented to manage these tasks. Relational databases, object databases, graph databases and more can be found today in the market as well as in the open souce world. Many books are available explaining this topic in detail, for example (thanks to Anne Ogborn for the hint!)
-
-+  Jeffrey D. Ullman [Principles of Database & Knowledge-Base Systems](https://www.amazon.com/dp/0716781581/ref=cm_sw_r_tw_dp_U_x_0einDbE4CNB3D)
-+  Stefano Ceri, G. Gottlob, L. Tanca [Logic Programming and Databases (Surveys in Computer Science)](https://www.amazon.com/dp/0387517286/ref=cm_sw_r_tw_dp_U_x_wjinDb0788341)
