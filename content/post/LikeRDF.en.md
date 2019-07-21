@@ -1,5 +1,5 @@
 +++
-date = "2019-07-22"
+date = 2019-07-22T18:00:00+01:00"
 highlight = true
 math = false
 tags = ["Basics"]
@@ -7,7 +7,7 @@ title = "Why I like RDF"
 
 [header]
   caption = "(c) Hans N. Beck"
-  image = "KranRot.jpg"
+  image = "obstteller.jpg"
 
 +++
 
@@ -27,11 +27,13 @@ is behind of that simple term "persistence". A lot of theory and structures were
 
 Now, I'm looking for a persistence component for my project [ECLogicPlay](en/project/prologgameengine/) The ECLogicPlay will be implemented in [SWI-Prolog](http://www.swi-prolog.org) which raises 2 questions: 
 
-1.  which kind of database suits to my application
-2.  which kind of database fits to Prolog
+1.  database type: which kind of database suits to my application
+2.  Prolog congruency: which kind of database fits to Prolog
 
 
 ### considering database types
+
+Assume we have a table "family" containing the familiy members mike, sahra, john, robert. For evey member, we story data like data of birth, gender and
 
 Prolog should have a good relationship to each other, Prolog is about knowledge and query of knowledge, too. Looking at the basics of Prolog, we have klike
 
