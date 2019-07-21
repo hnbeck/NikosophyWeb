@@ -15,15 +15,15 @@ Persistence is important. Storing and managing data is the big thing shaping our
  
 We see: storing and accessing data is important, but also processing them like
 
-+ counting
-+ associate them
-+ categorize them
-+ filter them
++  counting
++  associate them
++  categorize them
++  filter them
 
-is behind of that simple term "persistence". A lot of theory and structures were invented to manage these tasks. Relational databases, object databases, graph databases and more can be found today in the market as well as in the open souce world. Many books are available explaining this topic in detail, for example (thanks to Annie Ogborne for the hint!)
+is behind of that simple term "persistence". A lot of theory and structures were invented to manage these tasks. Relational databases, object databases, graph databases and more can be found today in the market as well as in the open souce world. Many books are available explaining this topic in detail, for example (thanks to Anne Ogborn for the hint!)
 
-+ Jeffrey D. Ullman [Principles of Database & Knowledge-Base Systems](https://www.amazon.com/dp/0716781581/ref=cm_sw_r_tw_dp_U_x_0einDbE4CNB3D)
-+ Stefano Ceri, G. Gottlob, L. Tanca [Logic Programming and Databases (Surveys in Computer Science)](https://www.amazon.com/dp/0387517286/ref=cm_sw_r_tw_dp_U_x_wjinDb0788341)
++  Jeffrey D. Ullman [Principles of Database & Knowledge-Base Systems](https://www.amazon.com/dp/0716781581/ref=cm_sw_r_tw_dp_U_x_0einDbE4CNB3D)
++  Stefano Ceri, G. Gottlob, L. Tanca [Logic Programming and Databases (Surveys in Computer Science)](https://www.amazon.com/dp/0387517286/ref=cm_sw_r_tw_dp_U_x_wjinDb0788341)
 
 Now, for my project [ECLogicPlay](en/project/prologgameengine/) I need a persistence component. Because the ECLogicPlay will be implemented in [SWI-Prolog](http://www.swi-prolog.org) which leads to the question how to connect Prolog with a database. Both should have a good relationship to each other, Prolog is about knowledge and query of knowledge. This is given in its predicates and forumlas, like
 
@@ -48,7 +48,7 @@ Both techniques associate data by relations. The thinking is in tables.  Now ass
 
 As you can see, not every node has the same relations. To implement this knowledge in tables you would have to introduce many tables with a few data. The knowledge here is not a list of items with fixex relations, it seems more a collection of knowledge as it is to a certain time. If we know something new about Sahra or the dog, it is easily to expand the database by introducing new nodes or relations. 
 
-It is easy to see that this graph could also be modeled in Prolog. Every pair of nodes could be expressed as `provide(john, feed)` or `like(john, dog)` and so on. But you might imagine that the access may take more time because it requires traversing a graph. To overcome this graph DB can use schemas, a describtion of node types and their possible relations.
+It is easy to see that this graph could also be modeled in Prolog. Every pair of nodes could be expressed as 'provide(john, feed)' or 'like(john, dog)' and so on. But you might imagine that the access may take more time because it requires traversing a graph. To overcome this graph DB can use schemas, a describtion of node types and their possible relations.
 
 {{< figure src="/src/rdf.png" title="RDF" >}}
 
