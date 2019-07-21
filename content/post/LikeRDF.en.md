@@ -54,18 +54,11 @@ It is easy to see that this graph could also be modeled in Prolog. Every pair of
 
 {{< figure src="/src/rdf.png" class="myimg" title="RDF" >}}
 
-Here comes RDF onto the scene. RDF expresses its data in triples which are of type subject, predicate and object. This is an elementary scheme matching the way we are defining categories and knowledge. 
-
-At this point, it is obvious that a decision how to do persistence is influenced by
-
-*  is the knowledge in the data fluent 
-*  are there many data of same structure
-*  is fast access of many data an issue
-*  what knowledge shall the data express
-*  how do you process the data, query or counting or visulization or...
+Here comes RDF onto the scene. RDF express its data in triples which are of type subject, predicate and object. This is an elementary scheme matching the way we are defining categories and knowledge. 
 
 
-### considering Prolog
+
+### considering Prolog concurency
 
 Prolog should have a good relationship to each other, Prolog is about knowledge and query of knowledge, too. Looking at the basics of Prolog, we have klike
 
@@ -81,3 +74,14 @@ Prolog should have a good relationship to each other, Prolog is about knowledge 
    A = mike.
 
  Or in SQl, the database query language (assumung there is a table family with columns daddy and child)
+
+
+### selection
+
+At this point, it is obvious that a decision how to do persistence is influenced by
+
+*  is the knowledge in the data fluent 
+*  are there many data of same structure
+*  is fast access of many data an issue
+*  what knowledge shall the data express
+*  how do you process the data, query or counting or visulization or...
