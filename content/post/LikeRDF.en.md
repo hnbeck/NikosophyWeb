@@ -37,18 +37,18 @@ Assume we have a relational database (the widely used type today) and a table "f
 
     SELECT name FROM family WHERE age=16
 
-Let us add a table "parents" containing all parents of a scool class with the column "class", "name", "father", "mother". A teacher might want to know who is the father of John. The problem is, we have to soures or two tables. The one lists families, the other parents. We have to associate both sources, which is can be done like 
+Let us add a table "parents" containing all parents of a scool class with the column "class", "name", "father", "mother". A teacher might want to know who is the father of John. The problem is we have two soures or two tables, respectively. The one lists families, the other parents. We have to associate both sources, which is can be done like 
 
 	SELECT family.name, parents.name FROM parents JOIN family on family.name = parents.name WHERE family.name="John"
 
-Here, the name of the parent is the key to identify which data are associated. The name in the one table has to be the same in the other table to identify the correct row of both tables. Roughly speaken, in a relational database you have data given in a collection of rows. Each row is a sequence of columns. Operating with this data means stripping of columns, insert columns in order to get the row you want. The mechanisms of a relational database provide via SQL cabability to operate on columns. As long as your application as data where the data items have the same structure (the column sequence) everything is perfect.
-   
+Here the name of the parent is the key to identify which data are associated: the name in the one table has to be the same in the other table to identify the correct row of both tables. Roughly speaken, in a relational database you have data given in a collection of rows. Each row is a sequence of columns. Operating with this data means stripping of columns, insert columns in order to get the row you want. The mechanisms of a relational database provide via SQL cabability to operate on columns. All you need are data given as a collection of items with common strucure and the posibility to define an unique key.
 
-Both techniques associate data by relations. The thinking is in tables.  Now assume, your data are heavily connected. For example 
+
+Unfortunately, the world is bad. Data can look like the example in figure "Graph DBs":
 
 {{< figure src="/src/graphdbex.png" title="Graph DBs" >}}
 
-As you can see, not every node has the same relations. To implement this knowledge in tables you would have to introduce many tables with a few data. The knowledge here is not a list of items with fixex relations, it seems more a collection of knowledge as it is to a certain time. If we know something new about Sahra or the dog, it is easily to expand the database by introducing new nodes or relations. 
+As you can see, not every node has the same relations. To implement this knowledge in tables you would have to introduce many tables with a few data. The knowledge here is not a list of items with fixed relations. The whole thing seems more like a collection of knowledge as it may be at certain time. If we know something new about Sahra or the dog, it is easy to expand the database by introducing new nodes or relations. 
 
 It is easy to see that this graph could also be modeled in Prolog. Every pair of nodes could be expressed as 'provide(john, feed)' or 'like(john, dog)' and so on. But you might imagine that the access may take more time because it requires traversing a graph. To overcome this graph DB can use schemas, a describtion of node types and their possible relations.
 
