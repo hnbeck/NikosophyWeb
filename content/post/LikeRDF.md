@@ -43,4 +43,16 @@ As you can see, not every node has the same relations. To implement this knowled
 
 It is easy to see that this graph could also be modeled in Prolog. Every pair of nodes could be expressed as `provide(john, feed)` or `like(john, dog)` and so on. But you might imagine that the access may take more time because it requires traversing a graph. To overcome this graph DB can use schemas, a describtion of node types and their possible relations.
 
+{{< figure src="/src/rdf.png" title="RDF" >}}
+
+Here comes RDF onto the scene. RDF expresses its data in triples which are of type subject, predicate and object. This is an elementary scheme matching the way we are defining categories and knowledge. 
+
+At this point, it is obvious that a decision how to do persistence is influenced by
+
+*  is the knowledge in the data fluent 
+*  are there many data of same structure
+*  is fast access of many data an issue
+*  what knowledge shall the data express
+*  how do you process the data, query or counting or visulization or...
+
 
