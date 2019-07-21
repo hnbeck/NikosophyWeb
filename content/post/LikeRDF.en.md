@@ -25,7 +25,7 @@ is behind of that simple term "persistence". A lot of theory and structures were
 +  Jeffrey D. Ullman [Principles of Database & Knowledge-Base Systems](https://www.amazon.com/dp/0716781581/ref=cm_sw_r_tw_dp_U_x_0einDbE4CNB3D)
 +  Stefano Ceri, G. Gottlob, L. Tanca [Logic Programming and Databases (Surveys in Computer Science)](https://www.amazon.com/dp/0387517286/ref=cm_sw_r_tw_dp_U_x_wjinDb0788341)
 
-Now, for my project [ECLogicPlay](en/project/prologgameengine/) I need a persistence component. Because the ECLogicPlay will be implemented in [SWI-Prolog](http://www.swi-prolog.org) which leads to the question how to connect Prolog with a database. Both should have a good relationship to each other, Prolog is about knowledge and query of knowledge. This is given in its predicates and forumlas, like
+Now, I'm looking for a persistence component for my project [ECLogicPlay](en/project/prologgameengine/) The ECLogicPlay will be implemented in [SWI-Prolog](http://www.swi-prolog.org) which leads to the question how to connect Prolog with a database. Both should have a good relationship to each other, Prolog is about knowledge and query of knowledge, too. Looking at the basics of Prolog, we have klike
 
     daddy(mike, sahra).
     daddy(mike, john).
