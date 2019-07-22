@@ -12,21 +12,22 @@ title = "Why I like RDF"
 
 +++
 
-Persistence is important. Storing and managing data is the big thing shaping our world and induce so many things in computer science. If a computer takes the task to handle data it means that it has to handle a lot of data. And of course the computer is required to provide means to get the data back. But the human is clever. In history, in the early days of computing, to get the data back was enough. Today the computer shall provide us new insights. Who wants read boring data if one could get information or even knowledge? Charts, statisical hypothesis about what will happen next and even knowlege are the matter of interest.
+Persistence is important. Storing and managing data is the big thing shaping our world and induce so many things in computer science. If a computer takes the task to handle data it means that it has to handle a *lot* of data. And of course the computer is required to provide means to get the data back. But the mankind is clever. Get data back is not enough. Today the computer shall provide us new insights. Who want to read boring data if getting information or even knowledge is possible? Charts, statisical hypothesis about what will happen next and even knowlege are the matter of interest. 
  
-We see: storing and accessing data is important, but also processing them like
+The expectation is now clarified and requires
 
-+  counting
-+  associate them
-+  categorize them
-+  filter them
++  counting data
++  associate data
++  categorize data
++  filter data
++  predict data.
 
-is in the background of that simple term "persistence". A lot of theory and structures were invented to manage these tasks. Relational databases, object databases, graph databases and more can be found today in the market as well as in the open souce world. Many books are available explaining this topic in detail, for example (thanks to Anne Ogborn for the hint!)
+All that is in the background of that simple term "persistence". A lot of theory and structures were invented to manage these tasks. Relational databases, object databases, graph databases and more can be found today in the market as well as in the open souce world. Many books are available explaining this topic in detail, for example (thanks to Anne Ogborn for the hint!)
 
 +  Jeffrey D. Ullman [Principles of Database & Knowledge-Base Systems](https://www.amazon.com/dp/0716781581/ref=cm_sw_r_tw_dp_U_x_0einDbE4CNB3D)
 +  Stefano Ceri, G. Gottlob, L. Tanca [Logic Programming and Databases (Surveys in Computer Science)](https://www.amazon.com/dp/0387517286/ref=cm_sw_r_tw_dp_U_x_wjinDb0788341)
 
-Now, I'm looking for a persistence component for my project [ECLogicPlay](en/project/prologgameengine/) The ECLogicPlay will be implemented in [SWI-Prolog](http://www.swi-prolog.org) which raises 2 questions: 
+Now, I'm looking for a persistence component for my project [ECLogicPlay](en/project/prologgameengine/) The ECLogicPlay will be implemented in [SWI-Prolog](http://www.swi-prolog.org) which raises two questions: 
 
 1.  Database type: which kind of database suits to my application
 2.  Prolog congruency: which kind of database fits to Prolog
@@ -34,33 +35,33 @@ Now, I'm looking for a persistence component for my project [ECLogicPlay](en/pro
 
 ### Considering database types
 
-Assume we have a relational database (the widely used type today) and a table "family" containing data about family members. 
+Assume we have a relational database (the widely used type today) and a table "childs" containing data about childs and their parents. 
 
-| name | age | gender |
-|------|-----|--------|
-| Mike | 40  | m      |
-| Sahra | 12  | f      |
-| John | 14 | m      |
-| Robert | 10  | m      |
-| Nelly | 39 | f   |
+| name | lastname | father | mother |
+|------|-----|--------|-----|
+| Sahra | Keller | Mike  | Annie     |
+| John | Keller | Mike | Annie    |
+| Robert | Cameron | Mitchell  | Doris     |
+| Nelly | Cameron | Mitchell | Doris   |
 
-If we want to know the name of the family member aged 14, the SQL data base query language may look like this: 
+If we want to know which childs has Mike the SQL data base query language may look like this: 
 
-    SELECT name FROM family WHERE age=14
+    SELECT name FROM childs WHERE father="Mike"
 
-Let us add a table "parents" containing all parents of a scool class.
+Children go to school, and that school may have a table for its own listing all classes. 
 
-| class | name | father | mother |
-|-------|------|--------|--------|
-| 1	| John | Mike | Nelly |
-| 1 | Matthew | Walter | Doris |
-| 1 | Cindy | John | Tiz |
+| class | name |  lastname | teacher | 
+|-------|------|--------|----|
+| 1	| John | Keller | Walter |
+| 1 | Matthew | Neuman| Doris |
+| 2 | Cindy | Johnson | Clint |
+| 2 | Rebecca | Whittaker  | Sandra |
 
- A teacher of the scool might want to know who is the father of John in order to contact him. The problem is we have two soures or two tables, respectively. The one lists families, the other parents. We have to associate both sources. 
+There might be a reason that the teacher what to contact the parents of one of John. All data are available. The problem is we have two soures or two tables, respectively. The one lists childs, the other classes. We have to associate both sources. This could be done like
 
-	SELECT family.name, parents.name FROM parents JOIN family on family.name = parents.name WHERE family.name="John"
+	SELECT childs.father, childs.lastname, class.lastname FROM class JOIN childs on childs.lastname = class.lastname WHERE childs.name="John"
 
-Here the name of the parent is the key to identify which data are associated: the name in the one table has to be the same in the other table to identify the correct row of both tables. Roughly speaken, in a relational database you have data given in a collection of rows. Each row is a sequence of columns. Operating with this data means stripping of columns, insert columns in order to get the row you want. The mechanisms of a relational database provide via SQL cabability to operate on columns. All you need are data given as a collection of items with common strucure and the posibility to define an unique key.
+Here the name is the key to identify which data are associated: the name in the one table has to be the same in the other table to identify the correct row of both tables. Roughly speaken, in a relational database you have data given in a collection of rows. Each row is a sequence of columns. Operating with this data means stripping of columns or insert columns in order to get the row you want. The mechanisms of a relational database provides (via SQL) the cabability to perform such column operations. All you need are data given as a collection of items with common strucure and the posibility to define an unique key.
 
 
 Unfortunately, the world is bad. Data can look like the example in figure "Graph DBs":
