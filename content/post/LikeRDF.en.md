@@ -21,7 +21,7 @@ We see: storing and accessing data is important, but also processing them like
 +  categorize them
 +  filter them
 
-is behind of that simple term "persistence". A lot of theory and structures were invented to manage these tasks. Relational databases, object databases, graph databases and more can be found today in the market as well as in the open souce world. Many books are available explaining this topic in detail, for example (thanks to Anne Ogborn for the hint!)
+is in the background of that simple term "persistence". A lot of theory and structures were invented to manage these tasks. Relational databases, object databases, graph databases and more can be found today in the market as well as in the open souce world. Many books are available explaining this topic in detail, for example (thanks to Anne Ogborn for the hint!)
 
 +  Jeffrey D. Ullman [Principles of Database & Knowledge-Base Systems](https://www.amazon.com/dp/0716781581/ref=cm_sw_r_tw_dp_U_x_0einDbE4CNB3D)
 +  Stefano Ceri, G. Gottlob, L. Tanca [Logic Programming and Databases (Surveys in Computer Science)](https://www.amazon.com/dp/0387517286/ref=cm_sw_r_tw_dp_U_x_wjinDb0788341)
@@ -32,13 +32,30 @@ Now, I'm looking for a persistence component for my project [ECLogicPlay](en/pro
 2.  Prolog congruency: which kind of database fits to Prolog
 
 
-### considering database types
+### Considering database types
 
 Assume we have a relational database (the widely used type today) and a table "family" containing the family members mike, sahra, john, robert. For evey member, we have columns "name", "age", "gender". Now we want to know something, for example we want the name of the family member of age 16. In SQL this would be: 
+
+| name | age | gender |
+-----------------------
+| Mike | 40  | m      |
+| Sahra | 12  | f      |
+| John | 14 | m      |
+| Robert | 10  | m      |
+| Nelly | 39 | f   |
+
+
 
     SELECT name FROM family WHERE age=16
 
 Let us add a table "parents" containing all parents of a scool class with the column "class", "name", "father", "mother". A teacher might want to know who is the father of John. The problem is we have two soures or two tables, respectively. The one lists families, the other parents. We have to associate both sources, which is can be done like 
+
+| class | name | father | mother |
+-----------------------------------
+| 1	| John | Mike | Nelly |
+| 1 | Matthew | Walter | Doris |
+| 1 | Cindy | John | Tiz |
+
 
 	SELECT family.name, parents.name FROM parents JOIN family on family.name = parents.name WHERE family.name="John"
 
