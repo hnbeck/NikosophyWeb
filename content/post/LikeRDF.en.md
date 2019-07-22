@@ -28,27 +28,27 @@ is in the background of that simple term "persistence". A lot of theory and stru
 
 Now, I'm looking for a persistence component for my project [ECLogicPlay](en/project/prologgameengine/) The ECLogicPlay will be implemented in [SWI-Prolog](http://www.swi-prolog.org) which raises 2 questions: 
 
-1.  database type: which kind of database suits to my application
+1.  Database type: which kind of database suits to my application
 2.  Prolog congruency: which kind of database fits to Prolog
 
 
 ### Considering database types
 
-Assume we have a relational database (the widely used type today) and a table "family" containing the family members mike, sahra, john, robert. For evey member, we have columns "name", "age", "gender". Now we want to know something, for example we want the name of the family member of age 16. In SQL this would be: 
+Assume we have a relational database (the widely used type today) and a table "family" containing data about family members. 
 
-| name | age | gender |
-|------|-----|--------|
-| Mike | 40  | m      |
-| Sahra | 12  | f      |
-| John | 14 | m      |
-| Robert | 10  | m      |
-| Nelly | 39 | f   |
+		| name | age | gender |
+		|------|-----|--------|
+		| Mike | 40  | m      |
+		| Sahra | 12  | f      |
+		| John | 14 | m      |
+		| Robert | 10  | m      |
+		| Nelly | 39 | f   |
 
+If we want to know the name of the family member aged 14, the SQL data base query language may look like this: 
 
+    SELECT name FROM family WHERE age=14
 
-    SELECT name FROM family WHERE age=16
-
-Let us add a table "parents" containing all parents of a scool class with the column "class", "name", "father", "mother". A teacher might want to know who is the father of John. The problem is we have two soures or two tables, respectively. The one lists families, the other parents. We have to associate both sources, which is can be done like 
+Let us add a table "parents" containing all parents of a scool class.
 
 | class | name | father | mother |
 |-------|------|--------|--------|
@@ -56,6 +56,7 @@ Let us add a table "parents" containing all parents of a scool class with the co
 | 1 | Matthew | Walter | Doris |
 | 1 | Cindy | John | Tiz |
 
+ A teacher of the scool might want to know who is the father of John in order to contact him. The problem is we have two soures or two tables, respectively. The one lists families, the other parents. We have to associate both sources. 
 
 	SELECT family.name, parents.name FROM parents JOIN family on family.name = parents.name WHERE family.name="John"
 
