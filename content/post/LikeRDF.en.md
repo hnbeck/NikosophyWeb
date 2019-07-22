@@ -39,10 +39,10 @@ Assume we have a relational database (the widely used type today) and a table "c
 
 | name | lastname | father | mother |
 |------|-----|--------|-----|
-| Sahra | Keller | Mike  | Annie     |
+| Cindy | Johnson | Ulrich  | Sandra     |
 | John | Keller | Mike | Annie    |
 | Robert | Cameron | Mitchell  | Doris     |
-| Nelly | Cameron | Mitchell | Doris   |
+
 
 If we want to know which childs has Mike the SQL data base query language may look like this: 
 
@@ -55,30 +55,33 @@ Children go to school, and that school may have a table for its own listing all 
 | 1	| John | Keller | Walter |
 | 1 | Matthew | Neuman| Doris |
 | 2 | Cindy | Johnson | Clint |
-| 2 | Rebecca | Whittaker  | Sandra |
+| 2 | Rebecca | Cameron  | Sandra |
 
 There might be a reason that the teacher what to contact the parents of one of John. All data are available. The problem is we have two soures or two tables, respectively. The one lists childs, the other classes. We have to associate both sources. This could be done like
 
-	SELECT childs.father, childs.lastname, class.lastname FROM class JOIN childs on childs.lastname = class.lastname WHERE childs.name="John"
+	SELECT childs.father FROM class JOIN childs on childs.lastname = class.lastname WHERE childs.name="John"
 
-Here the name is the key to identify which data are associated: the name in the one table has to be the same in the other table to identify the correct row of both tables. Roughly speaken, in a relational database you have data given in a collection of rows. Each row is a sequence of columns. Operating with this data means stripping of columns or insert columns in order to get the row you want. The mechanisms of a relational database provides (via SQL) the cabability to perform such column operations. All you need are data given as a collection of items with common strucure and the posibility to define an unique key.
+Both rows - one of table childs and one of table class - are sticked together. Which row to take is decided by the "key" lastname. In general the lastname may not unique in the table, so a value has to be be introduced which grants unique identifcation of every row. 
 
+So thinking data in the world of relational databases means thinking in a lot of rows build from a sequence columns. Or in other words, every data item (the objects?, the row) has the same attributes (the colums). A key is needed to make every row unique.
 
 Unfortunately, the world is bad. Data can look like the example in figure "Graph DBs":
 
 {{< figure src="/src/graphdbex.png" title="Graph DBs" >}}
 
-As you can see, not every node has the same relations. To implement this knowledge in tables you would have to introduce many tables with a few data. The knowledge here is not a list of items with fixed relations. The whole thing seems more like a collection of knowledge as it may be at certain time. If we know something new about Sahra or the dog, it is easy to expand the database by introducing new nodes or relations. 
-
-It is easy to see that this graph could also be modeled in Prolog. Every pair of nodes could be expressed as 'provide(john, feed)' or 'like(john, dog)' and so on. But you might imagine that the access may take more time because it requires traversing a graph. To overcome this graph DB can use schemas, a describtion of node types and their possible relations.
+As you can see, this data have no common shape. You may interpret relations as attributes, but then all items looks individual. This data landscape doesnt let think about tables and equal structured rows. The whole thing seems more like a collection of knowledge as it may be at some point in time. If we know something new about Sarah or the dog, it will be easy to expand the database by introducing new nodes or relations. As you may expect, graph databases were introduced to handle such data.
 
 {{< figure src="/src/rdf.png" class="myimg" title="RDF" >}}
 
-Here comes RDF onto the scene. RDF express its data in triples which are of type subject, predicate and object. This is an elementary scheme matching the way we are defining categories and knowledge. 
+If you think that a little bit wild: there are graph data bases which have a schema. A schema is like a building pattern of the graph. Here comes RDF on the scene: RDF express its data in triples of type subject, predicate and object. This is an elementary scheme matching the way we are defining categories and knowledge. 
+
+Conclusion: which data type fits to the application is the question about how the data looks like the application has to deal with. 
 
 
+### considering Prolog congruency
 
-### considering Prolog concurency
+
+It is easy to see that this graph could also be modeled in Prolog. Every pair of nodes could be expressed as 'provide(john, feed)' or 'like(john, dog)' and so on.
 
 Prolog should have a good relationship to each other, Prolog is about knowledge and query of knowledge, too. Looking at the basics of Prolog, we have klike
 
