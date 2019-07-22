@@ -37,7 +37,7 @@ Now, I'm looking for a persistence component for my project [ECLogicPlay](en/pro
 Assume we have a relational database (the widely used type today) and a table "family" containing the family members mike, sahra, john, robert. For evey member, we have columns "name", "age", "gender". Now we want to know something, for example we want the name of the family member of age 16. In SQL this would be: 
 
 | name | age | gender |
------------------------
+|------|-----|--------|
 | Mike | 40  | m      |
 | Sahra | 12  | f      |
 | John | 14 | m      |
@@ -51,7 +51,7 @@ Assume we have a relational database (the widely used type today) and a table "f
 Let us add a table "parents" containing all parents of a scool class with the column "class", "name", "father", "mother". A teacher might want to know who is the father of John. The problem is we have two soures or two tables, respectively. The one lists families, the other parents. We have to associate both sources, which is can be done like 
 
 | class | name | father | mother |
------------------------------------
+|-------|------|--------|--------|
 | 1	| John | Mike | Nelly |
 | 1 | Matthew | Walter | Doris |
 | 1 | Cindy | John | Tiz |
