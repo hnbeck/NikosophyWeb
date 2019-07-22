@@ -78,26 +78,38 @@ If you think that a little bit wild: there are graph data bases which have a sch
 Conclusion: which data type fits to the application is the question about how the data looks like the application has to deal with. 
 
 
-### considering Prolog congruency
+### Considering Prolog congruency
 
+Prolog is about knowledge and query of knowledge, too. Looking at the basics of Prolog, we have things like
 
-It is easy to see that this graph could also be modeled in Prolog. Every pair of nodes could be expressed as 'provide(john, feed)' or 'like(john, dog)' and so on.
+    father(mike, john).
+    father(ulrich, cindy).
+    class(1, john).
+    teacher(walter, john ).
 
-Prolog should have a good relationship to each other, Prolog is about knowledge and query of knowledge, too. Looking at the basics of Prolog, we have klike
+ expressing some knowledge from the tables above. So it is possible to do the query
 
-    daddy(mike, sahra).
-    daddy(mike, john).
-
- expressing that mike is the father of Sahra and John. So it is possible to do the query
-
-    ?daddy(A, john).
+    ?father(A, john).
 
  resulting in 
 
    A = mike.
 
- Or in SQl, the database query language (assumung there is a table family with columns daddy and child)
+And what's about the teachers question? Oh, here we need a rule
 
+	parent(Class, Name, Parent) :- class(Class, Name), father(Parent, Name).
+
+Now the teacher could ask
+
+	?parent(1, john, Parent).
+
+gives
+	Parent = mike.
+ 
+
+The notation looks different, but the impression is Prolog fits to the thinking of tables.
+
+It is easy to see that this graph could also be modeled in Prolog. Every pair of nodes could be expressed as 'provide(john, feed)' or 'like(john, dog)' and so on.
 
 ### selection
 
