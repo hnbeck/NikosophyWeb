@@ -36,13 +36,13 @@ Now, I'm looking for a persistence component for my project [ECLogicPlay](en/pro
 
 Assume we have a relational database (the widely used type today) and a table "family" containing data about family members. 
 
-		| name | age | gender |
-		|------|-----|--------|
-		| Mike | 40  | m      |
-		| Sahra | 12  | f      |
-		| John | 14 | m      |
-		| Robert | 10  | m      |
-		| Nelly | 39 | f   |
+| name | age | gender |
+|------|-----|--------|
+| Mike | 40  | m      |
+| Sahra | 12  | f      |
+| John | 14 | m      |
+| Robert | 10  | m      |
+| Nelly | 39 | f   |
 
 If we want to know the name of the family member aged 14, the SQL data base query language may look like this: 
 
@@ -50,12 +50,13 @@ If we want to know the name of the family member aged 14, the SQL data base quer
 
 Let us add a table "parents" containing all parents of a scool class.
 
-		| class | name | father | mother |
-		|-------|------|--------|--------|
-		| 1	| John | Mike | Nelly |
-		| 1 | Matthew | Walter | Doris |
-		| 1 | Cindy | John | Tiz |
-
+<div margin=10%>
+| class | name | father | mother |
+|-------|------|--------|--------|
+| 1	| John | Mike | Nelly |
+| 1 | Matthew | Walter | Doris |
+| 1 | Cindy | John | Tiz |
+</div>
  A teacher of the scool might want to know who is the father of John in order to contact him. The problem is we have two soures or two tables, respectively. The one lists families, the other parents. We have to associate both sources. 
 
 	SELECT family.name, parents.name FROM parents JOIN family on family.name = parents.name WHERE family.name="John"
