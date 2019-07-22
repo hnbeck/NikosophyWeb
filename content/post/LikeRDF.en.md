@@ -50,13 +50,12 @@ If we want to know the name of the family member aged 14, the SQL data base quer
 
 Let us add a table "parents" containing all parents of a scool class.
 
-<div style="margin:10%">
 | class | name | father | mother |
 |-------|------|--------|--------|
 | 1	| John | Mike | Nelly |
 | 1 | Matthew | Walter | Doris |
 | 1 | Cindy | John | Tiz |
-</div>
+
  A teacher of the scool might want to know who is the father of John in order to contact him. The problem is we have two soures or two tables, respectively. The one lists families, the other parents. We have to associate both sources. 
 
 	SELECT family.name, parents.name FROM parents JOIN family on family.name = parents.name WHERE family.name="John"
