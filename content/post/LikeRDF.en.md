@@ -50,7 +50,7 @@ If we want to know the name of the family member aged 14, the SQL data base quer
 
 Let us add a table "parents" containing all parents of a scool class.
 
-<div margin=10%>
+<div style="margin:10%">
 | class | name | father | mother |
 |-------|------|--------|--------|
 | 1	| John | Mike | Nelly |
