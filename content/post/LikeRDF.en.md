@@ -27,28 +27,30 @@ All that is in the background of that simple term "persistence". A lot of theory
 +  Jeffrey D. Ullman [Principles of Database & Knowledge-Base Systems](https://www.amazon.com/dp/0716781581/ref=cm_sw_r_tw_dp_U_x_0einDbE4CNB3D)
 +  Stefano Ceri, G. Gottlob, L. Tanca [Logic Programming and Databases (Surveys in Computer Science)](https://www.amazon.com/dp/0387517286/ref=cm_sw_r_tw_dp_U_x_wjinDb0788341)
 
-Now, I'm looking for a persistence component for my project [ECLogicPlay](en/project/prologgameengine/) The ECLogicPlay will be implemented in [SWI-Prolog](http://www.swi-prolog.org) which raises two questions: 
+Now, I'm looking for a persistence component for my project [ECLogicPlay](en/project/prologgameengine/). I've not read the books above yet. My perspective here is more from a phenomenical one. So let's start.
 
-1.  Database type: which kind of database suits to my application
-2.  Prolog congruency: which kind of database fits to Prolog
+The ECLogicPlay will be implemented in [SWI-Prolog](http://www.swi-prolog.org) which raises two questions: 
+
+1.  How do I think and model data
+2.  Prolog congruency: does this thinking match the Prolog way of modeling
 
 
-### Considering database types
+### Ways of thinking data
 
-Assume we have a relational database (the widely used type today) and a table "childs" containing data about childs and their parents. 
+Assume we have data given in a table "childs" describing childs and their parents. 
 
 | name | lastname | father | mother |
 |------|-----|--------|-----|
 | Cindy | Johnson | Ulrich  | Sandra     |
 | John | Keller | Mike | Annie    |
-| Robert | Cameron | Mitchell  | Doris     |
+| John | Cameron | Mitchell  | Doris     |
 
 
-If we want to know which childs has Mike the SQL data base query language may look like this: 
+If we want to know which childs has Mike a query language may look like this: 
 
     SELECT name FROM childs WHERE father="Mike"
 
-Children go to school, and that school may have a table for its own listing all classes. 
+This is easy to understand. Now, children go to school, and that school may have a table for its own listing all classes. 
 
 | class | name |  lastname | teacher | 
 |-------|------|--------|----|
@@ -57,35 +59,33 @@ Children go to school, and that school may have a table for its own listing all 
 | 2 | Cindy | Johnson | Clint |
 | 2 | Rebecca | Cameron  | Sandra |
 
-There might be a reason that the teacher what to contact the parents of one of John. All data are available. The problem is we have two soures or two tables, respectively. The one lists childs, the other classes. We have to associate both sources. This could be done like
+There might be a reason that the teacher what to contact the parents of John. All data are available. The problem is we have two soures or two tables, respectively. The one lists childs, the other classes. We have to associate both sources. What would you do if the tables would be listings on paper? You would look in the table "class" for the last name of John, which is Keller,  and retrieve in the row o table "childs" containing John Keller the name of the father. In a query language, this could be asked for like
 
 	SELECT childs.father FROM class JOIN childs on childs.lastname = class.lastname WHERE childs.name="John"
 
-Both rows - one of table childs and one of table class - are sticked together. Which row to take is decided by the "key" lastname. In general the lastname may not unique in the table, so a value has to be be introduced which grants unique identifcation of every row. 
+Both rows - one of table childs and one of table class - are sticked logically together. Which row to take is decided by the "key" lastname. In general the lastname may not unique in the table, so a value has to be be introduced which grants unique identifcation of every row. 
 
-So thinking data in the world of relational databases means thinking in a lot of rows build from a sequence columns. Or in other words, every data item (the objects?, the row) has the same attributes (the colums). A key is needed to make every row unique.
+To handle with tabled data means thinking in a lot of rows build from a sequence columns. Or in other words, every data item (the objects?, the row) has to have the same attributes (the colums). A key is needed to make every row unique. Where no natural uniqueness is given, an artifical value has to be introduced.
 
 Unfortunately, the world is bad. Data can look like the example in figure "Graph DBs":
 
 {{< figure src="/src/graphdbex.png" title="Graph DBs" >}}
 
-As you can see, this data have no common shape. You may interpret relations as attributes, but then all items looks individual. This data landscape doesnt let think about tables and equal structured rows. The whole thing seems more like a collection of knowledge as it may be at some point in time. If we know something new about Sarah or the dog, it will be easy to expand the database by introducing new nodes or relations. As you may expect, graph databases were introduced to handle such data.
+As you can see, this data have no common shape. You may interpret relations as attributes, but then all items looks individual. This data landscape doesn't let think about tables and equal structured rows. The whole thing seems more like a collection of knowledge as it may be at some point in time. If we know something new about Sarah or the dog, it will be easy to expand the database by introducing new nodes or relations. As you may expect, graph databases were introduced to handle such data.
 
 {{< figure src="/src/rdf.png" class="myimg" title="RDF" >}}
 
-If you think that a little bit wild: there are graph data bases which have a schema. A schema is like a building pattern of the graph. Here comes RDF on the scene: RDF express its data in triples of type subject, predicate and object. This is an elementary scheme matching the way we are defining categories and knowledge. 
-
-Conclusion: which data type fits to the application is the question about how the data looks like the application has to deal with. 
+If you think that's a little bit wild: there are graph data bases which have a schema. A schema is like a building pattern of the graph. Here comes RDF on the scene: RDF express its data in triples of type subject, predicate and object. This is an elementary scheme matching the way we are defining categories and knowledge. 
 
 
 ### Considering Prolog congruency
 
 Prolog is about knowledge and query of knowledge, too. Looking at the basics of Prolog, we have things like
 
-    father(mike, john).
-    father(ulrich, cindy).
+    father(mike, john, keller).
+    father(ulrich, cindy, johnson).
     class(1, john).
-    teacher(walter, john ).
+    teacher(walter, john).
 
  expressing some knowledge from the tables above. So it is possible to do the query
 
@@ -95,21 +95,39 @@ Prolog is about knowledge and query of knowledge, too. Looking at the basics of 
 
    A = mike.
 
-And what's about the teachers question? Oh, here we need a rule
+And what's about the teachers question? Oh, here we need a rule expression what we have done with the paper lists above:
 
-	parent(Class, Name, Parent) :- class(Class, Name), father(Parent, Name).
+	parent(Class, Name, Parent) :- class(Class, Name, LastName), father(Parent, Name, LastName).
 
 Now the teacher could ask
 
 	?parent(1, john, Parent).
 
 gives
+
 	Parent = mike.
  
-
 The notation looks different, but the impression is Prolog fits to the thinking of tables.
 
-It is easy to see that this graph could also be modeled in Prolog. Every pair of nodes could be expressed as 'provide(john, feed)' or 'like(john, dog)' and so on.
+It is easy to see that this graph could also be modeled in Prolog. Every pair of nodes could be expressed as 'provide(john, feed)' or 'like(john, dog)' or buy(mike, cat) and so on. You want to know all kids are in the familiy of mike? Easy:
+
+	?father(mike, Child).
+
+gives
+
+	Child = john.
+	Child = sarah.
+	false.
+
+Another question: which animals are in the familiy? To answer this, we need  rules:
+
+		animal(Father, Animal) :- buy(Father, Animal);
+								 kids(Father, Kids),
+								 animals(Kid, Animal).
+
+	 	animal(Kid, Animal) :- like(Kid, Animal).
+
+Prolog can help to retrieve data buy just using its database (of predicates) and rules 	
 
 ### selection
 

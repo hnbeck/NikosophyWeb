@@ -1,6 +1,6 @@
 @startuml
 
-object "Sahra" as o1
+object "Sarah" as o1
 object "Mike" as o2
 object "John" as o3
 object "Anne" as o4
