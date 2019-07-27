@@ -65,7 +65,7 @@ There might be a reason that the teacher what to contact the parents of John. Al
 
 Both rows - one of table childs and one of table class - are sticked logically together. Which row to take is decided by the "key" lastname. In general the lastname may not unique in the table, so a value has to be be introduced which grants unique identifcation of every row. 
 
-To handle with tabled data means thinking in a lot of rows build from a sequence columns. Or in other words, every data item (the objects?, the row) has to have the same attributes (the colums). A key is needed to make every row unique. Where no natural uniqueness is given, an artifical value has to be introduced.
+To handle with tabled data means thinking in a lot of rows build from a sequence columns. Or in other words, every data item (the row) has to have the same attributes (the colums). A key is needed to make every row unique. Where no natural uniqueness is given, an artifical value has to be introduced. If fact one could see a row as an object (which is an individual!) annotated by attributes. Every object has the same structure - the same type - making things easy.
 
 Unfortunately, the world is bad. Data can look like the example in figure "Graph DBs":
 
@@ -121,13 +121,21 @@ gives
 
 Another question: which animals are in the familiy? To answer this, we need  rules:
 
-		animal(Father, Animal) :- buy(Father, Animal);
-								 kids(Father, Kids),
-								 animals(Kid, Animal).
+		animals(Father, Animal) :- buy(Father, Animals);
+								 kids(Father, Allkids),
+								 kidAnimals(AllKids, Animals, Animals2).
 
-	 	animal(Kid, Animal) :- like(Kid, Animal).
+	 	kidAnimals([], Result, Result).
+	 	kidAnimals(AllKids, Animals, Animals3) :- [kid | OtherKids] = AllKids,
+	 											  like(Kid, Animal).
+	 											  append(Animals, [Animal], Animals2), 
+	 											  kidAnimals(OtherKids, Animal2, Animals3).
 
-Prolog can help to retrieve data buy just using its database (of predicates) and rules 	
+In words: take all animals the father bought and in addition all animals very kid of this father likes. Nothing special so far for a Prologer. But it is not that easy looking asking for something as in the table data case. The graph - which means the relations and nodes modelling the data - have great impact on the effort to get data back. 
+
+I observed that in such data graphs more thoughts or more assumptions related to the solution are included than in tables. Or in other words graph data are less of nature pure collecting data. They are more part of the solution than tables. In addtion, the graph reflects not objects, knowledge is  here distributed in small little elements like relations, nodes. There nothing well structured like the collection of objects a table is build of. 
+
+The solution is to give more structure to the building of data graphs. Here I come back to RDF mentioned above. RDF helps to think again in a common way about objects and their attributes. The subject - predicate - object triple models an attribute (the subject) and statement about (the predicate and the object). But in advantage of the tables, my objects here can be expanded and related together easily. My knowledge and structure can grow and adapt. 
 
 ### selection
 
