@@ -27,11 +27,11 @@ All that is in the background of that simple term "persistence". A lot of theory
 +  Jeffrey D. Ullman [Principles of Database & Knowledge-Base Systems](https://www.amazon.com/dp/0716781581/ref=cm_sw_r_tw_dp_U_x_0einDbE4CNB3D)
 +  Stefano Ceri, G. Gottlob, L. Tanca [Logic Programming and Databases (Surveys in Computer Science)](https://www.amazon.com/dp/0387517286/ref=cm_sw_r_tw_dp_U_x_wjinDb0788341)
 
-Now, I'm looking for a persistence component for my project [ECLogicPlay](en/project/prologgameengine/). I've not read the books above yet. My perspective here is more from a phenomenical one. So let's start.
+Now, I'm looking for a persistence component for my project [ECLogicPlay](en/project/prologgameengine/). I've not read the books mentioned above yet. My perspective for this post is more a phenomenical one. So let the game begin.
 
 The ECLogicPlay will be implemented in [SWI-Prolog](http://www.swi-prolog.org) which raises two questions: 
 
-1.  How do I think and model data
+1.  Data modeling: How to think and model data
 2.  Prolog congruency: does this thinking match the Prolog way of modeling
 
 
@@ -53,25 +53,31 @@ If we want to know which childs has Mike a query language may look like this:
 This is easy to understand. Now, children go to school, and that school may have a table for its own listing all classes. 
 
 | class | name |  lastname | teacher | 
-|-------|------|--------|----|
+|-------|------|-----------|---------|
 | 1	| John | Keller | Walter |
 | 1 | Matthew | Neuman| Doris |
 | 2 | Cindy | Johnson | Clint |
 | 2 | Rebecca | Cameron  | Sandra |
 
-There might be a reason that the teacher what to contact the parents of John. All data are available. The problem is we have two soures or two tables, respectively. The one lists childs, the other classes. We have to associate both sources. What would you do if the tables would be listings on paper? You would look in the table "class" for the last name of John, which is Keller,  and retrieve in the row o table "childs" containing John Keller the name of the father. In a query language, this could be asked for like
+There might be a reason that the teacher want to contact the parents of John. All data are available. The problem is we have two soures or two tables, respectively. The one lists childs, the other classes. We have to associate both sources. What would you do if the tables would be listings on paper? Probably you may look in the table "class" for the last name of "John", which is "Keller",  and retrieve in the row of the table "childs" containing "John" and "Keller" the name of the father. In a data base query language this may look like
 
 	SELECT childs.father FROM class JOIN childs on childs.lastname = class.lastname WHERE childs.name="John"
 
-Both rows - one of table childs and one of table class - are sticked logically together. Which row to take is decided by the "key" lastname. In general the lastname may not unique in the table, so a value has to be be introduced which grants unique identifcation of every row. 
+Both rows - one of table childs and one of table class - are sticked together logically. Which row to take in every table is decided by the "key" lastname combined with name.
 
-To handle with tabled data means thinking in a lot of rows build from a sequence columns. Or in other words, every data item (the row) has to have the same attributes (the colums). A key is needed to make every row unique. Where no natural uniqueness is given, an artifical value has to be introduced. If fact one could see a row as an object (which is an individual!) annotated by attributes. Every object has the same structure - the same type - making things easy.
+We observe: to operate with tabled data means thinking in a lot of rows build from a sequence columns. Or in other words, every data item (the row) has to have the same attributes (the columns). A key is needed to make every row unique. Where no natural uniqueness is given, an artifical value has to be introduced. 
+
+I invite you to understand a row as an object (which is an individual!) annotated by attributes. Every object is unique with a common structure. Computer people would say they have the same type. What we've done with the rows means in this interpretation to filter or extend attributes of this objects.
+
+Let's do our check: counting data is easy - as easy as counting objects. Filter data is easy as well.  
 
 Unfortunately, the world is bad. Data can look like the example in figure "Graph DBs":
 
 {{< figure src="/src/graphdbex.png" title="Graph DBs" >}}
 
 As you can see, this data have no common shape. You may interpret relations as attributes, but then all items looks individual. This data landscape doesn't let think about tables and equal structured rows. The whole thing seems more like a collection of knowledge as it may be at some point in time. If we know something new about Sarah or the dog, it will be easy to expand the database by introducing new nodes or relations. As you may expect, graph databases were introduced to handle such data.
+
+Counting data and filtering may be not so easy, Association is simple: just draw a new path in the graph. 
 
 {{< figure src="/src/rdf.png" class="myimg" title="RDF" >}}
 
@@ -137,7 +143,7 @@ I observed that in such data graphs more thoughts or more assumptions related to
 
 The solution is to give more structure to the building of data graphs. Here I come back to RDF mentioned above. RDF helps to think again in a common way about objects and their attributes. The subject - predicate - object triple models an attribute (the subject) and statement about (the predicate and the object). But in advantage of the tables, my objects here can be expanded and related together easily. My knowledge and structure can grow and adapt. 
 
-### selection
+### The Selection
 
 At this point, it is obvious that a decision how to do persistence is influenced by
 
