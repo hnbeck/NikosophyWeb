@@ -52,12 +52,14 @@ If we want to know which childs has Mike a query language may look like this:
 
 This is easy to understand. Now, children go to school, and that school may have a table for its own listing all classes. 
 
-| class | name | lastname | teacher | 
+
+| class | name | lastname | teacher |
 |------|-----|--------|-----|
 | 1	| John | Keller | Walter |
 | 1 | Matthew | Neuman| Doris |
 | 2 | Cindy | Johnson | Clint |
 | 2 | Rebecca | Cameron  | Sandra |
+
 
 There might be a reason that the teacher want to contact the parents of John. All data are available. The problem is we have two soures or two tables, respectively. The one lists childs, the other classes. We have to associate both sources. What would you do if the tables would be listings on paper? Probably you may look in the table "class" for the last name of "John", which is "Keller",  and retrieve in the row of the table "childs" containing "John" and "Keller" the name of the father. In a data base query language this may look like
 
