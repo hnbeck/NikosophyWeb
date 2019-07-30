@@ -52,8 +52,8 @@ If we want to know which childs has Mike a query language may look like this:
 
 This is easy to understand. Now, children go to school, and that school may have a table for its own listing all classes. 
 
-| class | name |  lastname | teacher | 
-|-------|------|-----------|---------|
+| class | name | lastname | teacher | 
+|------|-----|--------|-----|
 | 1	| John | Keller | Walter |
 | 1 | Matthew | Neuman| Doris |
 | 2 | Cindy | Johnson | Clint |
