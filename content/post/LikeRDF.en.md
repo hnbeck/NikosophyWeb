@@ -162,7 +162,6 @@ At this point, I want to flip the coin. Prolog as a logic programming language i
 
 ### The Selection
 
-
 At this point, it may obvious that a decision how to do persistence is influenced by
 
 *  is the knowledge in the data fluent -> associate and categorize data is a big thing, reshaping the data is probable
@@ -171,7 +170,7 @@ At this point, it may obvious that a decision how to do persistence is influence
 *  what knowledge shall the data express ->
 *  how do you process the data, query or counting or visulization or...
 
-What is given to me? [ECLogicPlay](en/project/prologgameengine/) is based on rules - rules are the fuel of games. Rules are more knowledge than data set based. I don't want explain this in detail. You can get the idea if you reminding that rules apply on many differnt aspects of the game world. In this world there are subjects (players), objects (like ressources, assets...) which have to controled by this rules. And all these things are changing. The state of the playing characters and objects changes all the time. Knowledge and world changes. 
+What is given to me? [ECLogicPlay]({{< ref "PrologGameEngine.en.md" >}}) is based on rules - rules are the fuel of games. Rules are more knowledge than data set based. I don't want explain this in detail. You can get the idea if you reminding that rules apply on many differnt aspects of the game world. In this world there are subjects (players), objects (like ressources, assets...) which have to controled by this rules. And all these things are changing. The state of the playing characters and objects changes all the time. Knowledge and world changes. 
 
 Last but not least: my game engine is intended to support adventure games. You may guess it, adventures are the game type which needs a lot of modeled knowledge. To use a graph data model is a logical consequence. Above we have seen that a general graph database have some weakness. The solution is - as mentioned above - to give more structure to the building of data graphs. I select RDF for this and because of this. RDF helps to think again in a common way about objects and their attributes (see figure "RDF" above). The subject - predicate - object triple models an attribute (the subject) and statement about (the predicate and the object). But in advantage of the tables my objects here are small units,  can be expanded and related together easily. My knowledge and structure can grow and adapt in a way which has some basic structure. I expect that this property of RDF will also support knowledge and structure procssing via Prolog in a good way.
 
