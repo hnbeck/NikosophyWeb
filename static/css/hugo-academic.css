@@ -1077,8 +1077,8 @@ nav#navbar-main li {
  **************************************************/
 
 table {
-  width: 90%;
-  max-width: 90%;
+  width: auto;
+  max-width: auto;
   margin-bottom: 1rem;
   font-size: 0.93rem;
   margin-left: 5rem;

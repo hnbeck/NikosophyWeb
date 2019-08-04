@@ -159,7 +159,7 @@ In words: take all animals the father bought and in addition all animals very ki
 
 At this point, I want to flip the coin. Prolog as a logic programming language is the gold tool for operating on facts, inspection and operation on structures. Graph data bases need something to work on a structural level to unwrap the full power of them. Therefore, Prolog is the perfect match to graph data bases, the capabilites of Prolog and graph databases support each other. Prolog can handle big sets of equal structured data - but here we have other tools and languages.
 
-{{< figure src="/src/yeah.png" title="The selection" >}}
+{{< figure src="/img/yeah.png" title="The selection" >}}
 
 
 ### The Selection
