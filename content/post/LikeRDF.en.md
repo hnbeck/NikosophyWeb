@@ -27,7 +27,7 @@ All that is in the background of that simple term "persistence" and I'll refer t
 +  Jeffrey D. Ullman [Principles of Database & Knowledge-Base Systems](https://www.amazon.com/dp/0716781581/ref=cm_sw_r_tw_dp_U_x_0einDbE4CNB3D)
 +  Stefano Ceri, G. Gottlob, L. Tanca [Logic Programming and Databases (Surveys in Computer Science)](https://www.amazon.com/dp/0387517286/ref=cm_sw_r_tw_dp_U_x_wjinDb0788341)
 
-Now, I'm looking for a persistence component for my project [ECLogicPlay](en/project/prologgameengine/). I've not read the books mentioned above yet. My perspective for this post is more a phenomenical one. So let the game begin.
+Now, I'm looking for a persistence component for my project [ECLogicPlay](/en/#project/prologgameengine/). I've not read the books mentioned above yet. My perspective for this post is more a phenomenical one. So let the game begin.
 
 The ECLogicPlay will be implemented in [SWI-Prolog](http://www.swi-prolog.org) which raises two questions: 
 
