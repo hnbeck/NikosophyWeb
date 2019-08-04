@@ -1078,11 +1078,11 @@ nav#navbar-main li {
 
 table {
   width: auto;
-  max-width: auto;
+  max-width: 100%;
   margin-bottom: 1rem;
   font-size: 0.93rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   border: 2px solid #ddd;
 }
 
