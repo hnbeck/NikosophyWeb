@@ -1,0 +1,8 @@
+@startuml
+
+object "Object" as o1
+object "Subject" as o2
+
+o2 .. o1 : predicate	
+
+@enduml

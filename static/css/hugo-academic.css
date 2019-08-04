@@ -1077,10 +1077,13 @@ nav#navbar-main li {
  **************************************************/
 
 table {
-  width: 100%;
-  max-width: 100%;
+  width: 96%;
+  max-width: 96%;
   margin-bottom: 1rem;
   font-size: 0.93rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  border: 2px solid #ddd;
 }
 
 table > thead > tr > th,

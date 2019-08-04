@@ -1,0 +1,25 @@
+@startuml
+
+object "Sarah" as o1
+object "Mike" as o2
+object "John" as o3
+object "Anne" as o4
+object "Dog" as o5
+object "Feed" as o6
+object "Cat" as o7
+
+
+o2 .. o1 : father
+o2 .. o3 : father
+o3 .. o5 : like
+o3 .. o6 : provide
+o3 .. o7 : own
+o2 .. o7 : buy
+o5 .. o6 : need
+o1 .. o4 : friend
+o4 .. o7 : wish
+o5 .. o7 : hate
+o3 .. o1 :: silbling
+
+
+@enduml

@@ -2,7 +2,7 @@
 date = "2017-09-05T00:01:51+02:00"
 highlight = true
 math = false
-tags = ["Projekte"]
+tags = ["Projects"]
 title = "Pharo Smalltalk to the net"
 
 [header]
