@@ -22,7 +22,7 @@ The expectation is now clarified and requires
 +  filter data
 +  predict data.
 
-All that is in the background of that simple term "persistence". A lot of theory and structures were invented to manage these tasks. Relational databases, object databases, graph databases and more can be found today in the market as well as in the open souce world. Many books are available explaining this topic in detail, for example (thanks to Anne Ogborn for the hint!)
+All that is in the background of that simple term "persistence" and I#ll refer to this as "Persistence task". A lot of theory and structures were invented to manage these tasks. Relational databases, object databases, graph databases and more can be found today in the market as well as in the open souce world. Many books are available explaining this topic in detail, for example (thanks to Anne Ogborn for the hint!)
 
 +  Jeffrey D. Ullman [Principles of Database & Knowledge-Base Systems](https://www.amazon.com/dp/0716781581/ref=cm_sw_r_tw_dp_U_x_0einDbE4CNB3D)
 +  Stefano Ceri, G. Gottlob, L. Tanca [Logic Programming and Databases (Surveys in Computer Science)](https://www.amazon.com/dp/0387517286/ref=cm_sw_r_tw_dp_U_x_wjinDb0788341)
@@ -69,17 +69,29 @@ Both rows - one of table childs and one of table class - are sticked together lo
 
 We observe: to operate with tabled data means thinking in a lot of rows build from a sequence columns. Or in other words, every data item (the row) has to have the same attributes (the columns). A key is needed to make every row unique. Where no natural uniqueness is given, an artifical value has to be introduced. 
 
-I invite you to understand a row as an object (which is an individual!) annotated by attributes. Every object is unique with a common structure. Computer people would say they have the same type. What we've done with the rows means in this interpretation to filter or extend attributes of this objects.
+I invite you to understand a row as an object (which is an individual!) annotated by attributes. In this picture we have object sets, each table is such a set. Every object of a set is unique with a common structure. Computer people would say they have the same type. 
 
-Let's do our check: counting data is easy - as easy as counting objects. Filter data is easy as well.  
+Let's do the check with the *persistence task*: 
 
-Unfortunately, the world is bad. Data can look like the example in figure "Graph DBs":
++ counting data as easy as counting objects of a set with a required attribute value.
++ associate data would require to blend objects. Some attribute of one object contain an identifier of another object. At this place the other object would be "projected" into the other object. What we get is a hierarchy of objects. Nothing bad so far, every object oriented programming does such things. But this hierachy of objects can be complex, must be filtered.
++ catagorizing data requires to have an overview of the data and compare them. The simples case is we look to all objects we have in the different sets and compare them. But this objects are some pre-decision of categories. Ok, so we look at the objects trees by associating them by their IDs. Because the tree is shaped by the IDs, this is also a pre-judgement. To find new categories, it would require to resolve all IDs and objects and define another strucure. Seems possible, but not very easy
++ filtering data means to filter attributes of objects. Filtering objects, some attribute of objects is no hard task. 
++ predicting data in the sense of filling gaps is the same as filling missing objects. This seams reasonable, if you have a set ob objects you might identify a pattern how they all look like. Predicting attributes of the objects might be much harder, I would assume that further attributes can not be infered from already known one. It might require a model of the object itself, some kind of preknowledge or judgment about the objects of a set to do this.
+
+There is an alternative way of thinking data. Again we have objects in our mind, but instead of big blocks of data wie look at them as small units. If we relate this units with other units,  data can look like the example in figure "Graph DBs":
 
 {{< figure src="/src/graphdbex.png" title="Graph DBs" >}}
 
-As you can see, this data have no common shape. You may interpret relations as attributes, but then all items looks individual. This data landscape doesn't let think about tables and equal structured rows. The whole thing seems more like a collection of knowledge as it may be at some point in time. If we know something new about Sarah or the dog, it will be easy to expand the database by introducing new nodes or relations. As you may expect, graph databases were introduced to handle such data.
+As you can see, this data have no common shape. This data landscape doesn't let think you about tables and equal structured rows. The whole thing seems more like a collection of knowledge as it may be at some point in time. If we know something new about Sarah or the dog for example it will be easy to expand the database by introducing new nodes or relations. As you may expect, graph databases were introduced to handle such data: they are connected graphs.  
 
-Counting data and filtering may be not so easy, Association is simple: just draw a new path in the graph. 
+Retrieving data and gaining information becomes a walk throw the graph. Starting from something known - item named "Mike" - we walking down the "father" link and learn that Mike is the father of John. Taking another path out from "Mike" we get the data that Mike is also father of Sahra. Keeping this in mind we can check the *persistence task*
+
++ counting is a little bit harder here: it is about to examine all paths starting from a node. Graph search can be a heavy thing.
++ associating data is very easy: links can be drawn from every item to very item. The graph structure grows as knowledge grows
++ categorizing data is easy as well. If we express categories or judgments by relations, any way of category is possible. And it is changable, because rearranging links should be the brilliant capability of graph data bases
++ filtering has a pro site and a down site. Forbid some paths - which means some relations - is an easy task. But filtering more complex data described by subgraphs may be hard. This is because an information may be represented by different shaped subgraphs. It is a matter of data organisation if filtering is hard or not so hard.
++ predicting is a difficult topic here. Predicting in the context of counting may be hard. Predicting in a connected graph could be also done as structure pattern matching: some structures may be very simmilar to other structures. If one add some links ore nodes to get the similar structures this is the prediction.  
 
 {{< figure src="/src/rdf.png" class="myimg" title="RDF" >}}
 
