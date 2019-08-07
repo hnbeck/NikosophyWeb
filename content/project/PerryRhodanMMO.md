@@ -6,12 +6,12 @@ image_preview = "introPerryMMO.png"
 math = false
 summary = "Ideen für ein Perry Rhodan MMO"
 tags = ["Basics"]
-title = "Perry Rhodan MMO Ideas"
+title = "Perry Rhodan MMO Ideen"
 src = ""
 
 [header]
   caption = "(c) Hans N. Beck"
-  image = "meer.jpg"
+  image = "introPerryMMO.png"
 
 +++
 
@@ -81,4 +81,4 @@ Im Umfeld von Perry oder anderer Titelfiguren die Geschehnisse um Terra, Superin
 
 ### Nächste Schritte
 
-Um solche Fragen zu klären, wäre es sinnvoll, ein kleines, textbasiertes Minispiel zu entwickeln, dass zwar die Grundzüge des Zielspiels enthält, bei dem man aber solche Spielsteuerungsmechanismen bzw. Spielregelmechanismen ausprobieren könnte.
+Um solche Fragen zu klären, wäre es sinnvoll, ein kleines, textbasiertes Minispiel mit Prolog zu entwickeln, dass zwar die Grundzüge des Zielspiels enthält, bei dem man aber solche Spielsteuerungsmechanismen bzw. Spielregelmechanismen ausprobieren könnte. Prolog sehe ich als Prototypensprache, insbesondere weil diese Sprache Regeln und Wissensmanagement bestens unterstützt. Welche Grafik hinzukommt und ob man eventuell auf andere Sprachen geht ist eine spätere Entscheidung. Erlang steht bei mir im Fokus als ideale, fehlertolerante und skalierbare Sprache, die Prolog verwandt ist.
