@@ -17,7 +17,7 @@ src = ""
 
 ### Disclaimer
 
-Die folgenden Texte repräsentieren ein Fan-Projekt. Es basiert auf Figuren und Geschichten der *"Perry Rhodan"* Hefte und anderer Produkte des Pabel-Moewig Verlag, Rastatt (siehe [Perry Rhodan Website](https://perry-rhodan.net/)). Als *Fan-Projekt* sind die Inhalte (wohl aber das Vorhaben an sich) nicht mit dem Chefredakteur Klaus Frick oder dem besagten Verlag abgesprochen. Ein gewerbliches Interesse besteht mit diesem Fan-Projekt nicht. 
+Die folgenden Texte repräsentieren ein Fan-Projekt. Es basiert auf Figuren und Geschichten der *"Perry Rhodan"* Hefte und anderer Produkte des Pabel-Moewig Verlag, Rastatt (siehe [Perry Rhodan Website](https://perry-rhodan.net/)). Als *Fan-Projekt* sind die Inhalte nicht mit dem Chefredakteur Klaus Frick oder dem besagten Verlag abgesprochen, ich handle nicht im Auftrag des Verlages. Gleichwohl habe ich das Vorhaben Herrn Frick vorgestellt. Ein gewerbliches Interesse besteht mit diesem Fan-Projekt nicht. 
 
 ### Grundidee
 
