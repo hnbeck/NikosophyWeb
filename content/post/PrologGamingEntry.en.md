@@ -8,7 +8,7 @@ title = "Gaming with Prolog - the beginning"
 
 [header]
   caption = "(c) Hans N. Beck"
-  image = "citylight.jpg"
+  image = "CityLight.jpg"
 
 +++
 
