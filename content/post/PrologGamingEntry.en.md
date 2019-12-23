@@ -40,9 +40,9 @@ This figure illustrates the architecture
 
 Pengine is a package of SWI Prolog. It allows to start and query a remote SWI Prolog instance. The instance is sandboxed. So a BlackJack game follows a simple sequence: 
 
--- Javascript querys SWI Prolog over Pengine to setup the game
--- SWI Prolog returns the player states to Tau-Prolog which adds them to its knowledge base
--- Depending of what the player does - draw a card or sand - Tau-Prolog sends over Pengine a new query to SWI Prolog with the current player state.
++ Javascript querys SWI Prolog over Pengine to setup the game
++ SWI Prolog returns the player states to Tau-Prolog which adds them to its knowledge base
++ Depending of what the player does - draw a card or sand - Tau-Prolog sends over Pengine a new query to SWI Prolog with the current player state.
 
 ### Disclaimer
 
@@ -51,9 +51,4 @@ This BlackJack Game has not the purpose to win anything. It is a simple implemen
 ### How to play
 
 
-
- [SWI-Prolog](http://www.swi-prolog.org) 
-
-
-
- thanks to the autors and contributers of this top software. 
+ 
