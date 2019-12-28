@@ -57,7 +57,7 @@ PROLOG has a knowledge base built from all persistent predicates. The server com
 The cards are a relation (a predicate) of this information
 
 	card(Color, Name, Card Points, Orientation).
-Example:
+	Example:
 	card(kreuz, ass, 11, up).
 
 The card colors are German names Kreuz, Herz, Karo, Schippe.
@@ -68,7 +68,7 @@ The player has a number and a sequence of cards, which he as drawn an played out
 
 	player(Number, Card List)
 
-Example:
+	Example:
 	player(1, [card(kreuz,ass,11,up), card(karo, 8, 8, up )])
 
 In the source code the list is named *"Field"*, because it represents the playing field of the player.
