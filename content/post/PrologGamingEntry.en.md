@@ -79,7 +79,7 @@ Playing the game consists of a simple sequence of communication, which happens w
 
 The basic sequence is as follows: 
 
-{{< figure src="/src/ArchitectureBlackJack.png" class="myimg" title="Protocol" >}}
+{{< figure src="/src/BasicSequence.png" class="myimg" title="Protocol" >}}
 
 ### Disclaimer
 
