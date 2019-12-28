@@ -75,7 +75,7 @@ In the source code the list is named *"Field"*, because it represents the playin
 
 ### Protocols
 
-Playing the game consists of a simple sequence of communication, which happens with every player action. This action can be: 
+Playing the game consists of a simple sequence of communication, which happens by every player action. This action can be: 
 
 + start the game by refreshing the side (or enter the side the first time)
 + draw a card or
@@ -83,23 +83,23 @@ Playing the game consists of a simple sequence of communication, which happens w
 
 The basic sequence is as follows: 
 
-{{< figure src="/src/BasicSequence.png" class="myimg" title="Protocol" >}}
+{{< figure src="/src/BasicSequence.png" title="Protocol" >}}
 
 Some explanations: 
 
-+ *Query as a string*: the Pengine function which performs a query on the remote Prolog requires this query as a String.
++ *Query as a string*: the Pengine function which performs a query on the remote Prolog. It requires this query as a String.
 
 + *Pengine Result* is a JSON object. It has the basic pattern {functor: FUNCTORNAME, arg: [A LIST]}
 
-+ *call(TakeResult(Result))* means that the predicate TakeResult(Result) will be queried at Tau-Prolog. This predicate takes the predicates coded as JSON Object and adds them to the knowlegde base of Tau-Prolog. By this way, the actual state of every player is part of the knowledge base. 
++ *call(TakeResult(Result))* means that the predicate *TakeResult(Result)* will be queried on Tau-Prolog. *Result* is the predicates coded as JSON Object, it will be added to the knowlegde base of Tau-Prolog. By this way, the actual state of every player is part of the knowledge base and therefore persistent (for the session).
 
-+ *gameContinue* is the predicate of Tau-Prolog which decides how the game has to proceed. For example, if SWI-Prolog tells via *Result* someone has won the game it has to end and the winner has to be displayed.
++ *gameContinue* is a predicate of Tau-Prolog which decides how the game has to proceed. For example, if SWI-Prolog tells via *Result* someone has won the game it has to end and the winner has to be displayed.
 
 + *call(visCostume)* does trigger the graphics. The basic technique is to give every element of the logical structure (which is relevant for GUI) a costume. This costurme is part of the JavaScript level and decides about the look and feel of visual representation. This is a first approach of decoupling logical structure of effects and processes.
 
 ### Disclaimer
 
-This BlackJack Game has not the purpose to win anything. It is a simple implementation of Black Jack and does not contain the full rule set. Its just for fun and try out things of programming. 
+This BlackJack Game has not the purpose to win anything. It is a simple implementation of Black Jack and does not contain the full rule set. Its purpose is just fun and to try out things of programming. 
 
 ### How to play
 
