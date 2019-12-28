@@ -22,7 +22,7 @@ PROLOG is a language which allows to describe the structure of a problem in term
 
 Having computer games in mind, there is the look at animation, colorful graphics, characters and many other things moving on screen. Games are full of processes and action. This is not the kind of things which let one associate logic immediatly. Logic seems to have a static nature. So the question is how to combine logic, action and processes (or effects). 
 
-### Logic and Processes
+### Logic and effects
 
 Experienced PROLOG programmers know that this programming language allows to describe structures. Trees and lists are common used structures used in logic programming. In general, mathematics (where logic programming is rooted) is about structures and maps of structures. On the other side, the world is dynamic and full of processes and effects. Where is the fine line between structures and effects? It is not easy to investigate this question in a philosophical sound way. But I have an idea, which guides me to create the game this post is about. 
 
@@ -57,6 +57,7 @@ PROLOG has a knowledge base built from all persistent predicates. The server com
 The cards are a relation (a predicate) of this information
 
 	card(Color, Name, Card Points, Orientation).
+	
 	Example:
 	card(kreuz, ass, 11, up).
 
