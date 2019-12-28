@@ -22,7 +22,7 @@ PROLOG is a language which allows to describe the structure of a problem in term
 
 Having computer games in mind, there is animation, colorful graphics, characters and many other things moving on screen. Games full of processes and action. This is not the kind of things which let one think about logic. Logic seems to have a static nature. So the question is how to combine logic, action and processes. 
 
-### Logic and Processing 
+### Logic and Processes
 
 Experienced PROLOG programmers know, that this programming language allows to describe structures. Trees and lists are common used structures used in logic programming. In general, mathematics (where logic programming is rooted) is about structures and maps of structures. On the other side, the world is dynamic and full of processes. Where is the fine line between structures and processes? It is not easy to investigate this question in a philosophical sound way. But I have an idea, which guides me to create the game this post is about. Look at electrostatics: a setup of charges - the structure - defines an electrical field. This field is the cause of a force on an other charge comming into the field. The force causes acceleration, which is the effect inducing movement. 
 
@@ -42,7 +42,44 @@ Pengine is a package of SWI Prolog. It allows to start and query a remote SWI Pr
 
 + Javascript querys SWI Prolog over Pengine to setup the game
 + SWI Prolog returns the player states to Tau-Prolog which adds them to its knowledge base
-+ Depending of what the player does - draw a card or sand - Tau-Prolog sends over Pengine a new query to SWI Prolog with the current player state.
++ Depending of what the player does - draw a card or stand - Tau-Prolog sends new query to SWI Prolog over Pengine with the current player state.
+
+### Basic data structures
+
+PROLOG has a knowledge base built from all persistent predicates. The server component stores the card data, the client PROLOG  holds the player with its cards played out. The nice thing on PROLOG is, the game rules need no extra data structure. They are directly coded in PROLOG terms and predicates. 
+
+#### Cards
+
+The cards are a relation (a predicate) of this information
+
+	card(Color, Name, Card Points, Orientation).
+Example:
+	card(kreuz, ass, 11, up).
+
+The card colors are German names Kreuz, Herz, Karo, Schippe.
+
+#### Player
+
+The player has a number and a sequence of cards, which he as drann an played out in this sequence:
+
+	player(Number, Card List)
+
+Example:
+	player(1, [card(kreuz,ass,11,up), card(karo, 8, 8, up )])
+
+In the source code the list is named "Field", because it represents the playing field of the player.
+
+### Protocols
+
+Playing the game consists of a simple sequence of communication, which happens with every player action. This action can be: 
+
++ start the game by refreshing the side (or enter the side the first time)
++ draw a card or
++ stand
+
+The basic sequence is as follows: 
+
+{{< figure src="/src/ArchitectureBlackJack.png" class="myimg" title="Protocol" >}}
 
 ### Disclaimer
 

@@ -1,0 +1,15 @@
+@startuml
+
+participant "Tau-Prolog"
+participant JavaScript
+participant "SWI-Prolog"
+
+
+"Tau-Prolog" -> JavaScript: call(Query as String)
+JavaScript -> "SWI-Prolog": ask Pengine (Query as String)
+"SWI-Prolog" -> JavaScript: Pengine Result 
+JavaScript -> "Tau-Prolog": query(TakeResult(Result))
+JavaScript -> "Tau-Prolog": query gameContinue 
+"Tau-Prolog" -> JavaScript: call(visCostume)
+
+@enduml

@@ -9,12 +9,12 @@ node Server {
 }
 
 node Browser {
-	[Tau-Prolog] .> Pengine : use
+	[JavaScript] -> Pengine : use
 	[Tau-Prolog] --> [JavaScript] : call
 	[JavaScript] --> [Tau-Prolog] : query
-	[JavaScript] -- [p5.js]
+	[JavaScript] - [p5.js]
 
-	[JavaScript] .> HTTP : use
+	[JavaScript] -> HTTP : use
 	note right of [Tau-Prolog] : game control
 	note right of [p5.js] : Graphics and Sound and GUI
 }
