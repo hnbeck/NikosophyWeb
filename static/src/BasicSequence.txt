@@ -9,7 +9,7 @@ participant "SWI-Prolog"
 JavaScript -> "SWI-Prolog": ask Pengine (Query as String)
 "SWI-Prolog" -> JavaScript: Pengine Result 
 JavaScript -> "Tau-Prolog": query(TakeResult(Result))
-JavaScript -> "Tau-Prolog": query gameContinue 
+JavaScript -> "Tau-Prolog": query(gameContinue)
 "Tau-Prolog" -> JavaScript: call(visCostume)
 
 @enduml

@@ -81,11 +81,24 @@ The basic sequence is as follows:
 
 {{< figure src="/src/BasicSequence.png" class="myimg" title="Protocol" >}}
 
+Some explanations: 
+
++ *Query as a string*: the Pengine function which performs a query on the remote Prolog requires this query as a String.
+
++ *Pengine Result* is a JSON object. It has the basic pattern {functor: FUNCTORNAME, arg: [A LIST]}
+
++ *call(TakeResult(Result))* means that the predicate TakeResult(Result) will be queried at Tau-Prolog. This predicate takes the predicates coded as JSON Object and adds them to the knowlegde base of Tau-Prolog. By this way, the actual state of every player is part of the knowledge base. 
+
++ *gameContinue* is the predicate of Tau-Prolog which decides how the game has to proceed. For example, if SWI-Prolog tells via *Result* someone has won the game it has to end and the winner has to be displayed.
+
++ *call(visCostume)* does trigger the graphics. The basic technique is to give every element of the logical structure (which is relevant for GUI) a costume. This costurme is part of the JavaScript level and decides about the look and feel of visual representation. This is a first approach of decoupling logical structure of effects and processes.
+
 ### Disclaimer
 
 This BlackJack Game has not the purpose to win anything. It is a simple implementation of Black Jack and does not contain the full rule set. Its just for fun and try out things of programming. 
 
 ### How to play
 
+Just follow THIS LINK. You will see the green table for the cards and the card stack. Your initial setup of cards will be drawn as well as that for the dealer. Just follow the instructions. For a new game reload the page. Enjoy and don#t expect anything. 
 
  
