@@ -45,17 +45,7 @@ So let's discuss which option would have which consequences.
 
 
 
-### Basic architecture
-
-The game is created as a HTTP game. The implementation of the rules of Black Jack is done in [SWI-Prolog](http://www.swi-prolog.org). This is a very good implementation of PROLOG. The big set of packages also contain HTTP stuff. To write a simple HTTP server is easy, SWI-Prolog is therefore the server component. 
-
-
-
-My client has to parts. One part is [Tau-Prolog](http://tau-prolog.org/), a very nice implementation of ISO Prolog in Javascript. This controls the gameplay. Graphics and sound is done in [p5.js](https://p5js.org/), an Web variant of the great [Processing](http://www.processing.org) creative language.
-
-The figure here illustrates the architecture
-
-{{< figure src="/src/ArchitectureBlackJack.png" class="myimg" title="Architecture" >}}
+kJack.png" class="myimg" title="Architecture" >}}
 
 
 
