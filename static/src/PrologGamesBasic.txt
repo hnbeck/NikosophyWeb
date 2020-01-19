@@ -1,0 +1,19 @@
+@startuml
+
+node Server {
+	[SWI Prolog] - Pengine
+	[SWI Prolog] -- [HTTP Server]
+	[HTTP Server] - HTTP
+	note left of [SWI Prolog] : Implementation of game rules
+	note left of [HTTP Server] : index.html = Website
+}
+
+node Browser {
+	[JavaScript] -> Pengine : use
+	[JavaScript] - [JS Graphics]
+
+	[JavaScript] -> HTTP : use
+	note right of [JS Graphics] : Graphics and Sound and GUI
+}
+
+@enduml
