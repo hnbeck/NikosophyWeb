@@ -30,7 +30,7 @@ The PROLOG part implements the Game Rules. In my approach, rules describe struct
 
 The question is now where the structure itself is stored. It could be stored by PROLOG, but it could also be stored on the client or even some mixture. Replication blurres the terms client and server. Instead of data the operations will be distributed over a net of symmetric nodes. Strutures are build on every node where it belongs. For details look for example [here](http://worrydream.com/refs/Smith%20-%20Croquet%20-%20A%20Collaboration%20System%20Architecture.pdf)
 
-So lets look which option would have which consequences.
+So let's discuss which option would have which consequences.
 
 
 ### Structure on the server
