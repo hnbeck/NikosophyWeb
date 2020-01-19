@@ -28,7 +28,7 @@ For the discussion please refer to the architecture below which all my PROLOG ga
 
 The PROLOG part implements the Game Rules. In my approach, rules describe structure and the transformation of structure. The effect part, graphics and interactivity are realized in the client via JavaScript or libraries based on JavaScript. 
 
-The question is now where the structure itself is stored. It could be stored by PROLOG, but it could also be stored on the client or even some mixture. So lets look which option would have which consequences.
+The question is now where the structure itself is stored. It could be stored by PROLOG, but it could also be stored on the client or even some mixture. Replication (see [this post](/project/projectCroquet/) post) So lets look which option would have which consequences.
 
 
 ### Structure on the server
