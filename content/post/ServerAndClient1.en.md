@@ -47,12 +47,25 @@ Back to the replication which is described in objects and messages. PROLOG has n
 
 My approach to find a judgement about the different Client-Server-Replication options is to examine the questions below. In order to state the questions precise let as define this basic operations needed in the PROLOG setting:
 
-		Q(S, A) 	== query something about the structure S, return answer A, which will be structure elements or Yes/No. Example: What ships are in the playfield?
-		R(S, S') 	== applying a rule on the structure S to get the next structure S'. Application of a rule would take the pseudo time one tick further
-		!(X, t, n) 	== amount of data encoded in structur S and/or real time t to process
-		?(S, R) 	== which rules R could be applied in current structure S. Such function may be used to show the player options.
-		E(S, F) 	== apply all effects one pseudo time step further resulting an a new situation F. These must be translated to a R. For example: in a playfield there are ships with a velocity. The effect would be that all ships move according this velocity.
+		with 
+		S 	== Structure
+		S+ 	== Structure of a next pseudo time
+		A 	== Substructure and answer to a query
+		t 	== Real time
+		R  	== Rules
+		F 	== facts
+		n 	== Amount or number of
+
+Then we have this abstract functions:
+
+		?(S, A) 	== query
+		!(S, S*) 	== applying rules. 
+		O(X, t, n) 	== Complexity related to data or time
+		+(F, S, S*) == transform situation F. These must be translated to a R. 
+
+		For example: in a playfield there are ships with a velocity. The effect would be that all ships move according this velocity.
 		F(F, S, S')	== a new situation has to be interpreted on the current structure S resulting in a new structure S. Look at the ship example above. Because S is a logical structure, it may be or not that the new ship positions change something at the logical structure. If the new position induces a collision, then this will be a structural thing. If one ship free in space moves a little bit it will be still a free ship in space.
+
 
 Keeping the interpretation of objects and messages and the operations described above in mind, I'll look at:
 
