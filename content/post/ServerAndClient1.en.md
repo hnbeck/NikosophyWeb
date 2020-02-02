@@ -49,7 +49,7 @@ My approach to find a judgement about the different Client-Server-Replication op
 
 		with 
 		S 	== Structure
-		S'' 	== Structure of a next pseudo time
+		S\* 	== Structure of a next pseudo time
 		A 	== Substructure and answer to a query
 		t 	== Real time
 		R  	== Rules
@@ -61,9 +61,9 @@ Then we have this abstract functions:
 | Command              | Description              | Example |
 | ---------------------|--------------------------|--------|
 | ?(S, A) | Query about the structure, returning A | Are there spaceships on the playfield? A would then describte all the ships with this predicate |
-| !(S, S'') | Applying all applicable rules R on S, resulting in S''| This would be on tick of the pseudo time clock. The rule of "on every place can only be one ship" requires collision if in the structure 2 ships will be on the same place |
-| +(S, F) | Calculate all effects out from structure S, resulting in new facts F | a spaceship has velocity v. The effect would be that the ship has moved after on tick of pseudotime according its v. The new fact is the new position |
-| >(F, S, S'') | Translate facts which are result of effects into new structure S''| Look at the ship example above. Because S is a logical structure, it may be or not that the new ship positions change something at the logical structure. If the new position induces a collision, then this will be a structural thing. If one ship free in space moves a little bit it will be still a free ship in space.|
+| !(S, S\*) | Applying all applicable rules R on S, resulting in S\*| This would be on tick of the pseudo time clock. The rule of on every place can only be one ship" requires collision if in the structure 2 ships will be on the same place |
+| +(S, F) | Calculate all effects out from structure S, resulting in new facts F | A spaceship has velocity v. The effect would be that the ship has moved after on tick of pseudotime according its v. The new fact is the new position |
+| >(F, S, S\*) | Translate facts which are result of effects into new structure S\*| Look at the ship example above. Because S is a logical structure, it may be or not that the new ship positions change something at the logical structure. If the new position induces a collision, then this will be a structural thing. If one ship free in space moves a little bit it will be still a free ship in space.|
 | O(X, t, n) | Evaluate complexity related to amount of storage or time of X) | O(S, n) may count the predicates stored in S |
 
 
