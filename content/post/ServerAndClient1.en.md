@@ -49,12 +49,19 @@ My approach to find a judgement about the different Client-Server-Replication op
 
 with 
 S 	== Structure
+
 S\* == Structure of a next pseudo time
+
 A 	== Substructure and answer to a query
+
 t 	== Real time
+
 R  	== Rules
+
 F 	== facts
+
 n 	== Amount or number of
+
 
 Then we have this abstract functions:
 
@@ -64,7 +71,7 @@ Then we have this abstract functions:
 | !(S, S\*) | Applying all applicable rules R on S, resulting in S\*| This would be on tick of the pseudo time clock. The rule of on every place can only be one ship" requires collision if in the structure 2 ships will be on the same place |
 | +(S, F) | Calculate all effects out from structure S, resulting in new facts F | A spaceship has velocity v. The effect would be that the ship has moved after on tick of pseudotime according its v. The new fact is the new position |
 | >(F, S, S\*) | Translate facts which are result of effects into new structure S\*| Look at the ship example above. Because S is a logical structure, it may be or not that the new ship positions change something at the logical structure. If the new position induces a collision, then this will be a structural thing. If one ship free in space moves a little bit it will be still a free ship in space.|
-| O(X, t, n) | Evaluate complexity related to amount of storage or time of X) | O(S, n) may count the predicates stored in S |
+| O(X, t, n) or just O(X)| Evaluate complexity related to amount of storage or time of X) | O(S, n) may count the predicates stored in S |
 
 
 Keeping the interpretation of objects and messages and the operations described above in mind, I'll look at:
@@ -84,19 +91,17 @@ For the PROLOG world and the operations above these questions translate to
 
 Question 1:
 
-Structure and therefore the game data are stored on the server. These are the most data and they have to be coded in the PROLOG way. 
+?(S, A) is implemented on the server. S contains the complete game. In consequence - because the complete set of S is on the server - !(S, S\*) is also part of the server mechanics. O(S, t, n), O(R, t, n) is big for big games. 
 
-There are many ways to make data in PROLOG persistent. The developer can choose between many kinds of databases. With the *asserta* predicate any term could be add to the - persistent - knowledge database. The structure describes the game world and all game objects. So in terms of amount of data, the server has the high load. 
+S has to be implemented in PROLOG way as predicates, facts and rules. There are many ways to make data in PROLOG persistent. The developer can choose between many kinds of databases. With the *asserta* predicate any term could be add to the - persistent - knowledge database. The structure describes the game world and all game objects. 
 
 Question 2: 
 
-Structure elements - which means facts coded in predicates -  have to be send to the client. Depending on the nature of the game all predicates have to be send many times or can be transported in parts from time to time. In my technical setting this would send a lot of JSON objects over the net, because the query results of PROLOG wil be coded in this way. 
-The way back will be lightweight. Things which results from interactions have to be send as queris to the server in order to ask for application of rules. This does not require big amount of data.
+?, S have to be send to the server. O(?) and O(A) << O(S) and O(R). The pengine library of SWI Prolog sends queries as strings, so ?, A has to be stringified. The answer A is send back as JSON objects, which matches perfect for the JavaScript environment. Big worlds and many effects require a big A, so the traffic will increase with the structural complexity of the game.
 
 Question 3: 
 
-In general the structure as hold on the server can not transformed directly to graphics. There has to be some interpretation to create the graphics. The JSON objects match the JavaScript environment, but they represent a logical structure out of the PROLOG world. Also the effect based on the structure has to be implemented by the client based on this JSON objects. If the structure enters the client in one block this will be a big task. 
-Because events and effect happens in Javascript, the client has to translate toe situation in an abstraction fitting the server, or the server has to do this tanslage
+ The client has to implement +(S, F).  (O+) depends on the rules an mechanisms describing the effect. S is received by the server. Related to the function >(F, S, S\*) there are 2 possibilites: if >() is executed on the client, the client has to need rules how F transforms to elements of S. That may require edditional communication and storage on client side. For a lightwight client it would be better to set >() on the server. In this case the server has to now also something about F, it cannot described in terms of S alone. The best option may depend on the game structure and the complexity of >()
 
 
 ### Structure on the client
