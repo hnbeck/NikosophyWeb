@@ -47,14 +47,14 @@ Back to the replication which is described in objects and messages. PROLOG has n
 
 My approach to find a judgement about the different Client-Server-Replication options is to examine the questions below. In order to state the questions precise let as define this basic operations needed in the PROLOG setting:
 
-		with 
-		S 	== Structure
-		S\* 	== Structure of a next pseudo time
-		A 	== Substructure and answer to a query
-		t 	== Real time
-		R  	== Rules
-		F 	== facts
-		n 	== Amount or number of
+with 
+S 	== Structure
+S\* == Structure of a next pseudo time
+A 	== Substructure and answer to a query
+t 	== Real time
+R  	== Rules
+F 	== facts
+n 	== Amount or number of
 
 Then we have this abstract functions:
 
