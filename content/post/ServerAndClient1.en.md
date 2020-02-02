@@ -91,34 +91,32 @@ For the PROLOG world and the operations above these questions translate to
 
 Question 1:
 
-?(S, A) is implemented on the server. S contains the complete game. In consequence - because the complete set of S is on the server - !(S, S\*) is also part of the server mechanics. O(S, t, n), O(R, t, n) is big for big games. 
+?(S, A) is implemented on the server. S contains the complete game. In consequence - because the complete set of S is on the server - !(S, S\*) is also part of the server mechanics. O(S), O(R) is big for big games. 
 
 S has to be implemented in PROLOG way as predicates, facts and rules. There are many ways to make data in PROLOG persistent. The developer can choose between many kinds of databases. With the *asserta* predicate any term could be add to the - persistent - knowledge database. The structure describes the game world and all game objects. 
 
 Question 2: 
 
-?, S have to be send to the server. O(?) and O(A) << O(S) and O(R). The pengine library of SWI Prolog sends queries as strings, so ?, A has to be stringified. The answer A is send back as JSON objects, which matches perfect for the JavaScript environment. Big worlds and many effects require a big A, so the traffic will increase with the structural complexity of the game.
+?, S have to be send to the server. O(?) and O(A) << O(S) and O\(R\). The pengine library of SWI Prolog sends queries as strings, so ?, A has to be stringified. The answer A is send back as JSON objects, which matches perfect for the JavaScript environment. Big worlds and many effects require a big A, so the traffic will increase with the structural complexity of the game.
 
 Question 3: 
 
- The client has to implement +(S, F).  (O+) depends on the rules an mechanisms describing the effect. S is received by the server. Related to the function >(F, S, S\*) there are 2 possibilites: if >() is executed on the client, the client has to need rules how F transforms to elements of S. That may require edditional communication and storage on client side. For a lightwight client it would be better to set >() on the server. In this case the server has to now also something about F, it cannot described in terms of S alone. The best option may depend on the game structure and the complexity of >()
+ The client has to implement +(S, F).  O(+) depends on the rules an mechanisms describing the effect. S is received by the server. Related to the function >(F, S, S\*) there are 2 possibilites: if >() is executed on the client, the client has to need rules how F transforms to elements of S. That may require edditional communication and storage on client side. For a lightwight client it would be better to set >() on the server. In this case the server has to now also something about F, it cannot described in terms of S alone. The best option may depend on the game structure and the complexity of >()
 
 
 ### Structure on the client
 
 Question 1: 
 
-In this case the server only holds the game rules. In general rule data are much less than game data. In addition, rules can be stored efficiently in PROLOG.
-
-What the server needs to apply the rules is a situation. The interactive effect on the client site triggers some situation between game objects. This could be a collision, or a distance between to objects drops under a limit. The user could trigger a control function. What ever happens on the effect side, the resulting new structure or at least the facts needed for the rules has to be coded in a way such that PROLOG could apply the rules. This translation could be done by Prolog, but could also done in the client. Anyway, the server has a limited load, only the gaming rules.
+The server only holds R and performs !(S, S\*). In general O(R)<<O(S), the story requirements will be low.
 
 Question 2:
 
-The result of thw rule application has to find the way back to the client. That means part of the structure has changed, that part which the logic is all about. As PROLOG query results these are abstract. This reduces the amount of communication.
+Because the rules are on the server, to perform !(S, S\*) would require to send all necessary elements of S to the server. In general this could be much in worst case all the full set S. The Server performs !() and sends S\* back, which could also be a lot. So in general O(S), O(A) with respect to communication would be big.
 
 Question 3: 
 
-Because the client has all structure on his side, it can store all data in a format which is convenient for graphics. But than the facts for query about rules have to be translated, which needs additional effort. 
+?(S, A), +(S, F) and >(F, S, S\*) are done on the client. The advantage would be that the encoding of S and F could be as the client in its JavaScript world bay need. The downside is, that O(?)+O(+)+O(>) >> O(!). So the in fact, the server is nearly useless, all load is on client and network.
 
 
 ### Replication
