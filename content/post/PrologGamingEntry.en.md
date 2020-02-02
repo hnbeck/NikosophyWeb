@@ -104,6 +104,6 @@ This BlackJack Game has not the purpose to win anything. It is a simple implemen
 
 ### How to play
 
-Just follow THIS LINK. You will see the green table for the cards and the card stack. Your initial setup of cards will be drawn as well as that for the dealer. Just follow the instructions. For a new game reload the page. Enjoy and don#t expect anything. 
+Just follow [THIS LINK](http://ecblackjack.e-c.biz). You will see the green table for the cards and the card stack. Your initial setup of cards will be drawn as well as that for the dealer. Just follow the instructions. For a new game reload the page. Enjoy and don#t expect anything. 
 
  
