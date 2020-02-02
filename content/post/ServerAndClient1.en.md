@@ -40,7 +40,7 @@ Rules describe the transformation of structure: how objects move on or what happ
 
 Back to the replication which is described in objects and messages. PROLOG has no objects and messages. It is built around facts, rules and queries. So how to map objects and messages and pseudo time to this? One thing is that different versions of the knowlegde base of PROLOG could be related to the history of queries applied. In the procedural view of PROLOG an application of a rule is like a method to the PROLOG system. Introducing a pseudo time as reference to a query history may be possible. But it is not the only thing that the query has to happen in a certain sequence. The facts which are the parameter of the queries should be of a selected version or time point. So maybe every predicate gets an new argument: the pseudo time reference.
 
- What about the objects? Assume we have space ships in a game as well as asteroids. It seems natural to implement ships and asteroids as object. What would be the equivalent in PROLOG? Knowledge is encoded and stored in predicates. Facts about the ships and asterodis are given as predicates. A message send to an object in the OpenCroquet world I'll interpret as a query on predicates with pseudo time. [Logtalk](https://logtalk.org) has a much more envolved view on this point, maybe I'll switch to it for later work.
+ What about the objects? Assume we have space ships in a game as well as asteroids. It seems natural to implement ships and asteroids as object. What would be the equivalent in PROLOG? Knowledge is encoded and stored in predicates. Facts about the ships and asterodis are given as predicates. A message send to an object in the OpenCroquet world I'll interpret as a query on predicates with pseudo time. This would require that the rules for transforming the related structures also have to be stored in connection to this predicates. [Logtalk](https://logtalk.org) has a much more envolved view on this point, maybe I'll switch to it for later work.
 
 
 ### And now - the comparison
@@ -89,32 +89,32 @@ For the PROLOG world and the operations above these questions translate to
 
 ### Structure on the server
 
-Question 1:
+*Question 1:*
 
-?(S, A) is implemented on the server. S contains the complete game. In consequence - because the complete set of S is on the server - !(S, S\*) is also part of the server mechanics. O(S), O(R) is big for big games. 
+?(S, A) is implemented on the server. S contains the complete game. In consequence - because the complete set of S is on the server - !(S, S\*) is also part of the server mechanics. O(S), O\(R\) is big for big games. 
 
 S has to be implemented in PROLOG way as predicates, facts and rules. There are many ways to make data in PROLOG persistent. The developer can choose between many kinds of databases. With the *asserta* predicate any term could be add to the - persistent - knowledge database. The structure describes the game world and all game objects. 
 
-Question 2: 
+*Question 2:*
 
 ?, S have to be send to the server. O(?) and O(A) << O(S) and O\(R\). The pengine library of SWI Prolog sends queries as strings, so ?, A has to be stringified. The answer A is send back as JSON objects, which matches perfect for the JavaScript environment. Big worlds and many effects require a big A, so the traffic will increase with the structural complexity of the game.
 
-Question 3: 
+*Question 3:* 
 
  The client has to implement +(S, F).  O(+) depends on the rules an mechanisms describing the effect. S is received by the server. Related to the function >(F, S, S\*) there are 2 possibilites: if >() is executed on the client, the client has to need rules how F transforms to elements of S. That may require edditional communication and storage on client side. For a lightwight client it would be better to set >() on the server. In this case the server has to now also something about F, it cannot described in terms of S alone. The best option may depend on the game structure and the complexity of >()
 
 
 ### Structure on the client
 
-Question 1: 
+*Question 1:* 
 
-The server only holds R and performs !(S, S\*). In general O(R)<<O(S), the story requirements will be low.
+The server only holds R and performs !(S, S\*). In general O\(R\)<<O(S), the story requirements will be low.
 
-Question 2:
+*Question 2:*
 
 Because the rules are on the server, to perform !(S, S\*) would require to send all necessary elements of S to the server. In general this could be much in worst case all the full set S. The Server performs !() and sends S\* back, which could also be a lot. So in general O(S), O(A) with respect to communication would be big.
 
-Question 3: 
+*Question 3:* 
 
 ?(S, A), +(S, F) and >(F, S, S\*) are done on the client. The advantage would be that the encoding of S and F could be as the client in its JavaScript world bay need. The downside is, that O(?)+O(+)+O(>) >> O(!). So the in fact, the server is nearly useless, all load is on client and network.
 
@@ -122,20 +122,27 @@ Question 3:
 ### Replication
 
 
-Question 1: 
+*Question 1:* 
 
-Every node stores this part of structure it needs. The data can be coded in a graphics friendly way. If a rule application is needed, the facts for the rules don't travel to the server, the rule travels to the node. In the sense of replication the rules are distributed to every node 
+Two variants are possible:
 
-Question 2: 
+1. The SWI Prolog server is a node as all other. According to the understanding of replication here, ?(S, A) and !(S, S\*) are implemented on every node. Every node has its replicated R, S and A and can encode and process S and A in the best way suited to the environmen: SWI Prolog, Tau-Prolog or JavaScript (or type systems). In general, every node needs also the effect functions +(S, F) and >(F, S, S\*). A server needs no effects and GUI, so this functions may not be necessary.
 
-Because only rules travels over the line, the amount of data is small. Rules are much light weight in comparision to structure data. 
+2. The SWI Prolog server is a rules server. It provide the rule pattern !() without application of rules,  !(S, S\*) hast to be executed on the client.  But I have to admit that I have no idea what this would looks like, what are the tasks of such a gateway. Therefore I'll take version 1. as initial approach. 
 
-Question 3: 
+*Question 2:* 
 
-Effect implementation is only as far as it is needed for the node and their current access to the world.
+Because every node has R, S and A, only the querys have to be transmitted. In opposite to the protocol the Pengine library of SWI Prolog uses replication would allow to transmit only references to the pseudotime and the predicates ("objects"). Including A and a subset of S would not be required resulting in a very fast and light communication. 
+
+*Question 3:* 
+
+As a full node, the "client" implements ?(S, A), !(S, S\*), +(S, F) and >(F, S, S\*). In principle, coding could be in JavaScript or Tau-Prolog. The nature of replication allows to keep the encoding of the package including S, R, F JavaScript friendly. 
+In this setting it may be reasonable to use the Croquet.studio SDK (which is JS) to implement the replication. 
 
 
+### Summary
 
+Replication and PROLOG looks interesting. There are many questions left, but for I it looks attractive for designing multi user games which utilitize PROLOG as a rule engine. Some code experiments will follow, and I will report about the results.
 
 
  
