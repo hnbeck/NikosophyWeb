@@ -1,226 +1,107 @@
+# Configuration of Hugo
+# Guide: https://sourcethemes.com/academic/docs/get-started/
+# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
+#
+# This file is formatted using TOML syntax - learn more at https://learnxinyminutes.com/docs/toml/
+# Each configuration section is defined by a name in square brackets (e.g. `[outputs]`).
+
+# Title of your site
+title = "Academic"
+
+# The URL of your site.
+# End your URL with a `/` trailing slash, e.g. `https://example.com/`.
 baseurl = "/"
-title = "Nikosophie - Experimentelle Philosophie"
-copyright = "&copy; 2017, 2018, 2019, 2020 Hans N. Beck"
+
+# Enter a copyright notice to display in the site footer.
+# To display a copyright symbol, type `&copy;`. For current year, type `{year}`.
+copyright = ""
+
+############################
+## Advanced options below ##
+############################
+
+# Name of Academic theme folder in `themes/`.
 theme = "academic"
-enableEmoji = true
-footnotereturnlinkcontents = "<sup>^</sup>"
 
-# Enable comments by entering your Disqus shortnameh
-disqusShortname = ""
-
-# Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+# Get last modified date for content from Git?
+enableGitInfo = false
 
 # Default language to use (if you setup multilingual support)
-defaultContentLanguage = "de"
+defaultContentLanguage = "en"
+hasCJKLanguage = false  # Set `true` for Chinese/Japanese/Korean languages.
 defaultContentLanguageInSubdir = false
- 
-[blackfriday]
-  hrefTargetBlank = true
+removePathAccents = true  # Workaround for https://github.com/gohugoio/hugo/issues/5687
 
-[params]
-  name = "Hans N. Beck"
-  role = "Dipl.-Ing."
-  organization = "Nikosophie Hans Beck"
-  organization_url = ""
-  avatar = "EduCon_Logo.png"
-  email = "hnbeck@nikosophy.online"
-  address = "Heilbronner Str. 119, 74211 Leingarten"
-  office_hours = ""
-  phone = "+49 (0) 151 58744954"
-  # skype = ""
-  telegram = ""
+summaryLength = 30  # Listing summary length in words. Also, see `abstract_length` in `params.toml`.
+paginate = 10  # Number of items per page in paginated lists.
+enableEmoji = true
+footnotereturnlinkcontents = "<sup>^</sup>"
+ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
-  # Enable Keybase in Contact section by entering your keybase.io username.
-  keybase = ""
+# Workaround Hugo publishing taxonomy URLs as plurals - consistently use singular across Academic.
+[permalinks]
+  authors = "/author/:slug/"
+  tags = "/tag/:slug/"
+  categories = "/category/:slug/"
+  publication_types = "/publication-type/:slug/"
 
-  # Date format (refer to Go's date format: http://flippinggodateformat.com )
-  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-  date_format = "2006-01-02"
+[outputs]
+  home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]
+  section = [ "HTML", "RSS" ]
 
-  # Enable global LaTeX math rendering?
-  #   If false, you can enable it locally on a per page basis.
-  math = false
+[mediaTypes."application/manifest+json"]
+  suffixes = ["webmanifest"]
 
-  # Highlight.js options
-  #   highlight
-  #     Enable global source code highlighting?  If false, you can
-  #     override it for a particular page in that page's preamble.
-  #
-  #     Example: highlight = true
-  #
-  #   highlight_languages
-  #     Add support for highlighting additional languages. Support for
-  #     languages mentioned here will be included in all pages. You
-  #     can also set this variable for a particular page in that
-  #     page's preamble.
-  #
-  #     Example: highlight_languages = ["go", "lisp", "ocaml"]
-  #
-  #   highlight_style
-  #     Choose a different CSS style for highlighting source
-  #     code. Setting this option in a page's preamble has no
-  #     effect.
-  #
-  #     Example: highlight_style = "github-gist"
-  #
-  #   highlight_version
-  #     Choose the version of highlight.js you want. Setting this
-  #     option in a page's preamble has no effect.
-  #
-  #     Example: highlight_version = "9.9.0"
-  #
-  #   For the list of supported languages, styles, and versions, see:
-  #   https://cdnjs.com/libraries/highlight.js/
-  #
-  #   For more info on the highlighting options, see:
-  #   https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/#highlighting-options
-  highlight = true
-  highlight_languages = []
-  # highlight_style = "github"
-  # highlight_version = "9.9.0"
+[outputFormats.WebAppManifest]
+  mediaType = "application/manifest+json"
+  rel = "manifest"
 
-  # Enable native social sharing buttons?
-  sharing = true
+# Configure the Markdown renderer.
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Enable user to embed HTML snippets in Markdown content.
+  [markup.highlight]
+    codeFences = false  # Disable Hugo's code highlighter as it conflicts with Academic's highligher.
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
 
-  # Link custom CSS and JS assets
-  #   (relative to /static/css and /static/js respectively)
-  custom_css = []
-  custom_js  = ["p5.min.js"]
-
-  # Publication types.
-  #   Used to categorize publications.
-  #   The index of the publication type in the list is used as its unique numerical identifier.
-  #   The numeric ID is used in a publication's frontmatter to categorize it.
-  #   The language can be edited below.
-  #   For multi-lingual sites, copy this block to each language section at the end of this file.
-  publication_types = [
-    'Uncategorized',  # 0
-    'Magazine',  # 1
-    'Online',  # 2
-    'Work in progress',  # 3
-    'Guest blog post',  # 4
-    'Book',  # 5
-    'Book chapter'  # 6
-  ]
-
-  # Social/Academic Networking
-  #
-  # Icon pack "fa" includes the following social network icons:
-  #
-  #   twitter, weibo, linkedin, github, facebook, pinterest, google-plus,
-  #   youtube, instagram, soundcloud
-  #
-  #   For email icon, use "fa" icon pack, "envelope" icon, and
-  #   "mailto:your@email.com" as the link.
-  #
-  #   Full list: https://fortawesome.github.io/Font-Awesome/icons/
-  #
-  # Icon pack "ai" includes the following academic network icons:
-  #
-  #   google-scholar, arxiv, orcid, researchgate, mendeley
-  #
-  #   Full list: https://jpswalsh.github.io/academicons/
-
-  [[params.social]]
-    icon = "envelope"
-    icon_pack = "fa"
-    link = "mailto:hnbeck@nikosophy.online"
-
-  [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "https://twitter.com/EnrichedGamesHB"
-
-   [[params.social]]
-    icon = "linkedin"
-    icon_pack = "fa"
-    link = "https://de.linkedin.com/in/hans-nikolaus-beck-b9a795159"
-
-#  [[params.social]]
-#    icon = "google-scholar"
-#    icon_pack = "ai"
-#    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
-
-  [[params.social]]
-    icon = "github"
-    icon_pack = "fa"
-    link = "https://github.com/hnbeck"
-
-
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
-#   The weight parameter defines the order that the links will appear in.
-
+[imaging]
+  resampleFilter = "lanczos"
+  quality = 90
+  anchor = "smart"  # Anchor for cropping. Options include Smart and Center.
 
 # Taxonomies.
-#[taxonomies]
-#  tag = "tags"
-#  category = "categories"
-#  publication_type = "publication_types"
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  publication_type = "publication_types"
+  author = "authors"
 
-# Languages
-#   Create a [languages.X] block for each language you want, where X is the language ID.
+# Related content.
+[related]
+  threshold = 80.0
+  includeNewer = true
+  toLower = true
 
-# Configure the English version of the website.
-[languages]
-  [languages.en]
-    languageCode = "en-us"
-    title = "Play and tale"
-    languageName = "flag-uk.png"
-   
-  [languages.de]
-    languageCode = "de-de"
-    title = "Spiel und Erzählung"
-    languageName = "flag-de.png"
-    
-  [[languages.de.menu.main]]
-    name = "Start"
-    url = "#about"
-    weight = 1
+  [[related.indices]]
+    name = "title"
+    weight = 60.0
 
-  [[languages.de.menu.main]]
-    name = "Publikationen"
-    url = "#publications"
-    weight = 4
+  [[related.indices]]
+    name = "summary"
+    weight = 50.0
 
-  [[languages.de.menu.main]]
-    name = "Beiträge"
-    url = "#posts"
-    weight = 3
+  [[related.indices]]
+    name = "tags"
+    weight = 80.0
 
-  [[languages.de.menu.main]]
-    name = "Projekte"
-    url = "#projects"
-    weight = 2
+  [[related.indices]]
+    name = "categories"
+    weight = 70.0
 
-  [[languages.de.menu.main]]
-    name = "Impressum/Datenschutz"
-    url = "#contact"
-    weight = 6
-
-  [[languages.en.menu.main]]
-    name = "Start"
-    url = "#about"
-    weight = 1
-
-  [[languages.en.menu.main]]
-    name = "Publications"
-    url = "#publications"
-    weight = 4
-
-  [[languages.en.menu.main]]
-    name = "Posts"
-    url = "#posts"
-    weight = 3
-
-  [[languages.en.menu.main]]
-    name = "Projects"
-    url = "#projects"
-    weight = 2
-
-  [[languages.en.menu.main]]
-    name = "Impressum/privacy"
-    url = "#contact"
-    weight = 6
+  [[related.indices]]
+    name = "authors"
+    weight = 20.0
