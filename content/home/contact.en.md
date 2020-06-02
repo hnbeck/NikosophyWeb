@@ -68,13 +68,13 @@ Consent of the data subject is any freely given, specific, informed and unambigu
 #### 2. Name and Address of the controller
 Controller for the purposes of the General Data Protection Regulation (GDPR), other data protection laws applicable in Member states of the European Union and other provisions related to data protection is: 
 
-Educational Concepts Hans Beck  
-Waghäuseler Str. 119
-68753 Waghäusel 
+Nikosophie Hans N. Beck  
+Heilbronner Str. 169 
+74211 Leingarten
 Deutschland  
-Phone: +49 151 58744954  
-Email: hnbeck@educational-concepts.biz  
-Website: www.educational-concepts.biz  
+Tel.: +4915158744954  
+E-Mail: hnbeck@nikosophy.online 
+Website: www.nikosophy.online  
 
 #### 3. Collection of general data and information
 The website of the Educational Concepts Hans Beck collects a series of general data and information when a data subject or automated system calls up the website. This general data and information are stored in the server log files. Collected may be (1) the browser types and versions used, (2) the operating system used by the accessing system, (3) the website from which an accessing system reaches our website (so-called referrers), (4) the sub-websites, (5) the date and time of access to the Internet site, (6) an Internet protocol address (IP address), (7) the Internet service provider of the accessing system, and (8) any other similar data and information that may be used in the event of attacks on our information technology systems.

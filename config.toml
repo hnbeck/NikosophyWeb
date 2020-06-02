@@ -1,6 +1,6 @@
 baseurl = "/"
-title = "Spiel und Erzählung"
-copyright = "&copy; 2017, 2018, 2019 Hans N. Beck"
+title = "Nikosophie - Experimentelle Philosophie"
+copyright = "&copy; 2017, 2018, 2019, 2020 Hans N. Beck"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -21,14 +21,14 @@ defaultContentLanguageInSubdir = false
 [params]
   name = "Hans N. Beck"
   role = "Dipl.-Ing."
-  organization = "Educational Concepts Hans Beck"
+  organization = "Nikosophie Hans Beck"
   organization_url = ""
   avatar = "EduCon_Logo.png"
-  email = "hnbeck@educational-concepts.biz"
-  address = "Waghäuseler Str. 119, 68753 Waghäusel"
+  email = "hnbeck@nikosophy.online"
+  address = "Heilbronner Str. 119, 74211 Leingarten"
   office_hours = ""
   phone = "+49 (0) 151 58744954"
-  # skype = "hnbeck@educational-concepts.biz"
+  # skype = ""
   telegram = ""
 
   # Enable Keybase in Contact section by entering your keybase.io username.

@@ -70,13 +70,13 @@ Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten 
 #### 2. Name und Anschrift des für die Verarbeitung Verantwortlichen
 Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:
 
-Educational Concepts Hans N. Beck  
-Waghäuseler Str. 119  
-68753 Waghäusel
+Nikosophie Hans N. Beck  
+Heilbronner Str. 169 
+74211 Leingarten
 Deutschland  
 Tel.: +4915158744954  
-E-Mail: hnbeck@educational-concepts.biz  
-Website: www.educational-concepts.biz  
+E-Mail: hnbeck@nikosophy.online 
+Website: www.nikosophy.online  
 
 #### 3. Erfassung von allgemeinen Daten und Informationen
 Die Internetseite der Educational Concepts Hans Beck erfasst mit jedem Aufruf der Internetseite durch eine betroffene Person oder ein automatisiertes System eine Reihe von allgemeinen Daten und Informationen. Diese allgemeinen Daten und Informationen werden in den Logfiles des Servers gespeichert. Erfasst werden können die (1) verwendeten Browsertypen und Versionen, (2) das vom zugreifenden System verwendete Betriebssystem, (3) die Internetseite, von welcher ein zugreifendes System auf unsere Internetseite gelangt (sogenannte Referrer), (4) die Unterwebseiten, welche über ein zugreifendes System auf unserer Internetseite angesteuert werden, (5) das Datum und die Uhrzeit eines Zugriffs auf die Internetseite, (6) eine Internet-Protokoll-Adresse (IP-Adresse), (7) der Internet-Service-Provider des zugreifenden Systems und (8) sonstige ähnliche Daten und Informationen, die der Gefahrenabwehr im Falle von Angriffen auf unsere informationstechnologischen Systeme dienen.
