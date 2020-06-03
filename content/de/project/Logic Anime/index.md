@@ -1,6 +1,6 @@
 ---
 title: Logic Anime
-summary: An Animationstool in PROLOG
+summary: Ein Animationstool in PROLOG
 tags:
 - Prolog
 date: "2017-08-14T19:28:37+02:00"

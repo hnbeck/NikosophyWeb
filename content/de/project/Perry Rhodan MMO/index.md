@@ -1,6 +1,6 @@
 ---
 title: Perry Rhodan MMO
-summary: Ideas for an Perry Rhodan MMO
+summary: Ideen für ein Perry Rhodan MMO
 tags:
 - Prolog
 - Basic

@@ -1,6 +1,6 @@
 ---
 title: Prolog Game Engine
-summary: How a Prolog Game Engine may look like
+summary: Wie eine Game Engine in PROLOG aussehen könnte.
 tags:
 - Prolog
 - Gaming
