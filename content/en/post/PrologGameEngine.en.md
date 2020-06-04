@@ -10,6 +10,7 @@ title = "Gaming with Prolog - the beginning"
   caption = "(c) Hans N. Beck"
   image = "CityLight.jpg"
 
+
 +++
 
 ### A game as an experiment
