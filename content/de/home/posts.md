@@ -41,7 +41,7 @@ subtitle = ""
 
   # Filter posts by a taxonomy term.
   [content.filters]
-    tag = "*"
+    tag = ""
     category = ""
     publication_type = ""
     author = ""
@@ -52,7 +52,7 @@ subtitle = ""
      tag = "*"
   
    [[content.filter_button]]
-     name = "Prolog"
+     name = "Spiele"
      tag = "Spiele"
   
 [design]
