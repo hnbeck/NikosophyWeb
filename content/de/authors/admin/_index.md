@@ -24,11 +24,13 @@ interests:
 - Lernende Systeme und künstliches Bewusstsein
 - Philosophie
 - Logische Programmierung
+- Geschichten
 
 activities:
-- Schreiben von Spielen
-- Schreiben von PROLOG
+- Erzählen mittels Spielen
+- Testen philosophischer Ideen mit PROLOG
 - Untersuchungen zu Struktur und Effekt
+- Schreiben von Texten
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
