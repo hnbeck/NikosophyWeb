@@ -21,16 +21,16 @@ role: Dipl.-Ing. Elektrotechnik
 bio: Experimenteller Philosoph, der an Spielen und Regelsystemen arbeitet
 
 interests:
-- Lernende Systeme und künstliches Bewusstsein
+- Struktur und Regeln für autonome Systeme
 - Philosophie
 - Logische Programmierung
-- Geschichten
+- Geschichten und Spiele
 
 activities:
-- Erzählen mittels Spielen
+- Umsetzung von Konzepten in Spielen
 - Testen philosophischer Ideen mit PROLOG
-- Untersuchungen zu Struktur und Effekt
-- Schreiben von Texten
+- Untersuchungen zu Struktur, Regel und Effekt
+- Schreiben und Beraten zu diesen Themen
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
