@@ -33,4 +33,4 @@ author = "admin"
 
 ### Mission und Vision
 
-Philosophie, Erzählen und Spielen sind die Grundpfeiler meiner Arbeit. Erzählen ist mein Medium, um philosophischer Erkenntnis zu entwickeln und nach dessen Nutzen zu suchen. Spiele sind ein Modell der Welt. Spielregeln zu entwerfen bedeutet, mit Welt und Entwicklungen zu konstruktiv experimentieren. Genau betrachtet ist Spielen eine Form der Geschichtenezählung. Mein Fokus liegt hierbei auf Struktur und Regeln als Grundmechanismus der Welt und künstlicher autonomer Systeme.
+Philosophie, Erzählung und Spielen sind die Grundpfeiler meiner Arbeit. Erzählen ist mein Medium, um philosophischer Erkenntnis zu entwickeln und nach dessen Nutzen zu suchen. Spiele sind ein Modell der Welt. Spielregeln zu entwerfen bedeutet, mit Welt und Entwicklungen zu konstruktiv experimentieren. Genau betrachtet sind Spiele eine auch Form der Geschichtenerzählung. Mein Fokus liegt auf Struktur und Regeln als Grundmechanismus der Welt und künstlicher autonomer Systeme.
