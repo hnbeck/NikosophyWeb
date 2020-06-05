@@ -3,10 +3,7 @@ date = "2017-05-10T07:22:22+02:00"
 highlight = true
 math = false
 tags = ["Spiele", "Animation", "Handzeichnung"]
-tags:
-- Spiele
-- Animation
-- Handzeichnung
+
 
 title = "Der 'alte' Stil"
 

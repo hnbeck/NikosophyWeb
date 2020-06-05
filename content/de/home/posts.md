@@ -41,11 +41,19 @@ subtitle = ""
 
   # Filter posts by a taxonomy term.
   [content.filters]
-    tag = ""
+    tag = "*"
     category = ""
     publication_type = ""
     author = ""
     exclude_featured = false
+
+  [[content.filter_button]]
+     name = "All"
+     tag = "*"
+  
+   [[content.filter_button]]
+     name = "Prolog"
+     tag = "Spiele"
   
 [design]
   # Toggle between the various page layout types.
