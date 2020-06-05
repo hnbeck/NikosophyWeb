@@ -33,4 +33,4 @@ author = "admin"
 
 ### Mission and Vision
 
-Story telling and gaming are the foundation of my work. Story telling is my way to develop and to communicate theories and knowledge. Games too can transport knowledge. But games are also a model of the world. To design gaming rules requires to model world and dynamics. To be exact, games are some kind of story telling where many stories can grow at the same time. Both, story telling and gaming is guided by the question "what if..." with the intention, to design and shape things.
+Philosophy, story telling and gaming are the foundation of my work. Story telling is my way to develop philosophical insight and to seek for its applications. Games are a model of the world. To design gaming rules is like experimenting with universum and evultion in a constructive way. Games are also some kind of story telling. My focus is at structure and rules as basic machanism of the universe and artificial autonomous systems.

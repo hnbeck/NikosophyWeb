@@ -21,14 +21,17 @@ role: Dipl.-Ing. Elektrotechnik
 bio: Experimental philosopher working with story telling and games
 
 interests:
-- Artificial Intelligence
+- Structure and rules for autonomous systems
 - Philosophy
 - Logical programming
+- Stories and games
 
 activities:
-- writing games
-- writing Prolog
-- investigate structure and effect
+- Compile concepts in games
+- Test of philosophical ideas with PROLOG
+- investigate structure, rule and effect
+- Writing and guidance about this topics
+
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
