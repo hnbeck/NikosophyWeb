@@ -6,7 +6,7 @@ date = "2021-04-17T21:19:52+01:00"
 title = "Stein auf Stein"
 
 [header]
-  caption = "Hans N. Beck"
+  caption = "(c) Hans N. Beck"
   image = "Alge.jpg"
 
 +++

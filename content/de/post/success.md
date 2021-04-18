@@ -6,7 +6,7 @@ date = "2017-04-14T21:19:52+01:00"
 title = "Der Anfang"
 
 [header]
-  caption = "Hans N. Beck"
+  caption = "(c) Hans N. Beck"
   image = "KranRot.jpg"
 
 +++
