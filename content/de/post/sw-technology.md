@@ -7,7 +7,7 @@ title = "Stein auf Stein"
 
 [header]
   caption = "(c) Hans N. Beck"
-  image = "Alge.jpg"
+  image = "Alge2.jpg"
 
 +++
 
