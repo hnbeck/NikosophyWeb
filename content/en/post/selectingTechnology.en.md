@@ -18,7 +18,7 @@ Software projects just for fun are exact this: fun. This allows to take every ti
 In my case, this idea is two-fold: 
 
 +  a CAD like application which let create and read [USD](https://graphics.pixar.com/usd/docs/index.html) and OpenDrive files for traffic scenario modelling
-+  the [Perry Rhodan MMO]({{< ref "perry-rhodan-mmo/index.md" >}}), a game with P2P concept for PC and AR/VR devices
++  the [Perry Rhodan MMO]({{< ref "projectCroquet.en.md" >}}), a game with P2P concept for PC and AR/VR devices
 
 [/en/project/perry-rhodan-mmo/index.md]({{< ref "/en/project/perry-rhodan-mmo/index.md" >}})
 
@@ -26,7 +26,7 @@ In my case, this idea is two-fold:
 
 [/project/perry-rhodan-mmo/]({{< ref "/project/perry-rhodan-mmo/" >}})
 
-[perry-rhodan-mmo]({{< ref "perry-rhodan-mmo" >}})
+[Perry Rhodan MMO]({{< ref "Perry Rhodan MMO" >}})
 
 [perry-rhodan-mmo/index.md]({{< relref "perry-rhodan-mmo/index.md" >}})
 
