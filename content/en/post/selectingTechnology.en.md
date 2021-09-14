@@ -105,8 +105,8 @@ Once upon a time...I got in contact with the Croquet project. It was about serve
 
 From this journey, I learned a lot about myself and what I want. The latter is connected with my very nature, evolved over many years of programming jobs, engineerin jobs and the experiences lived through. And this is the most important point:
 
-> + Things are easy. Everything in the universe is easy in its nature and roots. And therefore, I want to create things build on easy, understandable things.
-> + I want to express ideas and way of thinking in the way my applications are implemented. If I'm free of commercial constraints, and as a hobbist I am, neither time nor effort is important. The expression is important.
+    + Things are easy. Everything in the universe is easy in its nature and roots. And therefore, I want to create things build on easy, understandable things.
+    + I want to express ideas and way of thinking in the way my applications are implemented. If I'm free of commercial constraints, and as a hobbist I am, neither time nor effort is important. The expression is important.
 
 
 Our world of computing is constraint from multiplicity - many things are many times implemented - and variability - every implementation lacks some important points. Therefore production systems have their value if commercial or time constraints for creating a product hold. 
