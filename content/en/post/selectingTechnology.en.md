@@ -18,13 +18,13 @@ Software projects just for fun are exact this: fun. This allows to take every ti
 In my case, this idea is two-fold:
 
 +  a CAD like application which let create and read [USD](https://graphics.pixar.com/usd/docs/index.html) and OpenDrive files for traffic scenario modelling
-+  the [Perry Rhodan MMO]({{< ref "/projects/Perry Rhodan MMO" >}}), a game with P2P concept for PC and AR/VR devices
++  the [Perry Rhodan MMO]({{< ref "/projects/Perry-Rhodan-MMO" >}}), a game with P2P concept for PC and AR/VR devices
 
 Both projects require the same basic elements of architecture: 
 
 ![Basic elements](/src/BasicElements.png)
 
-These elements seems to be obvious:  graphics, logic, persistence. Maybe the communicator could surprise, not for the MMO, but for the other thing. In order to elaborate their value for the resulting application, its role in aggregating functionality together with the other elements for building the behaviour of the application, I'll use the following functions introduced in [this post]({{< ref "ServerAndClient1.en.md" >}}):
+These elements seems to be obvious:  graphics, logic, persistence. Maybe the communicator could be a surprise, not for the MMO, but for the other thing. In order to elaborate the value of these elements for the resulting application, its role in aggregating functionality together with the other elements for building the behaviour of the application, I'll use the following functions introduced in [this post]({{< ref "ServerAndClient1.en.md" >}}):
 
 | Command              | Description              | Example |
 | ---------------------|--------------------------|--------|
@@ -33,6 +33,9 @@ These elements seems to be obvious:  graphics, logic, persistence. Maybe the com
 | +(S, F) | Calculate all effects out from structure S, resulting in new facts F | A spaceship has velocity v. The effect would be that the ship has moved after on tick of pseudotime according its v. The new fact is the new position |
 | >(F, S, S\*) | Translate facts which are result of effects into new structure S\*| Look at the ship example above. Because S is a logical structure it may be or not that the new ship positions change something in the logical structure. If the new position induces a collision, then this will be a structural thing. If one ship free in space moves a little bit it will be still a free ship in space.|
 | O(X) | Evaluate complexity related to amount of storage or time of X) | O(S) may count the predicates stored in S |
+
+Thes functions are the consequence of my basic approach, to see everything as a combination of structure and effects induced by the structure. One basic example for this is a static charge which induced an electric field. The whole electrodynamics is shaped by structure of charges and currents. Behaviour and pyhsical properties of molecules are determined by their structure. Having said this, functions related to structure are not inside the graphics element, this one is only showing the effects from the structure. Later I will explain this in more detail.
+
 
 ## What is now ##
 
