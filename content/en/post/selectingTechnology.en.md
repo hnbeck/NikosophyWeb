@@ -18,7 +18,7 @@ Software projects just for fun are exact this: fun. This allows to take every ti
 In my case, this idea is two-fold:
 
 +  a CAD like application which let create and read [USD](https://graphics.pixar.com/usd/docs/index.html) and OpenDrive files for traffic scenario modelling
-+  the [Perry Rhodan MMO]({{< ref "/en/project/Perry-Rhodan-MMO" >}}), a game with P2P concept for PC and AR/VR devices
++  the [Perry Rhodan MMO]({{< ref "/project/Perry-Rhodan-MMO" >}}), a game with P2P concept for PC and AR/VR devices
 
 Both projects require the same basic elements of architecture: 
 
