@@ -18,7 +18,7 @@ Software projects just for fun are exact this: fun. This allows to take every ti
 In my case, this idea is two-fold:
 
 +  a CAD like application which let create and read [USD](https://graphics.pixar.com/usd/docs/index.html) and OpenDrive files for traffic scenario modelling
-+  the [Perry Rhodan MMO]({{< ref "/projects/Perry-Rhodan-MMO" >}}), a game with P2P concept for PC and AR/VR devices
++  the [Perry Rhodan MMO]({{< ref "/en/project/perry-rhodan-mmo/" >}}), a game with P2P concept for PC and AR/VR devices
 
 Both projects require the same basic elements of architecture: 
 
@@ -34,10 +34,41 @@ These elements seems to be obvious:  graphics, logic, persistence. Maybe the com
 | >(F, S, S\*) | Translate facts which are result of effects into new structure S\*| Look at the ship example above. Because S is a logical structure it may be or not that the new ship positions change something in the logical structure. If the new position induces a collision, then this will be a structural thing. If one ship free in space moves a little bit it will be still a free ship in space.|
 | O(X) | Evaluate complexity related to amount of storage or time of X) | O(S) may count the predicates stored in S |
 
-Thes functions are the consequence of my basic approach, to see everything as a combination of structure and effects induced by the structure. One basic example for this is a static charge which induced an electric field. The whole electrodynamics is shaped by structure of charges and currents. Behaviour and pyhsical properties of molecules are determined by their structure. Having said this, functions related to structure are not inside the graphics element, this one is only showing the effects from the structure. Later I will explain this in more detail.
+Thes functions are the consequence of my basic approach, to see everything as a combination of structure and effects induced by this structure. One basic example for this is a static charge which induces an electric field. The whole electrodynamics is shaped by structure of charges and currents. Behaviour and pyhsical properties of molecules are determined also by their structure. Having said this, functions related to structure are not inside the graphics element, this one is only showing the effects from the structure. Later I will explain this in more detail.
+
+
+## The basic choice ##
+
+The selection process for technologies in an commercial project is built on factors like cost and implementation time, sometimes also on knowlegde required from you team. This is necessary and inevitable. And it seems natural given you want to build many similar products like games or cars to aim to have a production system. To be faced with complicated technology decisions every product again and again is a time and cost factor, too. Once decided, it is so helpful if your selected technology stack would carry you through all your projects a long time. 
+
+The alternative is what is expressed best for me with the term "crafting". Every piece of creation is shaped from the way of using the tools, the composition of basic elements using and the basic knowledge about these elements and their creation potential. Every product is the result of a common coincidence of doing, designing and imaginagtion. 
+
+But these charactarizatiion is a little bit weak. To be more precise, I want ot fetch this words and look at them more deeply:
+
++ time
++ knowledge
++ factors
+
+Assume we want to draw a picture. Let's say the tools for this are the canvas, colors, pencils and brushes. Now I can create a wonderful picture. Using my experience as a drawer, who knows about the effect of colors, perspective, who can observe and see, I paint from the empty canvas until my painting is finished. And finished means: I as the crafter and artist is satisfied.
+
+*Time* would be high, *Knowledge* required would be high, and there are a lot of *Factors* to control.
+
+Now we want to draw man pictures of this kind. One simple way yould be to make a sketch with pencil as a start, and copy this for every picture before drawing. In this way, you would eleminate some factors of composition and shape. If you annotate your sketch with the colors requered of every area in the sketch, some more factors are eleminated. I suppose that the required time is decreased. Using this "technology", our judgment may now this: 
+
+*Time* is mid, *Knowlede* is mid, *Factors* are mid. 
+
+
+Here the pictures have still some kind of orginiaty: the coloring and the production of the colors carry some uncertainy, or say some uncontrollability which induces variation. 
+
+The pictures are great success. Everyone wants to buy one, so what will we do? We concentrate the steps of sketching and coloring in one step: printing. And in addition, we use standardised colors, meaning the production of the colors follows a exact described algorithm. So your canvas will just be printed. As a consequence, every picture looks nearly equal and is created in a just a moment. Meaning: 
+
+*Time* is low, *Knowledge* is low, *Factors* are low. 
+
+
 
 
 ## What is now ##
+
 
 
 
