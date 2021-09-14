@@ -101,5 +101,17 @@ Still there questions left, the way of communication and persistence was open. R
 
 Once upon a time...I got in contact with the Croquet project. It was about serverless distributed computing, by replicating operations on every node. Instead of broadcast data, which is common today, thy broad cast the operations in exact this time sequence on every node. This was the root that I'm still interested in blockchain and its P2P approach. I read a little bit of the Ethereum documentation and dreamed about to introduce a P2P like network replicating logical queries. But there was another ingredient, rooted in my history. It was XMPP, or Jabber, as it was called in earlier days. All these things let grow my dream of building a network of small nodes talking over such a simple protocol like XMPP. And if I say "talking" this means communication in the best sense, not just exchange of some data. My first contact with such package oriented communication was the ASTERIX protocol still used in the Air Traffic Control domain. And to be honest, yes some SciFi movies too put petroleum in the fire..... Taking this spirit with me I read and searched and read. After some time, I got to know that not much XMPP implementations are available - but one for Java is there! Racket and logic programming seems to fit if I would have to implement my own XMPP. This protocol is not hard, it is easy to understand, so go on! Lightweight server components are available, top!
 
+.Net, Hololens
+
+From this journey, I learned a lot about myself and what I want. The latter is connected with my very nature, evolved over many years of programming jobs, engineerin jobs and the experiences lived through. And this is the most important point:
+
+> + Things are easy. Everything in the universe is easy in its nature and roots. And therefore, I want to create things build on easy, understandable things.
+> + I want to express ideas and way of thinking in the way my applications are implemented. If I'm free of commercial constraints, and as a hobbist I am, neither time nor effort is important. The expression is important.
+
+
+Our world of computing is constraint from multiplicity - many things are many times implemented - and variability - every implementation lacks some important points. Therefore production systems have their value if commercial or time constraints for creating a product hold. 
+
+
 
 ## What may be ##
+
