@@ -27,7 +27,7 @@ Both projects require the same basic elements of architecture:
 These elements seems to be obvious:  graphics, logic, persistence. Maybe the communicator could be a surprise, not for the MMO, but for the other thing. In order to elaborate the value of these elements for the resulting application, its role in aggregating functionality together with the other elements for building the behaviour of the application, I'll use the following functions introduced in [this post]({{< ref "ServerAndClient1.en.md" >}}):
 
 | Command              | Description              | Example |
-| ---------------------|--------------------------|--------|
+| ---------------------|--------------------------|---------|
 | ?(S, A) | Query about the structure, returning A | Are there spaceships on the playfield? A would then contain all the ships with this predicate |
 | !(S, S\*) | Applying all applicable rules R on S, resulting in S\*| This would be one tick of the pseudo time clock. For example take the rule that on every place only ship can be. If in the structure S 2 ships will be on the same place that must be a collision |
 | +(S, F) | Calculate all effects out from structure S, resulting in new facts F | A spaceship has velocity v. The effect would be that the ship has moved after on tick of pseudotime according its v. The new fact is the new position |
@@ -75,16 +75,22 @@ Giving up the shape by using a pre-defined sketch means the idea of a picture is
 
 Now, I can preciceise  my criteria for my selection of technology:
 
-+ *time* is the time learning and using the tools or the production system and the time to create the product
-+ *knowledge* is the knowlege I want to learn and I don't want the learn but need it
-+ *factors* are the factors of design, the freedom of variation and the factors I have to control and I could not control of the tools or production system.
++ *time* is the "**time-**" learning and using the tools or the production system and the "**time+**" to create the product
++ *knowledge* is the "**knowlege+**"" I want to learn and  **knowlege-**"" I don't want the learn but need it
++ *factors* are the "**factors+**" of design, the freedom of variation and the "**factors-**" I have to control and I could not control of the tools or production system.
 
 
 
 ## What is now ##
 
 
+I started my journey at the requirements an AR/VR device need. Visualization is the plan. Well, I don't deny gaming at all, and to some extent I want to keep a small little backdoor open to this. But the very first reason to look for AR/VR is visualization. To be more precise, 3D graphs is the thing which attracts me. Graphs are exciting, you can do a lot of things with it. But their usefulness depends on what you can recognize. As the AR/VR products become known, my imagination got energy and I saw myself rotate big networks flying in my room, scale them and select nodes with my fingers. 
 
+Now, graphs are not the things offered from the start by the well-known costomer products. Determined by price and availability, I checked Oculus Quest, NReal and Lynx, how to create own software for them, software which are not games in the first place. It turned out that all these devices runs with Android. I never had done anything with android, so the obvious step was to read a little bit about. Then I installed the android studio, and also Idea/J for Kotlin. This was a straightforward thing. The exciting moment was there now, as comes all the time when trying out a new technology: how to get the hello world running on my Ouest? After hours of reading documentation how to use Android I learned there is an Oculus SDK, and a OpenXR SDK. The latter is wounderful, it promise to write AR/VR code once, because, what a great luck, OpenXR is from the Khronos Group. This is the same instution which created the OpenGL standard. Such bright future in mind I tried examples, I updated, tried other examples and got nothing to run. Time heals everything, I thought and headed to another aspect for my projects: logic.
+
+I'm a logic programming guy, I love Prolog and its silbling, miniKanren. If one talk and think about logic programming, Domain Specific Languages (DSL) and the dualism of code and data is not far away. Following down my roots as a philospher, logic programming is connected strongly with creating structures. So it was clear to me, as a condition of my way of thinking and as a objective of research, logic programming has to be in my projects. With SWI Prolog, I have a very nice package to follow this interest. It has a little downside, which I got aware of remembering the big question I have always and every time: how to deploy, how to I get an small executable? Under Windows 10 at this time, SWI Prolog could create an executable, but it was not simple. You have to handle with dlls, and I hate that. This attidued I gained on my work with Pharo Smallalkt, where you can take an Pharo.exe and and image file anywhere on your file system, without installation, without complicated requirements or wired pre-installations, and it just works. Consequently I scanned different implementations of miniKanren, because miniKanren can embbed logic programming in every standard programming language. So easy I thought, but as time goes on I learned that many implementations are not complete, do hard compromises because of the language it was implemented in and more. The orignial miniKanren, a wonderful small but powerful thing, was implemented in Scheme. When trying out Kotlin, which was a natural consequence beacuse of my AR/VR tests, I found and microKanren implementation looking promising. So yay, I could do Android code with Kotlin and logic and the solution of the OpenXR problem my come in future. 
+
+ 
 
 
 
