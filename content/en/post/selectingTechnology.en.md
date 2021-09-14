@@ -18,13 +18,13 @@ Software projects just for fun are exact this: fun. This allows to take every ti
 In my case, this idea is two-fold:
 
 +  a CAD like application which let create and read [USD](https://graphics.pixar.com/usd/docs/index.html) and OpenDrive files for traffic scenario modelling
-+  the [Perry Rhodan MMO]({{< ref "/project/Perry-Rhodan-MMO" >}}), a game with P2P concept for PC and AR/VR devices
++  the [Perry Rhodan MMO]({{< ref "/projects/Perry Rhodan MMO" >}}), a game with P2P concept for PC and AR/VR devices
 
 Both projects require the same basic elements of architecture: 
 
 ![Basic elements](/src/BasicElements.png)
 
-These elements seems to be obvious: a communication, graphics, logic, persistence. In order to elaborate their value for the resulting application, its role in aggregating functionality together with the other elements for building the behaviour of the application, I'll use the following functions introduced in [this post]({{< ref "ServerAndClient1.en.md" >}}):
+These elements seems to be obvious:  graphics, logic, persistence. Maybe the communicator could surprise, not for the MMO, but for the other thing. In order to elaborate their value for the resulting application, its role in aggregating functionality together with the other elements for building the behaviour of the application, I'll use the following functions introduced in [this post]({{< ref "ServerAndClient1.en.md" >}}):
 
 | Command              | Description              | Example |
 | ---------------------|--------------------------|--------|
