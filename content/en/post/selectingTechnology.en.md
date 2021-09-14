@@ -15,10 +15,21 @@ title = "Selecting Technology"
 
 Software projects just for fun are exact this: fun. This allows to take every time needed, to try out things and investigate many strategies of implementation.  And this is necessary, because the computer domain today provides many different implementations of the same thing, many levels of abstraction and many many programming languages and technologies. There are game engines, data bases, web frameworks, visualization frameworks etc.
 
-In my case, this idea is two-fold: (new2)
+In my case, this idea is two-fold: 
 
 +  a CAD like application which let create and read [USD](https://graphics.pixar.com/usd/docs/index.html) and OpenDrive files for traffic scenario modelling
 +  the [Perry Rhodan MMO]({{< ref "perry-rhodan-mmo/index.md" >}}), a game with P2P concept for PC and AR/VR devices
+
+[/en/project/perry-rhodan-mmo/index.md]({{< ref "/en/project/perry-rhodan-mmo/index.md" >}})
+[/en/project/perry-rhodan-mmo/]({{< ref "/en/project/perry-rhodan-mmo/" >}})
+[/project/perry-rhodan-mmo/]({{< ref "/project/perry-rhodan-mmo/" >}})
+[/perry-rhodan-mmo/]({{< ref "perry-rhodan-mmo/" >}})
+
+[/en/project/perry-rhodan-mmo/index.md]({{< relref "/en/project/perry-rhodan-mmo/index.md" >}})
+[/en/project/perry-rhodan-mmo/]({{< relref "/en/project/perry-rhodan-mmo/" >}})
+[/project/perry-rhodan-mmo/]({{< relref "/project/perry-rhodan-mmo/" >}})
+[/perry-rhodan-mmo/]({{< relref "perry-rhodan-mmo/" >}})
+
 
 Both projects require the same basic elements of architecture: 
 
