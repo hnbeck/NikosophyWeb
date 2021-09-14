@@ -21,14 +21,21 @@ In my case, this idea is two-fold:
 +  the [Perry Rhodan MMO]({{< ref "perry-rhodan-mmo/index.md" >}}), a game with P2P concept for PC and AR/VR devices
 
 [/en/project/perry-rhodan-mmo/index.md]({{< ref "/en/project/perry-rhodan-mmo/index.md" >}})
-[/en/project/perry-rhodan-mmo/]({{< ref "/en/project/perry-rhodan-mmo/" >}})
-[/project/perry-rhodan-mmo/]({{< ref "/project/perry-rhodan-mmo/" >}})
-[/perry-rhodan-mmo/]({{< ref "perry-rhodan-mmo/" >}})
 
-[/en/project/perry-rhodan-mmo/index.md]({{< relref "/en/project/perry-rhodan-mmo/index.md" >}})
+[/en/project/perry-rhodan-mmo/]({{< ref "/en/project/perry-rhodan-mmo/" >}})
+
+[/project/perry-rhodan-mmo/]({{< ref "/project/perry-rhodan-mmo/" >}})
+
+[perry-rhodan-mmo]({{< ref "perry-rhodan-mmo" >}})
+
+[perry-rhodan-mmo/index.md]({{< relref "perry-rhodan-mmo/index.md" >}})
+
 [/en/project/perry-rhodan-mmo/]({{< relref "/en/project/perry-rhodan-mmo/" >}})
+
 [/project/perry-rhodan-mmo/]({{< relref "/project/perry-rhodan-mmo/" >}})
-[/perry-rhodan-mmo/]({{< relref "perry-rhodan-mmo/" >}})
+
+[perry-rhodan-mmo]({{< relref "perry-rhodan-mmo" >}})
+
 
 
 Both projects require the same basic elements of architecture: 
