@@ -64,6 +64,20 @@ The pictures are great success. Everyone wants to buy one, so what will we do? W
 
 *Time* is low, *Knowledge* is low, *Factors* are low. 
 
+Everything is clear, yes? Unfortunately, things are not that easy. I'm pretty sure (but I can not go into details here, it requires a deep philosophical investigation) that time, knowlegde and factors in sum are not decreasing. They are spreaded over differnt people and domains. To do a printing machine is far from trivial, using such technological beasts not even less. And it is not important if factors, tima and knowledge rooted in the mechanics, the software algorithms or something else of the production machine - like the printer.
+
+The example above let make another observation. In the first case, nothing but the tools limit the design of the picture. Then the variation of shape is given up, then that of the colors vanished. For me that means two things: 
+
++ the lower the free factor set, the lower the variation. Free factor set means the factors controllable by the creator or user of a production machine
++ the lower the free factor set, the idea of what the product could be is narrowed or predetermined. 
+
+Giving up the shape by using a pre-defined sketch means the idea of a picture is fixed by this sketch. Many production systems show this fact: a printer can only print printable colors and sizes. A game engine is composed of geometric objects moving in space and carring a texture. To extent the limits of your production system it may be necessary to put in a lot of time and knowlege. In a game engine you can create effects not intended as first citizen in the engine, but you have to know details about the engine, shaders, filters etc.
+
+Now, I can preciceise  my criteria for my selection of technology:
+
++ *time* is the time learning and using the tools or the production system and the time to create the product
++ *knowledge* is the knowlege I want to learn and I don't want the learn but need it
++ *factors* are the factors of design, the freedom of variation and the factors I have to control and I could not control of the tools or production system.
 
 
 
