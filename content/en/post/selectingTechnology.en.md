@@ -114,7 +114,12 @@ Still where questions left, the way of communication and persistence was unsolve
 Once upon a time...I got in contact with the [Croquet](http://www.opencobalt.net/) project (please refer to the current incarnation [Croquet.io](https://croquet.io/)). It was about serverless distributed computing, by replicating operations on every node. Instead of broadcasting data, which is common today, they broadcast operations (messages) including the time information when the operations have to be performed. This was my personal root that I'm still interested today in blockchain and its P2P approach. So I've read a little bit of the [Ethereum](https://ethereum.org/en/) documentation and in consequnece dreamed about to introduce a P2P like network replicating logical queries. But there was another ingredient, rooted in my history. It was [XMPP](https://xmpp.org/), or Jabber, as it was called in earlier days. All these things let grow my dream of building a network of small nodes talking over such a simple protocol like XMPP. And if I say "talking" I mean communication in the best sense, not just exchange of some data. Chatting computing nodes, as in many SciFi movies.....My first contact with such package oriented communication was the ASTERIX protocol still used in the Air Traffic Control domain. Taking this spirit with me I've read and searched and read. After some time, I got to know that not much XMPP implementations are available - but one for Java is there, hehe... ! Racket and logic programming seems to fit if I would have to implement my own XMPP. This protocol is not hard, it is easy to understand, so go on! Lightweight server components are available, top! I climbed on another hill of happyness during my way.
 
 
-This was a personal report where many details are missing for sure. But I hope I coudl transport a little bit my ups and downs between hope and desperate questioning about how to do it. From this journey, I learned a lot about myself and what I want. The latter is connected with my very nature, evolved over many years of programming jobs, engineerin jobs and the experiences lived through. And this is the most important point:
+This was a personal report where many details are missing for sure. If I could transport a little bit my ups and downs between hope and desperate questioning all is fine.
+
+
+### What may be ###
+
+From this journey, I learned a lot about myself and what I want. The latter is connected with my very nature, evolved over many years of programming jobs, engineerin jobs and the experiences lived through. And this is the most important point:
 
 > + Things are easy. Everything in the universe is easy in its nature and roots. And therefore, I want to create things build on easy, understandable things, basic rules.
 > + I want to express ideas and the way of thinking in the way my applications are implemented. If I'm free of commercial constraints, and as a hobbist I am, neither time nor effort is important. The expression is important.
@@ -123,7 +128,16 @@ This was a personal report where many details are missing for sure. But I hope I
 
 Our world of computing is constraint from multiplicity - many things are  implemented many times- and variability - every implementation lacks some important points. Therefore production systems have their value if commercial or time constraints for creating a product hold. But I'm not a friend of magic. I'm afraid of production systems driven by AI and reduce the designing and inspired human as an observer who forgot the basics.
 
+Time to wrap up,  time to provide a conclusion of what I experienced and the application of the terms and taxonomy provided at the beginning. I'll try this in form of the following table:
 
+| Element | Function | Technology | Judgement |
+|---------|----------|------------|-----------|
+| Graphics | +(S, F) | Game Engines | time+ low, time- mid, knowlegde+ low, knowledge- mid, factors+ mid, factors- mid|
+| | >(F, S, S\*) | | |
+| | | Racket and Vulkan or OpenGL | time+ high, time- mid, knowlegde+ high, knowledge- low, factors+ high, factors- low|
+| | | Processing and Java  | time+ mid, time- mid, knowlegde+ mid, knowledge- low, factors+ high, factors- low
+|---|---|---|---|
 
-### What may be ###
-
++ Communication -> replicate +, >, !, ? functions
++ Logic -> !(S, S\*), ?(S, A)
++ Persistence -> make S persistent
