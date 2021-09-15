@@ -130,8 +130,8 @@ Our world of computing is constraint from multiplicity - many things are  implem
 
 Time to wrap up,  time to provide a conclusion of what I experienced and the application of the terms and taxonomy provided at the beginning. I'll try this in form of the following table (t=time, f=factors, k=knowledge:
 
-| Element | Function | Technology | Judgement | t+ | t- | k+ | k-|  f+ | f-| 
-|---------|----------|------------|-----------|----|----|----|---|----|----|
+| Element | Function | Technology  | t+ | t- | k+ | k-|  f+ | f-| 
+|---------|----------|------------|-----|----|----|---|----|----|
 | Graphics | +(S, F),  >(F, S, S\*) | Godot / Racket | mid | mid | mid |  mid | mid | mid|
 | | | Racket and Vulkan or OpenGL | high |  high | high | high | high | low|
 | | | Processing and Java  |  mid | low | mid | low | high |low|
@@ -143,9 +143,9 @@ Time to wrap up,  time to provide a conclusion of what I experienced and the app
 | | | Embeddable NoSql / Racket | high | mid | high | mid | mid | mid |
 
 
-It should be pointed out that this table is only some guide. Putting all together my allocation for my procjects is this - until new decisions a required or unsolvable problems occur: 
+It should be pointed out that this table is only some guide. Putting all together my allocation for my projects is this - until new decisions are required or unsolvable problems occur: 
 
-+ Street CAD: Processing and the Java Kotlin chain. This will be more product oriented.
-+ Perry MMO: Vulkan / Racket or Godot / Racket for the PC and OpenXR / Godot / Java for the AR/VR device. This project is aimed to learn basics.
++ Street CAD: Processing and the Java Kotlin chain -> This will be more product oriented.
++ Perry MMO: Vulkan / Racket or Godot / Racket for the PC and OpenXR / Godot / Java for the AR/VR device -> This project is aimed to learn basics.
 
 That's it. Every decision is not eternal, but the journey was worth it every minute.
