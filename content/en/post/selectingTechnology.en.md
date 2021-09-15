@@ -128,16 +128,24 @@ From this journey, I learned a lot about myself and what I want. The latter is c
 
 Our world of computing is constraint from multiplicity - many things are  implemented many times- and variability - every implementation lacks some important points. Therefore production systems have their value if commercial or time constraints for creating a product hold. But I'm not a friend of magic. I'm afraid of production systems driven by AI and reduce the designing and inspired human as an observer who forgot the basics.
 
-Time to wrap up,  time to provide a conclusion of what I experienced and the application of the terms and taxonomy provided at the beginning. I'll try this in form of the following table:
+Time to wrap up,  time to provide a conclusion of what I experienced and the application of the terms and taxonomy provided at the beginning. I'll try this in form of the following table (t=time, f=factors, k=knowledge:
 
-| Element | Function | Technology | Judgement |
-|---------|----------|------------|-----------|
-| Graphics | +(S, F) | Game Engines | time+ low, time- mid, knowlegde+ low, knowledge- mid, factors+ mid, factors- mid|
-| | >(F, S, S\*) | | |
-| | | Racket and Vulkan or OpenGL | time+ high, time- mid, knowlegde+ high, knowledge- low, factors+ high, factors- low|
-| | | Processing and Java  | time+ mid, time- mid, knowlegde+ mid, knowledge- low, factors+ high, factors- low
-|---|---|---|---|
+| Element | Function | Technology | Judgement | t+ | t- | k+ | k-|  f+ | f-| 
+|---------|----------|------------|-----------|----|----|----|---|----|----|
+| Graphics | +(S, F),  >(F, S, S\*) | Godot / Racket | low | mid | low |  mid | mid | mid|
+| | | Racket and Vulkan or OpenGL | high |  mid | high | low | high | low|
+| | | Processing and Java  |  mid | mid | mid |low |high |low|
+| Communication | +, >, !, ?| XMPP / Java | low | low | low | mid | low | mid|
+| | | XMPP / Racket | high | low |high | mid | high |low|
+| Logic | !(S, S\*), ?(S, A) | miniKanren / Java (Kotlin) | mid |mid | mid |mid | mid | mid|
+| | | miniKanren / Racket | low | low | high | mid | high | low |
+| Persistence | persistencs(S) | Java Tripple store | low | mid | low | mid | low | low |
+| | | Embeddable NoSql / Racket | high | mid | high | mid | mid | mid |
 
-+ Communication -> replicate +, >, !, ? functions
-+ Logic -> !(S, S\*), ?(S, A)
-+ Persistence -> make S persistent
+
+It should be pointed out that this table is only some guide. Putting all together my allocation for my procjects is this - until new decisions a required or unsolvable problems occur: 
+
++ Street CAD: Processing and the Java Kotlin chain. This will be more product oriented.
++ Perry MMO: Vulkan / Racket or Godot / Racket for the PC and OpenXR / Godot / Java for the AR/VR device. This project is aimed to learn basics.
+
+That's it. Every decision is not eternal, but the journey was worth it every minute.
