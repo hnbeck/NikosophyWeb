@@ -1,0 +1,8 @@
+@startuml
+
+left to right direction
+Graphics -- Communicator
+Communicator -- Logic
+Logic -- Persistence
+
+@enduml
