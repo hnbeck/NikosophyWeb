@@ -136,10 +136,10 @@ Time to wrap up,  time to provide a conclusion of what I experienced and the app
 | | | Racket and Vulkan or OpenGL | high |  high | high | high | high | low|
 | | | Processing and Java  |  mid | low | mid | low | high |low|
 | Communication | +, >, !, ?| XMPP / Java | low | low | low | mid | low | mid|
-| | | XMPP / Racket | high | low |high | mid | high |low|
+| | | XMPP / Racket | high | mid |high | low | high |low|
 | Logic | !(S, S\*), ?(S, A) | miniKanren / Java (Kotlin) | mid |mid | mid |mid | mid | mid|
 | | | miniKanren / Racket | low | low | high | mid | high | low |
-| Persistence | persistencs(S) | Java Tripple store | low | mid | low | mid | low | low |
+| Persistence | persistencs(S) | Java Tripple store | mid | mid | low | mid | low | mid |
 | | | Embeddable NoSql / Racket | high | mid | high | mid | mid | mid |
 
 
