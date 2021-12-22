@@ -7,7 +7,7 @@ title = "What is the Metaverse?"
 
 [header]
   caption = "(c) Hans N. Beck"
-  image = "bruecke.jpg"
+  image = "bridge.jpg"
 
 +++
 
