@@ -7,7 +7,7 @@ title = "What is the Metaverse?"
 
 [header]
   caption = "(c) Hans N. Beck"
-  image = "spaceCity.jpg"
+  image = "bruecke.jpg"
 
 +++
 
@@ -29,7 +29,7 @@ Simulation tody is characteeized by the steps setting up data files like CAD and
 
 ### Reliable location
 
-Personally, working in the public founded project (Validation and verification methods for autonomous driving)[https://vvm-projekt.de] my context is traffic situations. My interest is to put a autonomous car into a digital represented traffic scenario and observe its behaviour and the interaction with other traffic participants. From accident reasearch and known psychologic effects it would be possible to implement behavioal models for them (which is competitive, though). But the problem is to but them all intro a location and time based scene and let them run. It would be nice to have the structure of the scene fixed and to go into the scene with colleges. Reliable location would mean, I can tell a colleqgue to go to a special position in the scene and look what happens. This would be different quality than to look in a 3D visualisation from different angles. 
+Personally, working in the public founded project [Validation and verification methods for autonomous driving](https://vvm-projekt.de) my context is traffic situations. My interest is to put a autonomous car into a digital represented traffic scenario and observe its behaviour and the interaction with other traffic participants. From accident reasearch and known psychologic effects it would be possible to implement behavioal models for them (which is competitive, though). But the problem is to but them all intro a location and time based scene and let them run. It would be nice to have the structure of the scene fixed and to go into the scene with colleges. Reliable location would mean, I can tell a colleqgue to go to a special position in the scene and look what happens. This would be different quality than to look in a 3D visualisation from different angles. 
 
 ### hierachical organisation
 
@@ -39,6 +39,10 @@ A car is built by many components. As pointed out above, the interesting part wo
 
 
 ## Criteria of Metavers and Digital Twin
+
+In result of my observations explained above, I want to state these defining properties of "Metaverse" in the sense of axioms. I intend to use this for further considerations and implementations of my own projects:
+
+
 
 | ID       | Defining text              | Explanation |
 | ---------|----------------------------|-------------|
