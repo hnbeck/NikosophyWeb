@@ -17,9 +17,9 @@ Since a few years the term **"Metaverse"** popped up. One reason may be that AR 
 
 Looking at different vendors results in differnet approaches. In sum, an observer may get the impression that Metaverse means "something with AR or VR" and Digital Twin has be to read as "better simulation than today". Because I also think about these terms, my intention for this post is to develop some criteria for deciding if something given is a Metaverse or a Digital Twin - or just a fancy simulation.
 
-## What we have today and may wish today
+### What we have today and may wish today
 
-### Simulation and co-simulation
+#### Simulation and co-simulation
 
 Simulation of complex systems today is state of the art. Languages like [Modelica](https://modelica.org/) allows to describe simulation as code. Every object (or class in a programmers sense) has interfaces and its own mathematical code - differential equations inside. The advantage is that in this way objects can be written simulating things like hydraulics, mechanics, thermodynamics and more, organized in libraries. Moderen commercial tools allows link all these objects together in order to simulate multidomain complex systems. 
 
@@ -27,12 +27,12 @@ It sounds good, and it is. To motivate that there is space for wishes, I'll take
 
 Traffic simulations which I'm interested in would require simulation of multiple agents - the traffic participants - the static environment like traffic lights, buildings, streets and their conditions, but also the dynamic environment like view conditions or weather. 
 
-Now, consider to add traffic participants in the simulation. In systems like Modelica this would require a change of code and recompilation. Luckily, there is already a solution to this, it is called [**FMU/FMI**](https://fmi-standard.org/) standard. By this technology it is possible to bind precompiled objects together. Adding or removing an agent could be done by just instantiating (loading) more objects. But there is more: in addition, the precompiled objects (the "FMU") could be implemented in principle by any solver and with any language, as long as they implements the interface (the "FMI"). So traffic participants as simulation objects would be really "independent" from the traffic scenario simulation itself. And this would indicate me a desireable property of a Metaverse:
+Now, consider to add traffic participants in the simulation. In systems like Modelica this would require a change of code and recompilation. Luckily, there is already a solution to this, it is called [**FMU/FMI**](https://fmi-standard.org/) standard. By this technology it is possible to bind precompiled objects together. Adding or removing an agent could be done by just instantiating (loading) more objects. But there is more: in addition, the precompiled objects (the "FMU") could be implemented in principle by any solver, realize their own models (a car is different than a civilian) and with any language, as long as they implements the interface (the "FMI"). So traffic participants as simulation objects would be really "independent" from the traffic scenario simulation itself. And this would indicate me a desireable property of a Metaverse:
 
 >It should be possible to put simulation objects into the main simulation independet of their implementation, internal model or programming language, as long as it matches defined interfaces.
 
 
-### hierachical organisation
+#### Hierachical organisation
 
 A car is built by many components. As pointed out above, the interesting part would be that the components set up a bigger component do this by following the basic rules of the Metaverse. 
 
