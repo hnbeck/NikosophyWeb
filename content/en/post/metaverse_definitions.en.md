@@ -85,8 +85,8 @@ In result of my observations explained above, I want to state these defining pro
 
 This axioms are mainly introduced for my own work, to help me to differ between fancy simulation technology and a (possible) Metaverse. The most important part seems to be that humans are DiS by themself, the Metaverse Mechanic and reliable location.
 
-I think, there is no strictly need that space is Euclidean and time is a time as we as humans feel it. In fact, my current work at VVM goes in direction of topolocical spaces and a logical time (which still has monoton direction). In the opposite, I tried to find criteria which would allow to try out different "universal" concepts, to build own "universers" with their very own set of basic laws (or rules). I think this could be a new step of modeling - and some games out their trying to do such already.
+I think there is no strictly need that space is Euclidean and time is a time as we as humans feel it. In fact, my current work at VVM goes in direction of topolocical spaces and a logical time (which still has monoton direction). In the opposite, I tried to find criteria which would allow to try out different "universal" concepts, to build own "universers" with their very own set of basic laws (or rules). I think this could be a new step of modeling - and some games out their trying to do such already.
 
-Personally I assume, that the set of axioms above can be narrowed. For example, I could imagine that the axioms around space, time and location could be defined more abstracted, comming closer to what I would call the very nature of a "universe".
+Personally I assume that the set of axioms above can be narrowed. For example, I could imagine that the axioms around space, time and location could be defined more abstract, comming closer to what I would call the very nature of a "universe".
 
 Any comment via E-Mail (please refer [contact](/#contact)) would be appreciated, because I just started my journey and there is many to discuss, I'm sure :)
