@@ -89,4 +89,4 @@ I think, there is no strictly need that space is Euclidean and time is a time as
 
 Personally I assume, that the set of axioms above can be narrowed. For example, I could imagine that the axioms around space, time and location could be defined more abstracted, comming closer to what I would call the very nature of a "universe".
 
-Any comment via E-Mail (plese refer to contact) would be appreciated, because I just started my journey and there is many to discuss, I'm sure :)
+Any comment via E-Mail (plaese refer [contact](/#contact))) would be appreciated, because I just started my journey and there is many to discuss, I'm sure :)
