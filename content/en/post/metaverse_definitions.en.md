@@ -45,21 +45,23 @@ Here an new wish pops up to me. Would'nt it be nice if every simulating object j
 
  
 
-### Persistency and continuity
+#### Persistency and continuity
 
-Simulation tody is characteeized by the steps setting up data files like CAD and configuration, run it and do analysis about thr result. Simulating traffic scenarios wourl require many variations: different traffic participants, maybe changing starting positions or initial velocitys, by keeping the static environment, the geometry, signs and buildings constant. Imagine you change something in the traffic conditions by just add or remove or replace agents and start again. This seems to me promising to save time. Adapting simulated objects - for example by adapting their models - could be imediatly checked, when as stated above the basic interfaces are always valid and the effect of a new or changed simulated object can be tested suddenly. It would provide the feeling of an interpreted language. What I think about  is persitency and continuy
-
-
-> The main simulation and their basic contracts should be able to run continuisly and store every state persistently. 
+Simulation today is characterized by performing the steps set up a lot data files like CAD and configuration, run it and to do some analysis about the results. This is unconfortable because variation is a requirement of many simulation, especially in traffic scenario simulations.  Different traffic participants, maybe changing starting positions or initial velocities, by keeping the static environment, the geometry, signs and buildings constant are matter of variation. Changing something in the traffic conditions by just add or remove or replace traffic participants and start again seems to me promising to save time and get more insight. Adapting simulating objects - for example by adapting their models - could be immediatly checked.
 
 
-### Reliable location
+If a simulation system could implement this idea perfectly, it give the engineer or scientist a tool like an interpreter for a programmer.  Write an object with its behaviour defining code, add it to the system and its behaviour is available in time. Just call it. Smalltalk programmers would be now exactly what I mean.... in consequence, here is my next point:
+
+> The main simulation and their basic contracts should be able to run continiusly, like an interpreter runtime in Smalltalk or other interpreters,  and store every state and simulating object persistently, like the Smalltalk system. 
+
+
+#### Reliable location
 
 Personally, working in the public founded project  my context is traffic situations. My interest is to put a autonomous car into a digital represented traffic scenario and observe its behaviour and the interaction with other traffic participants. From accident reasearch and known psychologic effects it would be possible to implement behavioal models for them (which is competitive, though). But the problem is to but them all intro a location and time based scene and let them run. It would be nice to have the structure of the scene fixed and to go into the scene with colleges. Reliable location would mean, I can tell a colleqgue to go to a special position in the scene and look what happens. This would be different quality than to look in a 3D visualisation from different angles. 
 
 
 
-## Criteria of Metavers and Digital Twin
+## Criteria of Metaverse and Digital Twin
 
 In result of my observations explained above, I want to state these defining properties of "Metaverse" in the sense of axioms. I intend to use this for further considerations and implementations of my own projects:
 
@@ -67,11 +69,17 @@ In result of my observations explained above, I want to state these defining pro
 
 | ID       | Defining text              | Explanation |
 | ---------|----------------------------|-------------|
-| I   | The Metaverse is a digital space implementing a mechanic. The mechanic is given by a set of rules mapping a configuration of structure to a new configuration of structure. | In fact this means that the Metavers is equipped with some basic laws like gravity or perservation of energy is for our universe. These laws constitute the way how things in the metaverse can have effect to each other and the environment |
-| II | The Metaverse implements the properties of space and time. In these properties it is peristent (constantly, but not necessarily smoothly flowing) and scaleable | This means the developement of a Metavers is going in one direction. Things which are placed keep ther place until some rules change this. Scalable means, space and time need not to be in every part of the Metaverse the same and need not to be a 1:1 map of real space and time |
-| III | In the Metaverse, elements can be placed, interacting immediatly together and with the environment (the Metaverse itself) according the  Metaverse Mechanics |
-| IV | The elements of the Metaverse are called Digital Surrogates. The implementation of DS is irrelevant as long as the DS implements its behaviour according the Metavers mechanic | In industry there is often mentiond the term digital twin. But a good friend pointed out that the elements of the Metaverse don't be necessarly be a 1:1 map of the properties of the real object it represents |
-| V | A human can be a Digital Surrogate like every other DS. It has to obey the Metaverse Mecahnics. The number oh Personal Digital Surrogates are unlimited | Of course it is all about that humans can dive into the Metaverse, using VR or AR. But, and this seems me to be important for a Metaverse, no PDS  is somthing like good, it is a element like each other. This is because I call it not Avatar.|
+| I   | The Metaverse is a digital space implementing a Mechanic. The Mechanic is given by a set of rules mapping a configuration of structure to a new configuration of structure. | In fact this means that the Metaverse is equipped with some basic laws like gravity or perservation of energy is in our universe. These laws constitute the way how things in the Metaverse can have effect to each other and the environment |
+| II | The Metaverse implements the properties of space and time. In these properties and with its structure it is peristent (constantly, but not necessarily smoothly flowing) and scaleable. | This means the developement of a Metaverse is going into one direction. Things which are placed keep ther place until some rules change this. Scalable means, space and time need not to be in every part of the Metaverse the same and need not to be a 1:1 map of real space and time. |
+| III | In the Metaverse, elements can be placed, interacting immediatly together and with the environment (the Metaverse itself) according the Metaverse Mechanics. |
+| IV | The elements of the Metaverse are called Digital Surrogates (DiS). The implementation of DiS is irrelevant as long as the DiS implements its behaviour according the Metaverse Mechanic | In industry there is often mentiond the term digital twin. But a good friend pointed out that the elements of the Metaverse don't be necessarly be a 1:1 map of the properties of the real object it represents. |
+| V | A human can be a Digital Surrogate like every other DiS. It has to obey the Metaverse Mechanics. The number of Personal Digital Surrogates are (up to a technical limit) unlimited. | Of course it is all about that humans can dive into the Metaverse, using VR or AR. But, and this seems me to be important for a Metaverse, no PDiS  is somthing like good, it is a element like each other. This is because I call it not Avatar.|
 
 
+## Some wrap up notes
 
+This criteria are mainly introduced for my own work, to help me to differ between fancy simulation technology and a Metaverse. The most important part seems to be that humans are DiS by themself, and the Metaverse Mechanic.
+
+I think, there is no strictly need that space is Euclidean and time is a time as we as humans feel it. In fact, my current work at VVM goes in direction of topolocical spaces and a logical time (but it has still monotony direction). In the opposite, I tried to find criteria which would allow to try out different "universal" concepts, to build own "universers" with their very own set of basic laws (or rules). I think this could be a new step of modeling - and some games out their trying to do such already.
+
+Any comment via E-Mail (plese refer to contact) would be appreciated, because I just started my journey and there is many to discuss, I'm sure :)
