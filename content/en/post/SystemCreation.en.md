@@ -29,7 +29,22 @@ Many years later I bought a book about **LISP** and learned what can do just be 
 
 It's not a long time ago when I meet **Prolog**. Suddenly, calculation or algorithms were pushed to back stage, the logical structure of data - or better what is known and what is to be find out - now was prominent on stage. System now seems to be the network of logical statements. In addition, the development of the knowlegde was in focus. 
 
+The basic aspects are 
 
+-  data, their organisation and access
+-  computation as application of rules 
+-  message sending
+
+### One Question, more Precise
+
+What are the characteristics of a system ? the answer will be tried by changing the questions what forms a system? What are the influences of history (versions before), components (libraries) and thinking model?
+
+### Bsic parts of a system
+
+Basic parts of a system are 
+-  !(S, S\*) Structure change - What are structures for data, message sending computation systems
+- +(S, F) Effect triggering
++ >(F, S, S\*) Effects changing structure
 
 
 
