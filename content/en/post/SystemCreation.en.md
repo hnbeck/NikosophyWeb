@@ -45,12 +45,12 @@ Many applications today are built on a lot of different libraries. From practice
 
 ### Data are not equal to data
 
-![A Test](/img/SVGTest.svg)
+{{ readFile "static/img/SVGTest.svg” | safeHTML }}
 
 Basic parts of a system are 
 -  !(S, S\*) Structure change - What are structures for data, message sending computation systems
 - +(S, F) Effect triggering
-- >(F, S, S\*) Effects changing structure
+- \>(F, S, S\*) Effects changing structure
 
 
 
