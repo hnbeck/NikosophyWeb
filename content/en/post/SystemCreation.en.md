@@ -10,41 +10,47 @@ title = "System creation and the size of bricks"
   caption = "(c) Hans N. Beck"
   image = "bricks.jpg"
 
-
 +++
 
 ### One Question
 
 Beeing a programmer, I always was faced with systems. Big systems, small systems, interconnected system, operating systems and more. Although computer science is not as old as the mechanic engineering, and despite computer science is deeply rooted in mathematics, the "science" is on the way to become an "engineering". Everyone touched computers professionally learned about models, algorithms, data structures and enginneering tools like UML, high level programming languages, requirements and much more. 
 
-I've got introduced to many programmers, professionals as well as hobbists. After a lot of talks with them and cooperation as well as own practices, I still have no clear insight how to build a system from an engineering perspective. And this is strange, because I'm an electronics engineer. As such I've learned the building blocks of electronics, the basic parts like resistors and transistors, digital logic, electro-magnetics and how to assemble them. Every thing has its role, its place in the world of physics and it the world of engineering, too. But software?
+I've got introduced to many programmers, professionals as well as hobbists. After a lot of talks with them and cooperation as well as own practices, I still have no clear insight how to build a system from an engineering perspective. And this is strange, because I'm an electronics engineer. As such I've learned the building blocks of electronics, the basic parts like resistors and transistors, digital logic, electro-magnetics and how to assemble them. Every thing has its role, its place in the world of physics and it the world of engineering, too. *But what are the constituting elements of software?*
 
 ### Path through the Programmers World
 
-My professional carrier started 30 years ago as software developer. I've tried out a lot of programming languages, and most of them felt like the same thing in a different costume. Everything was about to write down data structures and tell what to do with the data, step by step. By doing calculations about electromagnetic fields, writing code looked naturally: just take the formulas, write dem as code with a good numeric library, think a little bit about where to put the data and that's it. Is this really a system?
+My professional carrier started 30 years ago as software developer. During this time I've got introduced to a lot of programming languages. Some were nice, some helpful. Three of them had the most influence on my working and thinking, and these are **Smalltalk**, **LISP** and **Prolog**.
 
-Some years before, during my studies about philosophy,  I've got introduced to **Smalltalk**. At this time I hadn't this fix view on algorithms and data structures, and the communicating objects, the simple way how to send messages to objects, all put together in an application,  and many more things. This framework of simple elements resulting in something easy to use tool pushed the idea of what a system might me. 
+The story **Smalltalk** told me is that everthing can be thought as a network of communicating objects. Today, the concept of objects has many interpretations, but as it belongs to Smalltalk, an object is just a unit receiving and sending messages and is capable of computing in any form. The simple but powerful mechanism of the language Smalltalk allows even functional style, and of course objects could be aggregated, building subnetworks or just describe records.  
 
-Many years later I bought a book about **LISP** and learned what can do just be this simple model of manipulating lists. Also, the idea of functional programming was new to me. Beeing elegant and small, Lisp compiler in its "physical" representation looked not like a system, although the model behind it does. 
+From  **LISP** I learned what can be one by just this simple model of manipulating lists by functions. Arranging data in lists was an efficient way to do calculations of the elements, and together with functions concatenating or dividing lists, sorting them give a powerful tool in the hand of coders. 
 
-It's not a long time ago when I meet **Prolog**. Suddenly, calculation or algorithms were pushed to back stage, the logical structure of data - or better what is known and what is to be find out - now was prominent on stage. System now seems to be the network of logical statements. In addition, the development of the knowlegde was in focus. 
+It's not a long time ago when I meet **Prolog**. Suddenly, calculation or algorithms were pushed to back stage, the logical structure of data - or better what is known and what is to be find out - now was prominent on stage. Of course, data structures is im an important thing in any programming languange, but in Prolog these data structure were pushed many levels up to a knowledge management. 
 
-The basic aspects are 
+These languages, Smalltalk, Lisp and Prolog pushed things in the light which may be good candidates to be the building blocks of software from an engineering perspektive. And they are: 
 
--  data, their organisation and access
--  computation as application of rules 
--  message sending
+-  data processing, meaning there organisation and access
+-  number processing, meaning all computation what every computer does since bits are pushed around from a CPU 
+-  message processing, meaning the excange of data
 
 ### One Question, more Precise
 
-What are the characteristics of a system ? the answer will be tried by changing the questions what forms a system? What are the influences of history (versions before), components (libraries) and thinking model?
+We all know the methods of *top down* and *bottom up*. Sometimes it seems that discussions are induced with the energy of a war. A system is built to fullfil some needs. Elements are not completly free to choose, because not every element required is available on the market, or need such hughe investmens of money or time to draw it unreliable. Consequently, a system designer has to look what its element set provides, meaning that bottom up has its value. 
 
-### Bsic parts of a system
+At this point, I would like to transform the question "what are the constituting elements of software" to "what determins the form of software", what are the formal, material and effective causes, as Aristotels would ask.
+
+Many applications today are built on a lot of different libraries. From practice, this seems natural, because in a money driven world costs for implementing something want to be  kept low as far as possible. But the question is, if the inner idea and logic, the Aristoteles causes of the libraries used determine the form of the system too much, narrow its possibilities to much. So we have another transformation of the basic question: 
+*"What narrows the potatial form of the system?"*
+
+### Data are not equal to data
+
+![A Test](SVGTest.svg)
 
 Basic parts of a system are 
 -  !(S, S\*) Structure change - What are structures for data, message sending computation systems
 - +(S, F) Effect triggering
-+ >(F, S, S\*) Effects changing structure
+- >(F, S, S\*) Effects changing structure
 
 
 
