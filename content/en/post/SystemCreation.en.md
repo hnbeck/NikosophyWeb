@@ -4,7 +4,7 @@ publishdate ="2022-05-16"
 highlight = true
 math = false
 tags = ["Programming", "Basics"]
-title = "System creation and the size of bricks"
+title = "Form of Systems"
 
 [header]
   caption = "(c) Hans N. Beck"
@@ -46,6 +46,10 @@ Many applications today are built on a lot of different libraries. From practice
 ### Data are not equal to data
 
 ![Bild](/img/svg_test.svg "Bildname")
+
+und 
+
+{{< figure src="/img/svg_test.svg" class="myimg" title="SVG TEst" >}}
 
 Basic parts of a system are 
 -  !(S, S\*) Structure change - What are structures for data, message sending computation systems
