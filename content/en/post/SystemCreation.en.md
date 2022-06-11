@@ -45,11 +45,9 @@ Many applications today are built on a lot of different libraries. From practice
 
 ### Data are not equal to data
 
-![Bild](/img/svg_test.svg "Bildname")
-
 und 
 
-{{< figure src="/img/svg_test.svg" class="myimg" title="SVG TEst" >}}
+{{< figure src="/img/svg_test.svg" class="myimg" title="SVG TEst" width="100" height="100" >}}
 
 Basic parts of a system are 
 -  !(S, S\*) Structure change - What are structures for data, message sending computation systems
