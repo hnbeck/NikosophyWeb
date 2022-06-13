@@ -42,6 +42,13 @@ At this point, I would like to transform the question "what are the constituting
 
 Many applications today are built on a lot of different libraries. From practice, this seems natural, because in a money driven world costs for implementing something want to be  kept low as far as possible. But the question is, if the inner idea and logic, the Aristoteles causes of the libraries used determine the form of the system too much, narrow its possibilities to much. So we have another transformation of the basic question: 
 *"What narrows the potatial form of the system?"*
+As an example consider the common task to draw some graphics on the screen. This can be done by the very basic API of a Vulcan or DirectX device driver. This is so-called low level, you have to setup camera, buffers and nearly everything of the graphics pipeline with a lot of API calls. More abstraction is provided by 2D/3D Graphics library, which allows you to thing in geometric shapes and device independend Coordiante systems. At high level there are Graphic Engines, which render everthing on every device they support. Now you have things like collision, sound, movement of many objects, and yes, the model of thinking is now less graphics, much more objects with behavior.
+
+The different abstraction level and thinking model can be observed at the API. The Vulcan API allows to do nearly everything the graphics hardware can do, but your thinking is bound to the material and formal cause of this hardware. You have maximim freedom to shape the effective cause. The great demo szene shows what can be done if everthing of the hardwar is under control of the programmer The game engine let you do only for what the game engine is designed for - 2D games, 3D games, sprites. A good engine still allows a lot to do what the hardware provides. But your influces as a programmer HOW this is done is limited. That means, the formal and material cause is defined by the game engine, the effective cause is predefined.
+
+Now, in ouer daily buisness this all makes sense. Graphic professionals can code their knowledge in game engines, and the user of game engines can focus on its game buisness. But this game artist has to agree about the models and ideas, or in other words it has to be accepted the material, formal effective AND ideal causes of the library or subsystem designer!
+
+Material and Formal Cause at one side, effective Cause and ideal Cause have theirfore much influence of the material, formal and effective cause of the everall system build from theses elements (libraries, subsystems)
 
 ### Data are not equal to data
 
